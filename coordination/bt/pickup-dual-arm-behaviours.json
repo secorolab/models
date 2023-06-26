@@ -1,7 +1,7 @@
 {
     "@context": {
-        "@base": "https://my.url/models/coordination/bt/",
-        "crdn-m": "https://my.url/models/coordination/",
+        "@base": "https://hbrs-sesame.github.io/models/coordination/bt/",
+        "pickup-events": "https://hbrs-sesame.github.io/models/coordination/pickup-events/",
 
         "py": "https://hbrs-sesame.github.io/metamodels/languages/python#",
 
@@ -24,11 +24,11 @@
         { "@id": "approach-arm2", "@type": "bt:Action" },
         {
             "@id": "approach1-events", "@type": "bt:ActionWithEvents", "of-action": "approach-arm1",
-            "start-event": "crdn-m:approach-arm1-start", "end-event": "crdn-m:approach-arm1-end"
+            "start-event": "pickup-events:approach-arm1-start", "end-event": "pickup-events:approach-arm1-end"
         },
         {
             "@id": "approach2-events", "@type": "bt:ActionWithEvents", "of-action": "approach-arm2",
-            "start-event": "crdn-m:approach-arm2-start", "end-event": "crdn-m:approach-arm2-end"
+            "start-event": "pickup-events:approach-arm2-start", "end-event": "pickup-events:approach-arm2-end"
         },
 
         {
@@ -69,7 +69,7 @@
         {
             "@id": "pickup-dual-arm-mockup", "@type": "bt:BehaviourTreeWithEvents",
             "uses-impl": "pickup-subtree-dual-arm-mockup",
-            "el-conn": "crdn-m:dual-arm-pickup-el"
+            "el-conn": "pickup-events:dual-arm-pickup-el"
         }
     ]
 }
