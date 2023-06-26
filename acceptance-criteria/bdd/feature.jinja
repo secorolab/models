@@ -10,6 +10,6 @@ Feature: {{ data.name }}
 
     Examples:
     |{% for var_name in scenario_data.variables %} {{ var_name }} |{% endfor %}
-    {% for variation in scenario_data.variations %}|{% for entity_name in variation %} {{ entity_name }} |{% endfor %}
+    {% for entity_data in scenario_data.entities %}|{% for entity_name in entity_data %} {{ entity_name }} |{% endfor %}
     {% endfor %}
 {% endfor %}
