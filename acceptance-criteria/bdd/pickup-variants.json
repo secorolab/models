@@ -1,0 +1,72 @@
+{
+    "@context": {
+        "@base": "https://hbrs-sesame.github.io/models/acceptance-criteria/bdd/pickup-variants/",
+        "tmpl": "https://hbrs-sesame.github.io/models/acceptance-criteria/bdd/templates/pickup/",
+
+        "crdnm": "https://hbrs-sesame.github.io/models/coordination/pickup-events/",
+
+        "hbrs-agents": "https://hbrs-sesame.github.io/models/agents/brsu/",
+        "hbrs-env": "https://hbrs-sesame.github.io/models/environments/brsu/",
+        "avl-env": "https://hbrs-sesame.github.io/models/environments/avl/",
+
+        "bdd": "https://hbrs-sesame.github.io/metamodels/acceptance-criteria/bdd#",
+        "of-clause": { "@id": "bdd:of-clause", "@type": "@id" },
+        "has-criteria": { "@id":"bdd:has-criteria", "@type": "@id" },
+        "of-scenario":{ "@id": "bdd:of-scenario", "@type": "@id" },
+        "has-var-connection": { "@id": "bdd:has-var-connection", "@type": "@id" },
+        "of-variable": { "@id": "bdd:of-variable", "@type": "@id" },
+        "has-variation": { "@id": "bdd:has-variation", "@type": "@id" },
+
+        "evt": "https://hbrs-sesame.github.io/metamodels/coordination/event#",
+        "has-event": { "@id": "evt:has-event", "@type": "@id" }
+    },
+
+    "@graph": [
+        {
+            "@id": "object-connection", "@type": "bdd:VariableConnection",
+            "of-variable": "tmpl:pick-object",
+            "has-variation": [ "hbrs-env:box", "hbrs-env:bottle", "avl-env:cylindrical1" ]
+        },
+        {
+            "@id": "workspace-connection", "@type": "bdd:VariableConnection",
+            "of-variable": "tmpl:pick-workspace",
+            "has-variation": [ "hbrs-env:dining-table" ]
+        },
+        {
+            "@id": "robot-connection", "@type": "bdd:VariableConnection",
+            "of-variable": "tmpl:pick-robot",
+            "has-variation": [ "hbrs-agents:kinova1", "hbrs-agents:kinova2" ]
+        },
+        {
+            "@id": "scenario-pick-1-arm", "@type": "bdd:ScenarioVariant",
+            "of-scenario": "tmpl:scenario-pick",
+            "has-var-connection": [
+                "object-connection", "workspace-connection", "robot-connection"
+            ]
+        },
+        {
+            "@id": "scenario-approach-1-arm", "@type": "bdd:ScenarioVariant",
+            "of-scenario": "tmpl:scenario-approach",
+            "has-var-connection": [
+                "object-connection", "workspace-connection", "robot-connection"
+            ]
+        },
+        {
+            "@id": "us-obj-transport-single-arm", "@type": "bdd:UserStory",
+            "has-criteria": [
+                "scenario-approach-1-arm", "scenario-pick-1-arm"
+            ]
+        },
+        {
+            "@id": "us-obj-transport-single-arm-approach-only", "@type": "bdd:UserStory",
+            "has-criteria": [
+                "scenario-approach-1-arm"
+            ]
+        },
+
+        {
+            "@id": "approach-when-event", "@type": "bdd:WhenEvent",
+            "of-clause": "tmpl:approach-when", "has-event": "crdnm:approach-start"
+        }
+    ]
+}

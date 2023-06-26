@@ -1,0 +1,25 @@
+{
+    "@context":{
+        "@base": "https://hbrs-sesame.github.io/models/environment/avl/",
+        "bdd": "https://hbrs-sesame.github.io/metamodels/acceptance-criteria/bdd#",
+        "avl": "https://www.avl.com/"
+    },
+    "@graph": [
+        {
+            "@id": "cylindrical1",
+            "@type": [ "bdd:Object", "avl:CylindricalCell" ]
+        },
+        {
+            "@id": "pouch1",
+            "@type": [ "bdd:Object", "avl:PouchCell" ]
+        },
+        {
+            "@id": "prismatic1",
+            "@type": [ "bdd:Object", "avl:PrismaticCell" ]
+        },
+        {
+            "@id": "prismatic2",
+            "@type": [ "bdd:Object", "avl:PrismaticCell" ]
+        }
+    ]
+}

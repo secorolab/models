@@ -1,0 +1,12 @@
+{
+    "@context": {
+        "@base": "https://hbrs-sesame.github.io/models/environments/brsu/",
+        "env": "https://hbrs-sesame.github.io/metamodels/environment#"
+    },
+    "@graph": [
+        { "@id": "box", "@type": "env:Object" },
+        { "@id": "ball", "@type": "env:Object" },
+        { "@id": "bottle", "@type": "env:Object" },
+        { "@id": "dining-table", "@type": "env:Workspace" }
+    ]
+}

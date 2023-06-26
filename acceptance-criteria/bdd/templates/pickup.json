@@ -1,0 +1,109 @@
+{
+    "@context": {
+        "@base": "https://hbrs-sesame.github.io/models/acceptance-criteria/bdd/templates/pickup/",
+
+        "bdd": "https://hbrs-sesame.github.io/metamodels/acceptance-criteria/bdd#",
+        "given": { "@id": "bdd:given", "@type": "@id" },
+        "when": { "@id": "bdd:when", "@type": "@id" },
+        "then": { "@id": "bdd:then", "@type": "@id" },
+        "clause-of": { "@id": "bdd:clause-of", "@type": "@id" },
+        "predicate": { "@id": "bdd:predicate", "@type": "@id" },
+        "time-constraint": { "@id": "bdd:time-constraint", "@type": "@id" },
+        "of-scenario": { "@id": "bdd:of-scenario", "@type": "@id" },
+        "ref-workspace": { "@id": "bdd:ref-workspace", "@type": "@id" },
+        "ref-object": { "@id": "bdd:ref-object", "@type": "@id" },
+        "ref-agent": { "@id": "bdd:ref-agent", "@type": "@id" },
+
+        "bhv": "https://hbrs-sesame.github.io/metamodels/behaviour#",
+        "of-behaviour":{ "@id": "bhv:of-behaviour", "@type": "@id" }
+    },
+    "@graph": [
+
+        { "@id": "approach", "@type": "bhv:Behaviour" },
+        { "@id": "approach-given", "@type": "bdd:GivenClause" },
+        { "@id": "approach-when", "@type": "bdd:WhenClause" },
+        { "@id": "approach-then", "@type": "bdd:ThenClause" },
+        {
+            "@id": "scenario-approach", "@type": "bdd:Scenario",
+            "of-behaviour": "approach",
+            "given": "approach-given",
+            "when": "approach-when",
+            "then": "approach-then"
+        },
+
+        { "@id": "lift", "@type": "bhv:Behaviour" },
+        { "@id": "lift-given", "@type": "GivenClause" },
+        { "@id": "lift-when", "@type": "WhenClause" },
+        { "@id": "lift-then", "@type": "ThenClause" },
+        {
+            "@id": "scenario-lift", "@type": "Scenario",
+            "of-behaviour": "lift",
+            "given": "lift-given",
+            "when": "lift-when",
+            "then": "lift-then"
+        },
+
+        { "@id": "pick", "@type": "bhv:Behaviour" },
+        { "@id": "pick-given", "@type": "bdd:GivenClause" },
+        { "@id": "pick-when", "@type": "bdd:WhenClause" },
+        { "@id": "pick-then", "@type": "bdd:ThenClause" },
+        {
+            "@id": "scenario-pick", "@type": "bdd:Scenario",
+            "of-behaviour": "pick",
+            "given": "pick-given",
+            "when": "pick-when",
+            "then": "pick-then"
+        },
+
+        {
+            "@id": "pick-object", "@type": "bdd:ScenarioVariable",
+            "of-scenario": [ "scenario-pick", "scenario-approach", "scenario-lift" ]
+        },
+        {
+            "@id": "pick-workspace", "@type": "bdd:ScenarioVariable",
+            "of-scenario": [ "scenario-pick", "scenario-approach", "scenario-lift" ]
+        },
+        {
+            "@id": "pick-robot", "@type": "bdd:ScenarioVariable",
+            "of-scenario": [ "scenario-pick", "scenario-approach", "scenario-lift" ]
+        },
+
+        { "@id": "pred-obj-located-at-ws", "@type": "bdd:LocatedAtPredicate" },
+        { "@id": "pred-robot-near-obj", "@type": "bdd:IsNearPredicate" },
+        { "@id": "pred-obj-held-by-robot", "@type": "bdd:IsHeldPredicate" },
+
+        { "@id": "before-pick", "@type": "bdd:TimeConstraint" },
+        { "@id": "after-approach", "@type": "bdd:TimeConstraint" },
+        { "@id": "before-lift", "@type": "bdd:TimeConstraint" },
+        { "@id": "after-pick", "@type": "bdd:TimeConstraint" },
+
+        {
+            "@id": "fluent-obj-located-at-ws",
+            "@type": [ "bdd:FluentClause", "bdd:LocatedAtPredicate" ],
+            "clause-of": [ "pick-given", "approach-given" ],
+            "predicate": "pred-obj-located-at-ws",
+            "time-constraint": "before-pick",
+            "ref-object": "pick-object",
+            "ref-workspace": "pick-workspace"
+        },
+        {
+            "@id": "fluent-ee-near-obj",
+            "@type": [ "bdd:FluentClause", "bdd:IsNearPredicate" ],
+            "clause-of": [ "approach-then" ],
+            "predicate": "pred-robot-near-obj",
+            "time-constraint": [ "after-approach", "before-lift" ],
+            "ref-object": "pick-object",
+            "ref-agent": "pick-robot"
+        },
+        {
+            "@id": "fluent-obj-held-by-robot",
+            "@type": [ "bdd:FluentClause", "bdd:IsHeldPredicate" ],
+            "clause-of": [ "pick-then", "lift-then" ],
+            "predicate": "pred-obj-held-by-robot",
+            "time-constraint": "after-pick",
+            "ref-object": "pick-object",
+            "ref-agent": "pick-robot"
+        }
+
+    ]
+}

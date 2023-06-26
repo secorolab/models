@@ -1,0 +1,11 @@
+{
+    "@context": {
+        "@base": "https://hbrs-sesame.github.io/models/agents/brsu/",
+        "agn": "https://hbrs-sesame.github.io/metamodels/agent#",
+        "kinova": "https://www.kinovarobotics.com/product/"
+    },
+    "@graph": [
+        { "@id": "kinova1", "@type": [ "agn:Agent", "kinova:gen3-robots" ] },
+        { "@id": "kinova2", "@type": [ "agn:Agent", "kinova:gen3-robots" ] }
+    ]
+}
