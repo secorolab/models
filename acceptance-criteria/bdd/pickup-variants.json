@@ -13,9 +13,11 @@
         "of-clause": { "@id": "bdd:of-clause", "@type": "@id" },
         "has-criteria": { "@id":"bdd:has-criteria", "@type": "@id" },
         "of-scenario":{ "@id": "bdd:of-scenario", "@type": "@id" },
-        "has-var-connection": { "@id": "bdd:has-var-connection", "@type": "@id" },
         "of-variable": { "@id": "bdd:of-variable", "@type": "@id" },
-        "has-variation": { "@id": "bdd:has-variation", "@type": "@id" },
+
+        "task": "https://hbrs-sesame.github.io/metamodels/task#",
+        "has-variation": { "@id": "task:has-variation", "@type": "@id" },
+        "can-be": { "@id": "task:can-be", "@type": "@id" },
 
         "evt": "https://hbrs-sesame.github.io/metamodels/coordination/event#",
         "has-event": { "@id": "evt:has-event", "@type": "@id" }
@@ -23,31 +25,31 @@
 
     "@graph": [
         {
-            "@id": "object-connection", "@type": "bdd:VariableConnection",
+            "@id": "object-connection", "@type": "task:Variation",
             "of-variable": "tmpl:pick-object",
-            "has-variation": [ "hbrs-env:box", "hbrs-env:bottle", "avl-env:cylindrical1" ]
+            "can-be": [ "hbrs-env:box", "hbrs-env:bottle", "avl-env:cylindrical1" ]
         },
         {
-            "@id": "workspace-connection", "@type": "bdd:VariableConnection",
+            "@id": "workspace-connection", "@type": "task:Variation",
             "of-variable": "tmpl:pick-workspace",
-            "has-variation": [ "hbrs-env:dining-table" ]
+            "can-be": [ "hbrs-env:dining-table" ]
         },
         {
-            "@id": "robot-connection", "@type": "bdd:VariableConnection",
+            "@id": "robot-connection", "@type": "task:Variation",
             "of-variable": "tmpl:pick-robot",
-            "has-variation": [ "hbrs-agents:kinova1", "hbrs-agents:kinova2" ]
+            "can-be": [ "hbrs-agents:kinova1", "hbrs-agents:kinova2" ]
         },
         {
             "@id": "scenario-pick-1-arm", "@type": "bdd:ScenarioVariant",
             "of-scenario": "tmpl:scenario-pick",
-            "has-var-connection": [
+            "has-variation": [
                 "object-connection", "workspace-connection", "robot-connection"
             ]
         },
         {
             "@id": "scenario-approach-1-arm", "@type": "bdd:ScenarioVariant",
             "of-scenario": "tmpl:scenario-approach",
-            "has-var-connection": [
+            "has-variation": [
                 "object-connection", "workspace-connection", "robot-connection"
             ]
         },
