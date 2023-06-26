@@ -25,17 +25,17 @@
 
     "@graph": [
         {
-            "@id": "object-connection", "@type": "task:Variation",
+            "@id": "obj-variation", "@type": "task:Variation",
             "of-variable": "tmpl:pick-object",
             "can-be": [ "hbrs-env:box", "hbrs-env:bottle", "avl-env:cylindrical1" ]
         },
         {
-            "@id": "workspace-connection", "@type": "task:Variation",
+            "@id": "ws-variation", "@type": "task:Variation",
             "of-variable": "tmpl:pick-workspace",
             "can-be": [ "hbrs-env:dining-table" ]
         },
         {
-            "@id": "robot-connection", "@type": "task:Variation",
+            "@id": "robot-variation", "@type": "task:Variation",
             "of-variable": "tmpl:pick-robot",
             "can-be": [ "hbrs-agents:kinova1", "hbrs-agents:kinova2" ]
         },
@@ -43,14 +43,14 @@
             "@id": "scenario-pick-1-arm", "@type": "bdd:ScenarioVariant",
             "of-scenario": "tmpl:scenario-pick",
             "has-variation": [
-                "object-connection", "workspace-connection", "robot-connection"
+                "obj-variation", "ws-variation", "robot-variation"
             ]
         },
         {
             "@id": "scenario-approach-1-arm", "@type": "bdd:ScenarioVariant",
             "of-scenario": "tmpl:scenario-approach",
             "has-variation": [
-                "object-connection", "workspace-connection", "robot-connection"
+                "obj-variation", "ws-variation", "robot-variation"
             ]
         },
         {
