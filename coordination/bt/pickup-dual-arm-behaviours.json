@@ -1,0 +1,75 @@
+{
+    "@context": {
+        "@base": "https://my.url/models/coordination/bt/",
+        "crdn-m": "https://my.url/models/coordination/",
+
+        "py": "https://hbrs-sesame.github.io/metamodels/languages/python#",
+
+        "bt": "https://hbrs-sesame.github.io/metamodels/coordination/behaviour-tree#",
+        "root": { "@id": "bt:root", "@type": "@id" },
+        "uses-impl": { "@id": "bt:uses-implementation", "@type": "@id" },
+        "of-action": { "@id": "bt:of-action", "@type": "@id" },
+        "start-event": { "@id": "bt:start-event", "@type": "@id" },
+        "end-event": { "@id": "bt:end-event", "@type": "@id" },
+        "has-child" : { "@id": "bt:has-child", "@type": "@id" },
+        "parent": { "@id": "bt:parent", "@type": "@id" },
+        "subroot": { "@id": "bt:subroot", "@type": "@id" },
+        "of-subtree": { "@id": "bt:of-subtree", "@type": "@id" },
+
+        "evt": "https://hbrs-sesame.github.io/metamodels/coordination/event#",
+        "el-conn": { "@id": "evt:event-loop-connection", "@type": "@id" }
+    },
+    "@graph": [
+        { "@id": "approach-arm1", "@type": "bt:Action" },
+        { "@id": "approach-arm2", "@type": "bt:Action" },
+        {
+            "@id": "approach1-events", "@type": "bt:ActionWithEvents", "of-action": "approach-arm1",
+            "start-event": "crdn-m:approach-arm1-start", "end-event": "crdn-m:approach-arm1-end"
+        },
+        {
+            "@id": "approach2-events", "@type": "bt:ActionWithEvents", "of-action": "approach-arm2",
+            "start-event": "crdn-m:approach-arm2-start", "end-event": "crdn-m:approach-arm2-end"
+        },
+
+        {
+            "@id": "approach-parallel", "@type": "bt:Parallel",
+            "has-child": [ "approach-arm1", "approach-arm2" ]
+        },
+        {
+            "@id": "approach-subtree", "@type": "bt:ActionSubtree",
+            "parent": "approach", "subroot": "approach-parallel"
+        },
+
+        {
+            "@id": "approach-arm1-mockup", "@type": "bt:PythonActionImpl",
+            "of-action": "approach-arm1",
+            "py:module": "bdd_dsl.behaviours.mockup", "py:class-name": "Heartbeat",
+            "py:ArgName": [ "heartbeat_duration", "message" ],
+            "py:ArgValue": [ 0.6, "left!" ]
+        },
+        {
+            "@id": "approach-arm2-mockup", "@type": "bt:PythonActionImpl",
+            "of-action": "approach-arm2",
+            "py:module": "bdd_dsl.behaviours.mockup", "py:class-name": "Heartbeat",
+            "py:ArgName": [ "heartbeat_duration", "message" ],
+            "py:ArgValue": [ 0.7, "right!" ]
+        },
+
+        {
+            "@id": "approach-subtree-dual-arm-mockup", "@type": "bt:SubtreeImpl",
+            "of-subtree": "approach-subtree",
+            "uses-impl": [ "approach-arm1-mockup", "approach-arm2-mockup" ]
+        },
+        {
+            "@id": "pickup-subtree-dual-arm-mockup", "@type": "bt:SubtreeImpl",
+            "of-subtree": "pickup-subtree",
+            "uses-impl": [ "approach-subtree-dual-arm-mockup", "grasp-mockup", "lift-mockup" ]
+        },
+
+        {
+            "@id": "pickup-dual-arm-mockup", "@type": "bt:BehaviourTreeWithEvents",
+            "uses-impl": "pickup-subtree-dual-arm-mockup",
+            "el-conn": "crdn-m:dual-arm-pickup-el"
+        }
+    ]
+}

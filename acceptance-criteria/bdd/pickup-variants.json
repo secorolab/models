@@ -3,7 +3,7 @@
         "@base": "https://hbrs-sesame.github.io/models/acceptance-criteria/bdd/pickup-variants/",
         "tmpl": "https://hbrs-sesame.github.io/models/acceptance-criteria/bdd/templates/pickup/",
 
-        "crdnm": "https://hbrs-sesame.github.io/models/coordination/pickup-events/",
+        "pickup-events": "https://hbrs-sesame.github.io/models/coordination/pickup-events/",
 
         "hbrs-agents": "https://hbrs-sesame.github.io/models/agents/brsu/",
         "hbrs-env": "https://hbrs-sesame.github.io/models/environments/brsu/",
@@ -66,7 +66,11 @@
 
         {
             "@id": "approach-when-event", "@type": "bdd:WhenEvent",
-            "of-clause": "tmpl:approach-when", "has-event": "crdnm:approach-start"
+            "of-clause": "tmpl:approach-when", "has-event": "pickup-events:approach-start"
+        },
+        {
+            "@id": "approach-when-event", "@type": "bdd:WhenEvent",
+            "of-clause": "tmpl:pick-when", "has-event": "pickup-events:approach-start"
         }
     ]
 }
