@@ -1,0 +1,703 @@
+{
+  "prefix": {
+    "ros": "http://wiki.ros.org/",
+    "exsce": "https://www.sesame-project.org/scenarios/",
+    "geom": "https://robot-schema.org/",
+    "coord": "https://robot-schema.org/coordinates/",
+    "angle": "https://robot-schema.org/rotation/",
+    "oracle": "https://www.sesame-project.org/scenarios/oracles/"
+  },
+  "bundle": {
+    "exsce:scenario_b_bundle": {
+      "prefix": {
+        "exsce": "https://www.sesame-project.org/scenarios/",
+        "mission": "https://www.sesame-project.org/scenarios/missions/",
+        "env": "https://www.sesame-project.org/scenarios/environments/",
+        "robot": "https://www.sesame-project.org/scenarios/robots/",
+        "scenario_b": "https://www.sesame-project.org/scenarios/scenario_b/",
+        "tiago1": "https://www.sesame-project.org/scenarios/robots/tiago1/",
+        "pose": "https://www.sesame-project.org/scenarios/tasks/waypoints/",
+        "tiago2": "https://www.sesame-project.org/scenarios/robots/tiago2/",
+        "mission_b": "https://www.sesame-project.org/scenarios/missions/mission_b/",
+        "task": "https://www.sesame-project.org/scenarios/tasks/"
+      },
+      "entity": {
+        "exsce:scenario_b": {
+          "prov:type": "exsce:ConcreteScenario"
+        },
+        "mission:mission_b": {
+          "prov:type": "exsce:mission",
+          "exsce:missionType": "parallel"
+        },
+        "mission_b:tiago1-task_01": {
+          "prov:type": "prov:Plan"
+        },
+        "mission_b:tiago2-task_01": {
+          "prov:type": "prov:Plan"
+        }
+      },
+      "hadMember": {
+        "_:id1": {
+          "prov:collection": "exsce:scenario_b",
+          "prov:entity": "mission:mission_b"
+        },
+        "_:id2": {
+          "prov:collection": "exsce:scenario_b",
+          "prov:entity": "env:brsu_building_c_with_doors"
+        },
+        "_:id3": {
+          "prov:collection": "exsce:scenario_b",
+          "prov:entity": "robot:tiago1"
+        },
+        "_:id4": {
+          "prov:collection": "exsce:scenario_b",
+          "prov:entity": "robot:tiago2"
+        },
+        "_:id5": {
+          "prov:collection": "mission:mission_b",
+          "prov:entity": "mission_b:tiago1-task_01"
+        },
+        "_:id7": {
+          "prov:collection": "mission:mission_b",
+          "prov:entity": "mission_b:tiago2-task_01"
+        }
+      },
+      "wasDerivedFrom": {
+        "scenario_b:tiago1-start-pose": {
+          "prov:generatedEntity": "tiago1:gazebo_model",
+          "prov:usedEntity": "pose:classroom_c025-w001-R0.00_P0.00_Y0.00",
+          "prov:role": "start_pose",
+          "exsce:scenario": "scenario_b"
+        },
+        "scenario_b:tiago2-start-pose": {
+          "prov:generatedEntity": "tiago2:gazebo_model",
+          "prov:usedEntity": "pose:classroom_c069-w001-R0.00_P0.00_Y0.00",
+          "prov:role": "start_pose",
+          "exsce:scenario": "scenario_b"
+        },
+        "_:id6": {
+          "prov:generatedEntity": "mission_b:tiago1-task_01",
+          "prov:usedEntity": "task:right_long_corridor_task.yaml",
+          "prov:type": "prov:PrimarySource"
+        },
+        "_:id8": {
+          "prov:generatedEntity": "mission_b:tiago2-task_01",
+          "prov:usedEntity": "task:left_long_corridor_task.yaml",
+          "prov:type": "prov:PrimarySource"
+        }
+      }
+    },
+    "env:brsu_building_c_with_doors_bundle": {
+      "prefix": {
+        "env": "https://www.sesame-project.org/scenarios/environments/",
+        "brsu_building_c_with_doors": "https://www.sesame-project.org/scenarios/environments/brsu_building_c_with_doors/",
+        "ros": "http://wiki.ros.org/"
+      },
+      "entity": {
+        "env:brsu_building_c_with_doors": {
+          "prov:type": "exsce:environment"
+        },
+        "brsu_building_c_with_doors:brsu_building_c_with_doors_map": {
+          "prov:type": "exsce:map",
+          "ros:pkg": "floorplan-DSL-environments",
+          "ros:relative_path": "maps/"
+        },
+        "brsu_building_c_with_doors:occupancy_grid": {
+          "prov:type": "ros:OccupancyGrid"
+        },
+        "brsu_building_c_with_doors:metadata": {
+          "prov:type": {
+            "$": "ros:Parameter_Server",
+            "type": "prov:QUALIFIED_NAME"
+          }
+        },
+        "brsu_building_c_with_doors:gazebo_world": {
+          "prov:type": {
+            "$": "ros:GazeboModel",
+            "type": "prov:QUALIFIED_NAME"
+          },
+          "ros:pkg": "floorplan-DSL-environments",
+          "ros:relative_path": "worlds/"
+        }
+      },
+      "hadMember": {
+        "_:id1": {
+          "prov:collection": "brsu_building_c_with_doors:brsu_building_c_with_doors_map",
+          "prov:entity": "brsu_building_c_with_doors:occupancy_grid"
+        },
+        "_:id2": {
+          "prov:collection": "brsu_building_c_with_doors:brsu_building_c_with_doors_map",
+          "prov:entity": "brsu_building_c_with_doors:metadata"
+        },
+        "_:id3": {
+          "prov:collection": "env:brsu_building_c_with_doors",
+          "prov:entity": "brsu_building_c_with_doors:brsu_building_c_with_doors_map"
+        },
+        "_:id4": {
+          "prov:collection": "env:brsu_building_c_with_doors",
+          "prov:entity": "brsu_building_c_with_doors:gazebo_world"
+        }
+      }
+    },
+    "robot:tiago1_bundle": {
+      "prefix": {
+        "robot": "https://www.sesame-project.org/scenarios/robots/",
+        "tiago1": "https://www.sesame-project.org/scenarios/robots/tiago1/",
+        "ros": "http://wiki.ros.org/"
+      },
+      "entity": {
+        "robot:tiago1": {
+          "prov:type": "exsce:robot"
+        },
+        "tiago1:software-config": {
+          "prov:type": "software-config"
+        },
+        "tiago1:hardware-config": {
+          "prov:type": "hardware-config"
+        },
+        "tiago1:gazebo_model": {
+          "prov:type": {
+            "$": "ros:GazeboModel",
+            "type": "prov:QUALIFIED_NAME"
+          }
+        }
+      },
+      "agent": {
+        "tiago1:agent": {
+          "prov:type": "prov:SoftwareAgent"
+        }
+      },
+      "hadMember": {
+        "_:id1": {
+          "prov:collection": "robot:tiago1",
+          "prov:entity": "tiago1:gazebo_model"
+        },
+        "_:id2": {
+          "prov:collection": "robot:tiago1",
+          "prov:entity": "tiago1:software-config"
+        },
+        "_:id3": {
+          "prov:collection": "robot:tiago1",
+          "prov:entity": "tiago1:hardware-config"
+        }
+      }
+    },
+    "env:classroom_c025_bundle": {
+      "prefix": {
+        "pose": "https://www.sesame-project.org/scenarios/tasks/waypoints/",
+        "point": "https://www.sesame-project.org/scenarios/tasks/points/",
+        "coord": "https://robot-schema.org/coordinates/",
+        "orientation": "https://www.sesame-project.org/scenarios/tasks/orientation/",
+        "angle": "https://robot-schema.org/rotation/",
+        "geom": "https://robot-schema.org/",
+        "env": "https://www.sesame-project.org/scenarios/environments/"
+      },
+      "entity": {
+        "pose:classroom_c025-w001-R0.00_P0.00_Y0.00": {
+          "prov:type": "geom:Pose"
+        },
+        "point:classroom_c025-w001": {
+          "coord:x": {
+            "$": 44.80387496948242,
+            "type": "xsd:double"
+          },
+          "coord:y": {
+            "$": 37.15502166748047,
+            "type": "xsd:double"
+          },
+          "coord:z": {
+            "$": 0.0,
+            "type": "xsd:double"
+          },
+          "prov:type": "geom:Point"
+        },
+        "orientation:R0.00_P0.00_Y0.00": {
+          "angle:roll": {
+            "$": 0.0,
+            "type": "xsd:double"
+          },
+          "angle:pitch": {
+            "$": 0.0,
+            "type": "xsd:double"
+          },
+          "angle:yaw": {
+            "$": 0.0,
+            "type": "xsd:double"
+          },
+          "prov:type": "geom:EulerAngles",
+          "geom:axes": "sxyz"
+        }
+      },
+      "hadMember": {
+        "_:id1": {
+          "prov:collection": "pose:classroom_c025-w001-R0.00_P0.00_Y0.00",
+          "prov:entity": "point:classroom_c025-w001"
+        },
+        "_:id2": {
+          "prov:collection": "pose:classroom_c025-w001-R0.00_P0.00_Y0.00",
+          "prov:entity": "orientation:R0.00_P0.00_Y0.00"
+        }
+      }
+    },
+    "robot:tiago2_bundle": {
+      "prefix": {
+        "robot": "https://www.sesame-project.org/scenarios/robots/",
+        "tiago2": "https://www.sesame-project.org/scenarios/robots/tiago2/",
+        "ros": "http://wiki.ros.org/"
+      },
+      "entity": {
+        "robot:tiago2": {
+          "prov:type": "exsce:robot"
+        },
+        "tiago2:software-config": {
+          "prov:type": "software-config"
+        },
+        "tiago2:hardware-config": {
+          "prov:type": "hardware-config"
+        },
+        "tiago2:gazebo_model": {
+          "prov:type": {
+            "$": "ros:GazeboModel",
+            "type": "prov:QUALIFIED_NAME"
+          }
+        }
+      },
+      "agent": {
+        "tiago2:agent": {
+          "prov:type": "prov:SoftwareAgent"
+        }
+      },
+      "hadMember": {
+        "_:id1": {
+          "prov:collection": "robot:tiago2",
+          "prov:entity": "tiago2:gazebo_model"
+        },
+        "_:id2": {
+          "prov:collection": "robot:tiago2",
+          "prov:entity": "tiago2:software-config"
+        },
+        "_:id3": {
+          "prov:collection": "robot:tiago2",
+          "prov:entity": "tiago2:hardware-config"
+        }
+      }
+    },
+    "env:classroom_c069_bundle": {
+      "prefix": {
+        "pose": "https://www.sesame-project.org/scenarios/tasks/waypoints/",
+        "point": "https://www.sesame-project.org/scenarios/tasks/points/",
+        "coord": "https://robot-schema.org/coordinates/",
+        "orientation": "https://www.sesame-project.org/scenarios/tasks/orientation/",
+        "angle": "https://robot-schema.org/rotation/",
+        "geom": "https://robot-schema.org/",
+        "env": "https://www.sesame-project.org/scenarios/environments/"
+      },
+      "entity": {
+        "pose:classroom_c069-w001-R0.00_P0.00_Y0.00": {
+          "prov:type": "geom:Pose"
+        },
+        "point:classroom_c069-w001": {
+          "coord:x": {
+            "$": 11.721145629882812,
+            "type": "xsd:double"
+          },
+          "coord:y": {
+            "$": 53.50111770629883,
+            "type": "xsd:double"
+          },
+          "coord:z": {
+            "$": 0.0,
+            "type": "xsd:double"
+          },
+          "prov:type": "geom:Point"
+        },
+        "orientation:R0.00_P0.00_Y0.00": {
+          "angle:roll": {
+            "$": 0.0,
+            "type": "xsd:double"
+          },
+          "angle:pitch": {
+            "$": 0.0,
+            "type": "xsd:double"
+          },
+          "angle:yaw": {
+            "$": 0.0,
+            "type": "xsd:double"
+          },
+          "prov:type": "geom:EulerAngles",
+          "geom:axes": "sxyz"
+        }
+      },
+      "hadMember": {
+        "_:id1": {
+          "prov:collection": "pose:classroom_c069-w001-R0.00_P0.00_Y0.00",
+          "prov:entity": "point:classroom_c069-w001"
+        },
+        "_:id2": {
+          "prov:collection": "pose:classroom_c069-w001-R0.00_P0.00_Y0.00",
+          "prov:entity": "orientation:R0.00_P0.00_Y0.00"
+        }
+      }
+    },
+    "task:right_long_corridor_task.yaml_bundle": {
+      "prefix": {
+        "task": "https://www.sesame-project.org/scenarios/tasks/",
+        "ros": "http://wiki.ros.org/",
+        "right_long_corridor_task.yaml-subtask_001": "https://www.sesame-project.org/scenarios/tasks/right_long_corridor_task.yaml-subtask_001/",
+        "pose": "https://www.sesame-project.org/scenarios/tasks/waypoints/"
+      },
+      "entity": {
+        "task:right_long_corridor_task.yaml": {
+          "prov:type": "prov:Plan",
+          "ros:pkg": "floorplan-dsl-environments",
+          "ros:relative_path": "tasks/brsu_building_c_with_doors/right_long_corridor_task.yaml"
+        },
+        "task:right_long_corridor_task.yaml-subtask_001": {
+          "prov:type": "prov:Plan"
+        }
+      },
+      "wasDerivedFrom": {
+        "_:id1": {
+          "prov:generatedEntity": "task:right_long_corridor_task.yaml",
+          "prov:usedEntity": "task:right_long_corridor_task.yaml-subtask_001",
+          "prov:role": "subtask_001"
+        },
+        "right_long_corridor_task.yaml-subtask_001:w_001": {
+          "prov:generatedEntity": "task:right_long_corridor_task.yaml-subtask_001",
+          "prov:usedEntity": "pose:right_long_corridor-point-0-R0.00_P0.00_Y0.00",
+          "prov:role": "waypoint"
+        },
+        "right_long_corridor_task.yaml-subtask_001:w_002": {
+          "prov:generatedEntity": "task:right_long_corridor_task.yaml-subtask_001",
+          "prov:usedEntity": "pose:right_long_corridor-point-1-R0.00_P0.00_Y0.00",
+          "prov:role": "waypoint"
+        },
+        "right_long_corridor_task.yaml-subtask_001:w_003": {
+          "prov:generatedEntity": "task:right_long_corridor_task.yaml-subtask_001",
+          "prov:usedEntity": "pose:right_long_corridor-point-2-R0.00_P0.00_Y0.00",
+          "prov:role": "waypoint"
+        },
+        "right_long_corridor_task.yaml-subtask_001:w_004": {
+          "prov:generatedEntity": "task:right_long_corridor_task.yaml-subtask_001",
+          "prov:usedEntity": "pose:right_long_corridor-point-3-R0.00_P0.00_Y0.00",
+          "prov:role": "waypoint"
+        }
+      }
+    },
+    "env:right_long_corridor_bundle": {
+      "prefix": {
+        "pose": "https://www.sesame-project.org/scenarios/tasks/waypoints/",
+        "point": "https://www.sesame-project.org/scenarios/tasks/points/",
+        "coord": "https://robot-schema.org/coordinates/",
+        "orientation": "https://www.sesame-project.org/scenarios/tasks/orientation/",
+        "angle": "https://robot-schema.org/rotation/",
+        "geom": "https://robot-schema.org/",
+        "env": "https://www.sesame-project.org/scenarios/environments/"
+      },
+      "entity": {
+        "pose:right_long_corridor-point-0-R0.00_P0.00_Y0.00": {
+          "prov:type": "geom:Pose"
+        },
+        "point:right_long_corridor-point-0": {
+          "coord:x": {
+            "$": 51.12,
+            "type": "xsd:double"
+          },
+          "coord:y": {
+            "$": 39.44,
+            "type": "xsd:double"
+          },
+          "coord:z": {
+            "$": 0,
+            "type": "xsd:int"
+          },
+          "prov:type": "geom:Point"
+        },
+        "orientation:R0.00_P0.00_Y0.00": {
+          "angle:roll": {
+            "$": 0.0,
+            "type": "xsd:double"
+          },
+          "angle:pitch": {
+            "$": 0.0,
+            "type": "xsd:double"
+          },
+          "angle:yaw": {
+            "$": 0,
+            "type": "xsd:int"
+          },
+          "prov:type": "geom:EulerAngles",
+          "geom:axes": "sxyz"
+        },
+        "pose:right_long_corridor-point-1-R0.00_P0.00_Y0.00": {
+          "prov:type": "geom:Pose"
+        },
+        "point:right_long_corridor-point-1": {
+          "coord:x": {
+            "$": 17.28,
+            "type": "xsd:double"
+          },
+          "coord:y": {
+            "$": -8.89,
+            "type": "xsd:double"
+          },
+          "coord:z": {
+            "$": 0,
+            "type": "xsd:int"
+          },
+          "prov:type": "geom:Point"
+        },
+        "pose:right_long_corridor-point-2-R0.00_P0.00_Y0.00": {
+          "prov:type": "geom:Pose"
+        },
+        "point:right_long_corridor-point-2": {
+          "coord:x": {
+            "$": 16.26,
+            "type": "xsd:double"
+          },
+          "coord:y": {
+            "$": -8.17,
+            "type": "xsd:double"
+          },
+          "coord:z": {
+            "$": 0,
+            "type": "xsd:int"
+          },
+          "prov:type": "geom:Point"
+        },
+        "pose:right_long_corridor-point-3-R0.00_P0.00_Y0.00": {
+          "prov:type": "geom:Pose"
+        },
+        "point:right_long_corridor-point-3": {
+          "coord:x": {
+            "$": 50.1,
+            "type": "xsd:double"
+          },
+          "coord:y": {
+            "$": 40.16,
+            "type": "xsd:double"
+          },
+          "coord:z": {
+            "$": 0,
+            "type": "xsd:int"
+          },
+          "prov:type": "geom:Point"
+        }
+      },
+      "hadMember": {
+        "_:id1": {
+          "prov:collection": "pose:right_long_corridor-point-0-R0.00_P0.00_Y0.00",
+          "prov:entity": "point:right_long_corridor-point-0"
+        },
+        "_:id2": {
+          "prov:collection": "pose:right_long_corridor-point-0-R0.00_P0.00_Y0.00",
+          "prov:entity": "orientation:R0.00_P0.00_Y0.00"
+        },
+        "_:id3": {
+          "prov:collection": "pose:right_long_corridor-point-1-R0.00_P0.00_Y0.00",
+          "prov:entity": "point:right_long_corridor-point-1"
+        },
+        "_:id4": {
+          "prov:collection": "pose:right_long_corridor-point-1-R0.00_P0.00_Y0.00",
+          "prov:entity": "orientation:R0.00_P0.00_Y0.00"
+        },
+        "_:id5": {
+          "prov:collection": "pose:right_long_corridor-point-2-R0.00_P0.00_Y0.00",
+          "prov:entity": "point:right_long_corridor-point-2"
+        },
+        "_:id6": {
+          "prov:collection": "pose:right_long_corridor-point-2-R0.00_P0.00_Y0.00",
+          "prov:entity": "orientation:R0.00_P0.00_Y0.00"
+        },
+        "_:id7": {
+          "prov:collection": "pose:right_long_corridor-point-3-R0.00_P0.00_Y0.00",
+          "prov:entity": "point:right_long_corridor-point-3"
+        },
+        "_:id8": {
+          "prov:collection": "pose:right_long_corridor-point-3-R0.00_P0.00_Y0.00",
+          "prov:entity": "orientation:R0.00_P0.00_Y0.00"
+        }
+      }
+    },
+    "task:left_long_corridor_task.yaml_bundle": {
+      "prefix": {
+        "task": "https://www.sesame-project.org/scenarios/tasks/",
+        "ros": "http://wiki.ros.org/",
+        "left_long_corridor_task.yaml-subtask_001": "https://www.sesame-project.org/scenarios/tasks/left_long_corridor_task.yaml-subtask_001/",
+        "pose": "https://www.sesame-project.org/scenarios/tasks/waypoints/"
+      },
+      "entity": {
+        "task:left_long_corridor_task.yaml": {
+          "prov:type": "prov:Plan",
+          "ros:pkg": "floorplan-dsl-environments",
+          "ros:relative_path": "tasks/brsu_building_c_with_doors/left_long_corridor_task.yaml"
+        },
+        "task:left_long_corridor_task.yaml-subtask_001": {
+          "prov:type": "prov:Plan"
+        }
+      },
+      "wasDerivedFrom": {
+        "_:id1": {
+          "prov:generatedEntity": "task:left_long_corridor_task.yaml",
+          "prov:usedEntity": "task:left_long_corridor_task.yaml-subtask_001",
+          "prov:role": "subtask_001"
+        },
+        "left_long_corridor_task.yaml-subtask_001:w_001": {
+          "prov:generatedEntity": "task:left_long_corridor_task.yaml-subtask_001",
+          "prov:usedEntity": "pose:left_long_corridor-point-0-R0.00_P0.00_Y0.00",
+          "prov:role": "waypoint"
+        },
+        "left_long_corridor_task.yaml-subtask_001:w_002": {
+          "prov:generatedEntity": "task:left_long_corridor_task.yaml-subtask_001",
+          "prov:usedEntity": "pose:left_long_corridor-point-1-R0.00_P0.00_Y0.00",
+          "prov:role": "waypoint"
+        },
+        "left_long_corridor_task.yaml-subtask_001:w_003": {
+          "prov:generatedEntity": "task:left_long_corridor_task.yaml-subtask_001",
+          "prov:usedEntity": "pose:left_long_corridor-point-2-R0.00_P0.00_Y0.00",
+          "prov:role": "waypoint"
+        },
+        "left_long_corridor_task.yaml-subtask_001:w_004": {
+          "prov:generatedEntity": "task:left_long_corridor_task.yaml-subtask_001",
+          "prov:usedEntity": "pose:left_long_corridor-point-3-R0.00_P0.00_Y0.00",
+          "prov:role": "waypoint"
+        }
+      }
+    },
+    "env:left_long_corridor_bundle": {
+      "prefix": {
+        "pose": "https://www.sesame-project.org/scenarios/tasks/waypoints/",
+        "point": "https://www.sesame-project.org/scenarios/tasks/points/",
+        "coord": "https://robot-schema.org/coordinates/",
+        "orientation": "https://www.sesame-project.org/scenarios/tasks/orientation/",
+        "angle": "https://robot-schema.org/rotation/",
+        "geom": "https://robot-schema.org/",
+        "env": "https://www.sesame-project.org/scenarios/environments/"
+      },
+      "entity": {
+        "pose:left_long_corridor-point-0-R0.00_P0.00_Y0.00": {
+          "prov:type": "geom:Pose"
+        },
+        "point:left_long_corridor-point-0": {
+          "coord:x": {
+            "$": 21.73,
+            "type": "xsd:double"
+          },
+          "coord:y": {
+            "$": 60.02,
+            "type": "xsd:double"
+          },
+          "coord:z": {
+            "$": 0,
+            "type": "xsd:int"
+          },
+          "prov:type": "geom:Point"
+        },
+        "orientation:R0.00_P0.00_Y0.00": {
+          "angle:roll": {
+            "$": 0.0,
+            "type": "xsd:double"
+          },
+          "angle:pitch": {
+            "$": 0.0,
+            "type": "xsd:double"
+          },
+          "angle:yaw": {
+            "$": 0,
+            "type": "xsd:int"
+          },
+          "prov:type": "geom:EulerAngles",
+          "geom:axes": "sxyz"
+        },
+        "pose:left_long_corridor-point-1-R0.00_P0.00_Y0.00": {
+          "prov:type": "geom:Pose"
+        },
+        "point:left_long_corridor-point-1": {
+          "coord:x": {
+            "$": -12.11,
+            "type": "xsd:double"
+          },
+          "coord:y": {
+            "$": 11.69,
+            "type": "xsd:double"
+          },
+          "coord:z": {
+            "$": 0,
+            "type": "xsd:int"
+          },
+          "prov:type": "geom:Point"
+        },
+        "pose:left_long_corridor-point-2-R0.00_P0.00_Y0.00": {
+          "prov:type": "geom:Pose"
+        },
+        "point:left_long_corridor-point-2": {
+          "coord:x": {
+            "$": -13.13,
+            "type": "xsd:double"
+          },
+          "coord:y": {
+            "$": 12.41,
+            "type": "xsd:double"
+          },
+          "coord:z": {
+            "$": 0,
+            "type": "xsd:int"
+          },
+          "prov:type": "geom:Point"
+        },
+        "pose:left_long_corridor-point-3-R0.00_P0.00_Y0.00": {
+          "prov:type": "geom:Pose"
+        },
+        "point:left_long_corridor-point-3": {
+          "coord:x": {
+            "$": 20.71,
+            "type": "xsd:double"
+          },
+          "coord:y": {
+            "$": 60.74,
+            "type": "xsd:double"
+          },
+          "coord:z": {
+            "$": 0,
+            "type": "xsd:int"
+          },
+          "prov:type": "geom:Point"
+        }
+      },
+      "hadMember": {
+        "_:id1": {
+          "prov:collection": "pose:left_long_corridor-point-0-R0.00_P0.00_Y0.00",
+          "prov:entity": "point:left_long_corridor-point-0"
+        },
+        "_:id2": {
+          "prov:collection": "pose:left_long_corridor-point-0-R0.00_P0.00_Y0.00",
+          "prov:entity": "orientation:R0.00_P0.00_Y0.00"
+        },
+        "_:id3": {
+          "prov:collection": "pose:left_long_corridor-point-1-R0.00_P0.00_Y0.00",
+          "prov:entity": "point:left_long_corridor-point-1"
+        },
+        "_:id4": {
+          "prov:collection": "pose:left_long_corridor-point-1-R0.00_P0.00_Y0.00",
+          "prov:entity": "orientation:R0.00_P0.00_Y0.00"
+        },
+        "_:id5": {
+          "prov:collection": "pose:left_long_corridor-point-2-R0.00_P0.00_Y0.00",
+          "prov:entity": "point:left_long_corridor-point-2"
+        },
+        "_:id6": {
+          "prov:collection": "pose:left_long_corridor-point-2-R0.00_P0.00_Y0.00",
+          "prov:entity": "orientation:R0.00_P0.00_Y0.00"
+        },
+        "_:id7": {
+          "prov:collection": "pose:left_long_corridor-point-3-R0.00_P0.00_Y0.00",
+          "prov:entity": "point:left_long_corridor-point-3"
+        },
+        "_:id8": {
+          "prov:collection": "pose:left_long_corridor-point-3-R0.00_P0.00_Y0.00",
+          "prov:entity": "orientation:R0.00_P0.00_Y0.00"
+        }
+      }
+    }
+  }
+}

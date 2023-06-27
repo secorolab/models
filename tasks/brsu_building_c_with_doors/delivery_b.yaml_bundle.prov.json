@@ -1,0 +1,47 @@
+{
+  "prefix": {
+    "ros": "http://wiki.ros.org/",
+    "exsce": "https://www.sesame-project.org/scenarios/",
+    "geom": "https://robot-schema.org/",
+    "coord": "https://robot-schema.org/coordinates/",
+    "angle": "https://robot-schema.org/rotation/",
+    "oracle": "https://www.sesame-project.org/scenarios/oracles/"
+  },
+  "bundle": {
+    "task:delivery_b.yaml_bundle": {
+      "prefix": {
+        "task": "https://www.sesame-project.org/scenarios/tasks/",
+        "ros": "http://wiki.ros.org/",
+        "delivery_b.yaml-subtask_001": "https://www.sesame-project.org/scenarios/tasks/delivery_b.yaml-subtask_001/",
+        "pose": "https://www.sesame-project.org/scenarios/tasks/waypoints/"
+      },
+      "entity": {
+        "task:delivery_b.yaml": {
+          "prov:type": "prov:Plan",
+          "ros:pkg": "metamorphic_testing",
+          "ros:relative_path": "config/tasks/delivery_b.yaml"
+        },
+        "task:delivery_b.yaml-subtask_001": {
+          "prov:type": "prov:Plan"
+        }
+      },
+      "wasDerivedFrom": {
+        "_:id1": {
+          "prov:generatedEntity": "task:delivery_b.yaml",
+          "prov:usedEntity": "task:delivery_b.yaml-subtask_001",
+          "prov:role": "subtask_001"
+        },
+        "delivery_b.yaml-subtask_001:w_001": {
+          "prov:generatedEntity": "task:delivery_b.yaml-subtask_001",
+          "prov:usedEntity": "pose:classroom_c022-w002-R0.00_P0.00_Y2.27",
+          "prov:role": "waypoint"
+        },
+        "delivery_b.yaml-subtask_001:w_002": {
+          "prov:generatedEntity": "task:delivery_b.yaml-subtask_001",
+          "prov:usedEntity": "pose:classroom_c018-w002-R0.00_P0.00_Y-0.64",
+          "prov:role": "waypoint"
+        }
+      }
+    }
+  }
+}

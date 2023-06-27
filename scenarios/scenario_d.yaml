@@ -1,0 +1,39 @@
+id: scenario_d
+mission:
+  id: mission_d
+  type: sequential 
+  allocation:
+    - robot: tiago1
+      pkg: metamorphic_testing
+      file_path: config/tasks/delivery_a.yaml
+    - robot: tiago1
+      pkg: metamorphic_testing
+      file_path: config/tasks/delivery_b.yaml
+    - robot: tiago1
+      pkg: metamorphic_testing
+      file_path: config/tasks/navigate_home_1.yaml
+environment:
+  id: brsu_building_c_with_doors
+  models:
+    map: 
+      map_name: brsu_building_c_with_doors
+      pkg: floorplan-DSL-environments
+      relative_path: maps/
+    gazebo_world: 
+      model_name: brsu_building_c_with_doors
+      pkg: floorplan-DSL-environments
+      relative_path: worlds/
+  robots:
+    tiago1:
+      start_pose: # C025
+        id: classroom_c025-w001
+        x: 44.80387496948242
+        y: 37.15502166748047
+        z: 0.0
+        roll: 0.0
+        pitch: 0.0
+        yaw: 0.0
+robots:
+  - robot_id: tiago1
+    robot_namespace: tiago1
+    robot_type: tiago

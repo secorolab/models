@@ -1,0 +1,95 @@
+{
+  "prefix": {
+    "ros": "http://wiki.ros.org/",
+    "exsce": "https://www.sesame-project.org/scenarios/",
+    "geom": "https://robot-schema.org/",
+    "coord": "https://robot-schema.org/coordinates/",
+    "angle": "https://robot-schema.org/rotation/",
+    "oracle": "https://www.sesame-project.org/scenarios/oracles/"
+  },
+  "bundle": {
+    "env:classroom_c018_bundle": {
+      "prefix": {
+        "pose": "https://www.sesame-project.org/scenarios/tasks/waypoints/",
+        "point": "https://www.sesame-project.org/scenarios/tasks/points/",
+        "coord": "https://robot-schema.org/coordinates/",
+        "orientation": "https://www.sesame-project.org/scenarios/tasks/orientation/",
+        "angle": "https://robot-schema.org/rotation/",
+        "geom": "https://robot-schema.org/",
+        "env": "https://www.sesame-project.org/scenarios/environments/"
+      },
+      "entity": {
+        "pose:classroom_c018-w001-R0.00_P0.00_Y-0.64": {
+          "prov:type": "geom:Pose"
+        },
+        "point:classroom_c018-w001": {
+          "coord:x": {
+            "$": 48.26420974731445,
+            "type": "xsd:double"
+          },
+          "coord:y": {
+            "$": 24.618297576904297,
+            "type": "xsd:double"
+          },
+          "coord:z": {
+            "$": 0.0,
+            "type": "xsd:double"
+          },
+          "prov:type": "geom:Point"
+        },
+        "orientation:R0.00_P0.00_Y-0.64": {
+          "angle:roll": {
+            "$": 0.0,
+            "type": "xsd:double"
+          },
+          "angle:pitch": {
+            "$": 0.0,
+            "type": "xsd:double"
+          },
+          "angle:yaw": {
+            "$": -0.641,
+            "type": "xsd:double"
+          },
+          "prov:type": "geom:EulerAngles",
+          "geom:axes": "sxyz"
+        },
+        "pose:classroom_c018-w002-R0.00_P0.00_Y-0.64": {
+          "prov:type": "geom:Pose"
+        },
+        "point:classroom_c018-w002": {
+          "coord:x": {
+            "$": 46.25560760498047,
+            "type": "xsd:double"
+          },
+          "coord:y": {
+            "$": 21.586545944213867,
+            "type": "xsd:double"
+          },
+          "coord:z": {
+            "$": 0.0,
+            "type": "xsd:double"
+          },
+          "prov:type": "geom:Point"
+        }
+      },
+      "hadMember": {
+        "_:id1": {
+          "prov:collection": "pose:classroom_c018-w001-R0.00_P0.00_Y-0.64",
+          "prov:entity": "point:classroom_c018-w001"
+        },
+        "_:id2": {
+          "prov:collection": "pose:classroom_c018-w001-R0.00_P0.00_Y-0.64",
+          "prov:entity": "orientation:R0.00_P0.00_Y-0.64"
+        },
+        "_:id3": {
+          "prov:collection": "pose:classroom_c018-w002-R0.00_P0.00_Y-0.64",
+          "prov:entity": "point:classroom_c018-w002"
+        },
+        "_:id4": {
+          "prov:collection": "pose:classroom_c018-w002-R0.00_P0.00_Y-0.64",
+          "prov:entity": "orientation:R0.00_P0.00_Y-0.64"
+        }
+      }
+    }
+  }
+}

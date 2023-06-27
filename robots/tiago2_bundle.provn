@@ -1,0 +1,23 @@
+document
+  prefix ros <http://wiki.ros.org/>
+  prefix exsce <https://www.sesame-project.org/scenarios/>
+  prefix geom <https://robot-schema.org/>
+  prefix coord <https://robot-schema.org/coordinates/>
+  prefix angle <https://robot-schema.org/rotation/>
+  prefix oracle <https://www.sesame-project.org/scenarios/oracles/>
+  
+  bundle robot:tiago2_bundle
+    prefix robot <https://www.sesame-project.org/scenarios/robots/>
+    prefix tiago2 <https://www.sesame-project.org/scenarios/robots/tiago2/>
+    prefix ros <http://wiki.ros.org/>
+    
+    entity(robot:tiago2, [prov:type="exsce:robot"])
+    agent(tiago2:agent, [prov:type="prov:SoftwareAgent"])
+    entity(tiago2:software-config, [prov:type="software-config"])
+    entity(tiago2:hardware-config, [prov:type="hardware-config"])
+    entity(tiago2:gazebo_model, [prov:type='ros:GazeboModel'])
+    hadMember(robot:tiago2, tiago2:gazebo_model)
+    hadMember(robot:tiago2, tiago2:software-config)
+    hadMember(robot:tiago2, tiago2:hardware-config)
+  endBundle
+endDocument

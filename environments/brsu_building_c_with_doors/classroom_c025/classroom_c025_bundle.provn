@@ -1,0 +1,35 @@
+document
+  prefix ros <http://wiki.ros.org/>
+  prefix exsce <https://www.sesame-project.org/scenarios/>
+  prefix geom <https://robot-schema.org/>
+  prefix coord <https://robot-schema.org/coordinates/>
+  prefix angle <https://robot-schema.org/rotation/>
+  prefix oracle <https://www.sesame-project.org/scenarios/oracles/>
+  
+  bundle env:classroom_c025_bundle
+    prefix pose <https://www.sesame-project.org/scenarios/tasks/waypoints/>
+    prefix point <https://www.sesame-project.org/scenarios/tasks/points/>
+    prefix coord <https://robot-schema.org/coordinates/>
+    prefix orientation <https://www.sesame-project.org/scenarios/tasks/orientation/>
+    prefix angle <https://robot-schema.org/rotation/>
+    prefix geom <https://robot-schema.org/>
+    prefix env <https://www.sesame-project.org/scenarios/environments/>
+    
+    entity(pose:classroom_c025-w001-R0.00_P0.00_Y0.00, [prov:type="geom:Pose"])
+    entity(point:classroom_c025-w001, [coord:x="44.8039" %% xsd:float, coord:y="37.155" %% xsd:float, coord:z="0" %% xsd:float, prov:type="geom:Point"])
+    hadMember(pose:classroom_c025-w001-R0.00_P0.00_Y0.00, point:classroom_c025-w001)
+    entity(orientation:R0.00_P0.00_Y0.00, [angle:roll="0" %% xsd:float, angle:pitch="0" %% xsd:float, angle:yaw="0" %% xsd:float, prov:type="geom:EulerAngles", geom:axes="sxyz"])
+    hadMember(pose:classroom_c025-w001-R0.00_P0.00_Y0.00, orientation:R0.00_P0.00_Y0.00)
+    entity(pose:classroom_c025-w002-R0.00_P0.00_Y0.00, [prov:type="geom:Pose"])
+    entity(point:classroom_c025-w002, [coord:x="43.4329" %% xsd:float, coord:y="38.4939" %% xsd:float, coord:z="0" %% xsd:float, prov:type="geom:Point"])
+    hadMember(pose:classroom_c025-w002-R0.00_P0.00_Y0.00, point:classroom_c025-w002)
+    hadMember(pose:classroom_c025-w002-R0.00_P0.00_Y0.00, orientation:R0.00_P0.00_Y0.00)
+    entity(pose:classroom_c025-w001-R0.00_P0.00_Y0.93, [prov:type="geom:Pose"])
+    hadMember(pose:classroom_c025-w001-R0.00_P0.00_Y0.93, point:classroom_c025-w001)
+    entity(orientation:R0.00_P0.00_Y0.93, [angle:roll="0" %% xsd:float, angle:pitch="0" %% xsd:float, angle:yaw="0.925" %% xsd:float, prov:type="geom:EulerAngles", geom:axes="sxyz"])
+    hadMember(pose:classroom_c025-w001-R0.00_P0.00_Y0.93, orientation:R0.00_P0.00_Y0.93)
+    entity(pose:classroom_c025-w002-R0.00_P0.00_Y0.93, [prov:type="geom:Pose"])
+    hadMember(pose:classroom_c025-w002-R0.00_P0.00_Y0.93, point:classroom_c025-w002)
+    hadMember(pose:classroom_c025-w002-R0.00_P0.00_Y0.93, orientation:R0.00_P0.00_Y0.93)
+  endBundle
+endDocument

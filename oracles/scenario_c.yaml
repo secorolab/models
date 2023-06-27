@@ -1,0 +1,121 @@
+# Oracle
+id: scenario_c
+baseline:
+  base_scenario: scenario_c
+  mission:
+    mission_duration:
+      topics: 
+        - /tiago1/waypoint_dispatcher/feedback
+        - /tiago2/waypoint_dispatcher/feedback
+      baseline:
+        value: 97.606 
+        tolerance: 10.0
+      relationship:
+        package: exsce.metamorphic.relationships
+        name: invariant
+    distance_between_robots:
+      topics:
+        - /tiago1/robot_pose
+        - /tiago2/robot_pose
+      baseline:
+        limit: 0.1
+      relationship:
+        package: exsce.metamorphic.relationships
+        name: above_min
+  robots:
+    tiago1:
+      # The order matters (at least at the moment!)
+      task_duration:
+        topics:
+        - /tiago1/waypoint_dispatcher/feedback
+        baseline:
+          value: 97.606
+          tolerance: 5.0
+        relationship:
+          package: exsce.metamorphic.relationships
+          name: invariant
+      waypoints_visited:
+        topics:
+        - /tiago1/waypoint_dispatcher/result
+        baseline:
+          value: 3
+        relationship:
+          package: exsce.metamorphic.relationships
+          name: invariant
+      distance_travelled:
+        topics:
+        - /tiago1/distance_travelled
+        baseline:
+          value: 50.702942669287076
+          tolerance: 2.0
+        relationship:
+          package: exsce.metamorphic.relationships
+          name: invariant
+      distance_to_obstacles:
+        topics:
+        - /tiago1/scan
+        baseline:
+          limit: 0.1
+        relationship:
+          package: exsce.metamorphic.relationships
+          name: above_min
+      max_velocity:
+        topics:
+        - /tiago1/nav_vel
+        baseline:
+          limit: 1.0
+        relationship:
+          package: exsce.metamorphic.relationships
+          name: below_max
+      # - metric: travel_duration
+      #   topics:
+      #   - move_base/result
+      # - metric: localization-accuracy
+      # topics:
+      #   - 
+      # - metric: number-of-crashes
+      # topics:
+      # - scan
+    tiago2:
+      task_duration:
+        topics:
+        - /tiago2/waypoint_dispatcher/feedback
+        baseline:
+          value: 89.804
+          tolerance: 5.0
+        relationship:
+          package: exsce.metamorphic.relationships
+          name: invariant
+      waypoints_visited:
+        topics:
+        - /tiago2/waypoint_dispatcher/result
+        baseline:
+          value: 3
+        relationship:
+          package: exsce.metamorphic.relationships
+          name: invariant
+      distance_travelled:
+        topics:
+        - /tiago2/distance_travelled
+        baseline:
+          value: 59.53308400704416
+          tolerance: 2.0
+        relationship:
+          package: exsce.metamorphic.relationships
+          name: invariant
+      distance_to_obstacles:
+        topics:
+        - /tiago2/scan
+        baseline:
+          limit: 0.1
+        relationship:
+          package: exsce.metamorphic.relationships
+          name: above_min
+      max_velocity:
+        topics:
+        - /tiago2/nav_vel
+        baseline:
+          limit: 1.0
+        relationship:
+          package: exsce.metamorphic.relationships
+          name: below_max

@@ -1,0 +1,64 @@
+{
+  "prefix": {
+    "ros": "http://wiki.ros.org/",
+    "exsce": "https://www.sesame-project.org/scenarios/",
+    "geom": "https://robot-schema.org/",
+    "coord": "https://robot-schema.org/coordinates/",
+    "angle": "https://robot-schema.org/rotation/",
+    "oracle": "https://www.sesame-project.org/scenarios/oracles/"
+  },
+  "bundle": {
+    "env:brsu_building_c_with_doors_bundle": {
+      "prefix": {
+        "env": "https://www.sesame-project.org/scenarios/environments/",
+        "brsu_building_c_with_doors": "https://www.sesame-project.org/scenarios/environments/brsu_building_c_with_doors/",
+        "ros": "http://wiki.ros.org/"
+      },
+      "entity": {
+        "env:brsu_building_c_with_doors": {
+          "prov:type": "exsce:environment"
+        },
+        "brsu_building_c_with_doors:brsu_building_c_with_doors_map": {
+          "prov:type": "exsce:map",
+          "ros:pkg": "floorplan-DSL-environments",
+          "ros:relative_path": "maps/"
+        },
+        "brsu_building_c_with_doors:occupancy_grid": {
+          "prov:type": "ros:OccupancyGrid"
+        },
+        "brsu_building_c_with_doors:metadata": {
+          "prov:type": {
+            "$": "ros:Parameter_Server",
+            "type": "prov:QUALIFIED_NAME"
+          }
+        },
+        "brsu_building_c_with_doors:gazebo_world": {
+          "prov:type": {
+            "$": "ros:GazeboModel",
+            "type": "prov:QUALIFIED_NAME"
+          },
+          "ros:pkg": "floorplan-DSL-environments",
+          "ros:relative_path": "worlds/"
+        }
+      },
+      "hadMember": {
+        "_:id1": {
+          "prov:collection": "brsu_building_c_with_doors:brsu_building_c_with_doors_map",
+          "prov:entity": "brsu_building_c_with_doors:occupancy_grid"
+        },
+        "_:id2": {
+          "prov:collection": "brsu_building_c_with_doors:brsu_building_c_with_doors_map",
+          "prov:entity": "brsu_building_c_with_doors:metadata"
+        },
+        "_:id3": {
+          "prov:collection": "env:brsu_building_c_with_doors",
+          "prov:entity": "brsu_building_c_with_doors:brsu_building_c_with_doors_map"
+        },
+        "_:id4": {
+          "prov:collection": "env:brsu_building_c_with_doors",
+          "prov:entity": "brsu_building_c_with_doors:gazebo_world"
+        }
+      }
+    }
+  }
+}

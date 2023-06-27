@@ -1,0 +1,55 @@
+{
+  "prefix": {
+    "ros": "http://wiki.ros.org/",
+    "exsce": "https://www.sesame-project.org/scenarios/",
+    "geom": "https://robot-schema.org/",
+    "coord": "https://robot-schema.org/coordinates/",
+    "angle": "https://robot-schema.org/rotation/",
+    "oracle": "https://www.sesame-project.org/scenarios/oracles/"
+  },
+  "bundle": {
+    "robot:tiago1_bundle": {
+      "prefix": {
+        "robot": "https://www.sesame-project.org/scenarios/robots/",
+        "tiago1": "https://www.sesame-project.org/scenarios/robots/tiago1/",
+        "ros": "http://wiki.ros.org/"
+      },
+      "entity": {
+        "robot:tiago1": {
+          "prov:type": "exsce:robot"
+        },
+        "tiago1:software-config": {
+          "prov:type": "software-config"
+        },
+        "tiago1:hardware-config": {
+          "prov:type": "hardware-config"
+        },
+        "tiago1:gazebo_model": {
+          "prov:type": {
+            "$": "ros:GazeboModel",
+            "type": "prov:QUALIFIED_NAME"
+          }
+        }
+      },
+      "agent": {
+        "tiago1:agent": {
+          "prov:type": "prov:SoftwareAgent"
+        }
+      },
+      "hadMember": {
+        "_:id1": {
+          "prov:collection": "robot:tiago1",
+          "prov:entity": "tiago1:gazebo_model"
+        },
+        "_:id2": {
+          "prov:collection": "robot:tiago1",
+          "prov:entity": "tiago1:software-config"
+        },
+        "_:id3": {
+          "prov:collection": "robot:tiago1",
+          "prov:entity": "tiago1:hardware-config"
+        }
+      }
+    }
+  }
+}

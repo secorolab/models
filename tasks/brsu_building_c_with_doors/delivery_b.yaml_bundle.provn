@@ -1,0 +1,21 @@
+document
+  prefix ros <http://wiki.ros.org/>
+  prefix exsce <https://www.sesame-project.org/scenarios/>
+  prefix geom <https://robot-schema.org/>
+  prefix coord <https://robot-schema.org/coordinates/>
+  prefix angle <https://robot-schema.org/rotation/>
+  prefix oracle <https://www.sesame-project.org/scenarios/oracles/>
+  
+  bundle task:delivery_b.yaml_bundle
+    prefix task <https://www.sesame-project.org/scenarios/tasks/>
+    prefix ros <http://wiki.ros.org/>
+    prefix delivery_b.yaml-subtask_001 <https://www.sesame-project.org/scenarios/tasks/delivery_b.yaml-subtask_001/>
+    prefix pose <https://www.sesame-project.org/scenarios/tasks/waypoints/>
+    
+    entity(task:delivery_b.yaml, [prov:type="prov:Plan", ros:pkg="metamorphic_testing", ros:relative_path="config/tasks/delivery_b.yaml"])
+    entity(task:delivery_b.yaml-subtask_001, [prov:type="prov:Plan"])
+    wasDerivedFrom(task:delivery_b.yaml, task:delivery_b.yaml-subtask_001, -, -, -, [prov:role="subtask_001"])
+    wasDerivedFrom(delivery_b.yaml-subtask_001:w_001; task:delivery_b.yaml-subtask_001, pose:classroom_c022-w002-R0.00_P0.00_Y2.27, -, -, -, [prov:role="waypoint"])
+    wasDerivedFrom(delivery_b.yaml-subtask_001:w_002; task:delivery_b.yaml-subtask_001, pose:classroom_c018-w002-R0.00_P0.00_Y-0.64, -, -, -, [prov:role="waypoint"])
+  endBundle
+endDocument

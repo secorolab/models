@@ -1,0 +1,133 @@
+{
+  "prefix": {
+    "ros": "http://wiki.ros.org/",
+    "exsce": "https://www.sesame-project.org/scenarios/",
+    "geom": "https://robot-schema.org/",
+    "coord": "https://robot-schema.org/coordinates/",
+    "angle": "https://robot-schema.org/rotation/",
+    "oracle": "https://www.sesame-project.org/scenarios/oracles/"
+  },
+  "bundle": {
+    "env:classroom_c025_bundle": {
+      "prefix": {
+        "pose": "https://www.sesame-project.org/scenarios/tasks/waypoints/",
+        "point": "https://www.sesame-project.org/scenarios/tasks/points/",
+        "coord": "https://robot-schema.org/coordinates/",
+        "orientation": "https://www.sesame-project.org/scenarios/tasks/orientation/",
+        "angle": "https://robot-schema.org/rotation/",
+        "geom": "https://robot-schema.org/",
+        "env": "https://www.sesame-project.org/scenarios/environments/"
+      },
+      "entity": {
+        "pose:classroom_c025-w001-R0.00_P0.00_Y0.00": {
+          "prov:type": "geom:Pose"
+        },
+        "point:classroom_c025-w001": {
+          "coord:x": {
+            "$": 44.80387496948242,
+            "type": "xsd:double"
+          },
+          "coord:y": {
+            "$": 37.15502166748047,
+            "type": "xsd:double"
+          },
+          "coord:z": {
+            "$": 0.0,
+            "type": "xsd:double"
+          },
+          "prov:type": "geom:Point"
+        },
+        "orientation:R0.00_P0.00_Y0.00": {
+          "angle:roll": {
+            "$": 0.0,
+            "type": "xsd:double"
+          },
+          "angle:pitch": {
+            "$": 0.0,
+            "type": "xsd:double"
+          },
+          "angle:yaw": {
+            "$": 0.0,
+            "type": "xsd:double"
+          },
+          "prov:type": "geom:EulerAngles",
+          "geom:axes": "sxyz"
+        },
+        "pose:classroom_c025-w002-R0.00_P0.00_Y0.00": {
+          "prov:type": "geom:Pose"
+        },
+        "point:classroom_c025-w002": {
+          "coord:x": {
+            "$": 43.432926177978516,
+            "type": "xsd:double"
+          },
+          "coord:y": {
+            "$": 38.493873596191406,
+            "type": "xsd:double"
+          },
+          "coord:z": {
+            "$": 0.0,
+            "type": "xsd:double"
+          },
+          "prov:type": "geom:Point"
+        },
+        "pose:classroom_c025-w001-R0.00_P0.00_Y0.93": {
+          "prov:type": "geom:Pose"
+        },
+        "orientation:R0.00_P0.00_Y0.93": {
+          "angle:roll": {
+            "$": 0.0,
+            "type": "xsd:double"
+          },
+          "angle:pitch": {
+            "$": 0.0,
+            "type": "xsd:double"
+          },
+          "angle:yaw": {
+            "$": 0.925,
+            "type": "xsd:double"
+          },
+          "prov:type": "geom:EulerAngles",
+          "geom:axes": "sxyz"
+        },
+        "pose:classroom_c025-w002-R0.00_P0.00_Y0.93": {
+          "prov:type": "geom:Pose"
+        }
+      },
+      "hadMember": {
+        "_:id1": {
+          "prov:collection": "pose:classroom_c025-w001-R0.00_P0.00_Y0.00",
+          "prov:entity": "point:classroom_c025-w001"
+        },
+        "_:id2": {
+          "prov:collection": "pose:classroom_c025-w001-R0.00_P0.00_Y0.00",
+          "prov:entity": "orientation:R0.00_P0.00_Y0.00"
+        },
+        "_:id3": {
+          "prov:collection": "pose:classroom_c025-w002-R0.00_P0.00_Y0.00",
+          "prov:entity": "point:classroom_c025-w002"
+        },
+        "_:id4": {
+          "prov:collection": "pose:classroom_c025-w002-R0.00_P0.00_Y0.00",
+          "prov:entity": "orientation:R0.00_P0.00_Y0.00"
+        },
+        "_:id5": {
+          "prov:collection": "pose:classroom_c025-w001-R0.00_P0.00_Y0.93",
+          "prov:entity": "point:classroom_c025-w001"
+        },
+        "_:id6": {
+          "prov:collection": "pose:classroom_c025-w001-R0.00_P0.00_Y0.93",
+          "prov:entity": "orientation:R0.00_P0.00_Y0.93"
+        },
+        "_:id7": {
+          "prov:collection": "pose:classroom_c025-w002-R0.00_P0.00_Y0.93",
+          "prov:entity": "point:classroom_c025-w002"
+        },
+        "_:id8": {
+          "prov:collection": "pose:classroom_c025-w002-R0.00_P0.00_Y0.93",
+          "prov:entity": "orientation:R0.00_P0.00_Y0.93"
+        }
+      }
+    }
+  }
+}

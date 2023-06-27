@@ -1,0 +1,157 @@
+document
+  prefix ros <http://wiki.ros.org/>
+  prefix exsce <https://www.sesame-project.org/scenarios/>
+  prefix geom <https://robot-schema.org/>
+  prefix coord <https://robot-schema.org/coordinates/>
+  prefix angle <https://robot-schema.org/rotation/>
+  prefix oracle <https://www.sesame-project.org/scenarios/oracles/>
+  
+  bundle exsce:scenario_d_bundle
+    prefix exsce <https://www.sesame-project.org/scenarios/>
+    prefix mission <https://www.sesame-project.org/scenarios/missions/>
+    prefix env <https://www.sesame-project.org/scenarios/environments/>
+    prefix robot <https://www.sesame-project.org/scenarios/robots/>
+    prefix scenario_d <https://www.sesame-project.org/scenarios/scenario_d/>
+    prefix tiago1 <https://www.sesame-project.org/scenarios/robots/tiago1/>
+    prefix pose <https://www.sesame-project.org/scenarios/tasks/waypoints/>
+    prefix mission_d <https://www.sesame-project.org/scenarios/missions/mission_d/>
+    prefix task <https://www.sesame-project.org/scenarios/tasks/>
+    
+    entity(exsce:scenario_d, [prov:type="exsce:ConcreteScenario"])
+    entity(mission:mission_d, [prov:type="exsce:mission", exsce:missionType="sequential"])
+    hadMember(exsce:scenario_d, mission:mission_d)
+    hadMember(exsce:scenario_d, env:brsu_building_c_with_doors)
+    hadMember(exsce:scenario_d, robot:tiago1)
+    wasDerivedFrom(scenario_d:tiago1-start-pose; tiago1:gazebo_model, pose:classroom_c025-w001-R0.00_P0.00_Y0.00, -, -, -, [prov:role="start_pose", exsce:scenario="scenario_d"])
+    entity(mission_d:tiago1-task_01, [prov:type="prov:Plan"])
+    hadMember(mission:mission_d, mission_d:tiago1-task_01)
+    wasDerivedFrom(mission_d:tiago1-task_01, task:delivery_a.yaml, -, -, -, [prov:type="prov:PrimarySource"])
+    entity(mission_d:tiago1-task_02, [prov:type="prov:Plan"])
+    hadMember(mission:mission_d, mission_d:tiago1-task_02)
+    wasDerivedFrom(mission_d:tiago1-task_02, task:delivery_b.yaml, -, -, -, [prov:type="prov:PrimarySource"])
+    entity(mission_d:tiago1-task_03, [prov:type="prov:Plan"])
+    hadMember(mission:mission_d, mission_d:tiago1-task_03)
+    wasDerivedFrom(mission_d:tiago1-task_03, task:navigate_home_1.yaml, -, -, -, [prov:type="prov:PrimarySource"])
+  endBundle
+  bundle env:brsu_building_c_with_doors_bundle
+    prefix env <https://www.sesame-project.org/scenarios/environments/>
+    prefix brsu_building_c_with_doors <https://www.sesame-project.org/scenarios/environments/brsu_building_c_with_doors/>
+    prefix ros <http://wiki.ros.org/>
+    
+    entity(env:brsu_building_c_with_doors, [prov:type="exsce:environment"])
+    entity(brsu_building_c_with_doors:brsu_building_c_with_doors_map, [prov:type="exsce:map", ros:pkg="floorplan-DSL-environments", ros:relative_path="maps/"])
+    entity(brsu_building_c_with_doors:occupancy_grid, [prov:type="ros:OccupancyGrid"])
+    hadMember(brsu_building_c_with_doors:brsu_building_c_with_doors_map, brsu_building_c_with_doors:occupancy_grid)
+    entity(brsu_building_c_with_doors:metadata, [prov:type='ros:Parameter_Server'])
+    hadMember(brsu_building_c_with_doors:brsu_building_c_with_doors_map, brsu_building_c_with_doors:metadata)
+    hadMember(env:brsu_building_c_with_doors, brsu_building_c_with_doors:brsu_building_c_with_doors_map)
+    entity(brsu_building_c_with_doors:gazebo_world, [prov:type='ros:GazeboModel', ros:pkg="floorplan-DSL-environments", ros:relative_path="worlds/"])
+    hadMember(env:brsu_building_c_with_doors, brsu_building_c_with_doors:gazebo_world)
+  endBundle
+  bundle robot:tiago1_bundle
+    prefix robot <https://www.sesame-project.org/scenarios/robots/>
+    prefix tiago1 <https://www.sesame-project.org/scenarios/robots/tiago1/>
+    prefix ros <http://wiki.ros.org/>
+    
+    entity(robot:tiago1, [prov:type="exsce:robot"])
+    agent(tiago1:agent, [prov:type="prov:SoftwareAgent"])
+    entity(tiago1:software-config, [prov:type="software-config"])
+    entity(tiago1:hardware-config, [prov:type="hardware-config"])
+    entity(tiago1:gazebo_model, [prov:type='ros:GazeboModel'])
+    hadMember(robot:tiago1, tiago1:gazebo_model)
+    hadMember(robot:tiago1, tiago1:software-config)
+    hadMember(robot:tiago1, tiago1:hardware-config)
+  endBundle
+  bundle env:classroom_c025_bundle
+    prefix pose <https://www.sesame-project.org/scenarios/tasks/waypoints/>
+    prefix point <https://www.sesame-project.org/scenarios/tasks/points/>
+    prefix coord <https://robot-schema.org/coordinates/>
+    prefix orientation <https://www.sesame-project.org/scenarios/tasks/orientation/>
+    prefix angle <https://robot-schema.org/rotation/>
+    prefix geom <https://robot-schema.org/>
+    prefix env <https://www.sesame-project.org/scenarios/environments/>
+    
+    entity(pose:classroom_c025-w001-R0.00_P0.00_Y0.00, [prov:type="geom:Pose"])
+    entity(point:classroom_c025-w001, [coord:x="44.8039" %% xsd:float, coord:y="37.155" %% xsd:float, coord:z="0" %% xsd:float, prov:type="geom:Point"])
+    hadMember(pose:classroom_c025-w001-R0.00_P0.00_Y0.00, point:classroom_c025-w001)
+    entity(orientation:R0.00_P0.00_Y0.00, [angle:roll="0" %% xsd:float, angle:pitch="0" %% xsd:float, angle:yaw="0" %% xsd:float, prov:type="geom:EulerAngles", geom:axes="sxyz"])
+    hadMember(pose:classroom_c025-w001-R0.00_P0.00_Y0.00, orientation:R0.00_P0.00_Y0.00)
+    entity(pose:classroom_c025-w001-R0.00_P0.00_Y0.93, [prov:type="geom:Pose"])
+    hadMember(pose:classroom_c025-w001-R0.00_P0.00_Y0.93, point:classroom_c025-w001)
+    entity(orientation:R0.00_P0.00_Y0.93, [angle:roll="0" %% xsd:float, angle:pitch="0" %% xsd:float, angle:yaw="0.925" %% xsd:float, prov:type="geom:EulerAngles", geom:axes="sxyz"])
+    hadMember(pose:classroom_c025-w001-R0.00_P0.00_Y0.93, orientation:R0.00_P0.00_Y0.93)
+  endBundle
+  bundle task:delivery_a.yaml_bundle
+    prefix task <https://www.sesame-project.org/scenarios/tasks/>
+    prefix ros <http://wiki.ros.org/>
+    prefix delivery_a.yaml-subtask_001 <https://www.sesame-project.org/scenarios/tasks/delivery_a.yaml-subtask_001/>
+    prefix pose <https://www.sesame-project.org/scenarios/tasks/waypoints/>
+    
+    entity(task:delivery_a.yaml, [prov:type="prov:Plan", ros:pkg="metamorphic_testing", ros:relative_path="config/tasks/delivery_a.yaml"])
+    entity(task:delivery_a.yaml-subtask_001, [prov:type="prov:Plan"])
+    wasDerivedFrom(task:delivery_a.yaml, task:delivery_a.yaml-subtask_001, -, -, -, [prov:role="subtask_001"])
+    wasDerivedFrom(delivery_a.yaml-subtask_001:w_001; task:delivery_a.yaml-subtask_001, pose:classroom_c022-w001-R0.00_P0.00_Y2.27, -, -, -, [prov:role="waypoint"])
+    wasDerivedFrom(delivery_a.yaml-subtask_001:w_002; task:delivery_a.yaml-subtask_001, pose:classroom_c018-w001-R0.00_P0.00_Y-0.64, -, -, -, [prov:role="waypoint"])
+  endBundle
+  bundle env:classroom_c022_bundle
+    prefix pose <https://www.sesame-project.org/scenarios/tasks/waypoints/>
+    prefix point <https://www.sesame-project.org/scenarios/tasks/points/>
+    prefix coord <https://robot-schema.org/coordinates/>
+    prefix orientation <https://www.sesame-project.org/scenarios/tasks/orientation/>
+    prefix angle <https://robot-schema.org/rotation/>
+    prefix geom <https://robot-schema.org/>
+    prefix env <https://www.sesame-project.org/scenarios/environments/>
+    
+    entity(pose:classroom_c022-w001-R0.00_P0.00_Y2.27, [prov:type="geom:Pose"])
+    entity(point:classroom_c022-w001, [coord:x="52.8256" %% xsd:float, coord:y="32.5629" %% xsd:float, coord:z="0" %% xsd:float, prov:type="geom:Point"])
+    hadMember(pose:classroom_c022-w001-R0.00_P0.00_Y2.27, point:classroom_c022-w001)
+    entity(orientation:R0.00_P0.00_Y2.27, [angle:roll="0" %% xsd:float, angle:pitch="0" %% xsd:float, angle:yaw="2.269" %% xsd:float, prov:type="geom:EulerAngles", geom:axes="sxyz"])
+    hadMember(pose:classroom_c022-w001-R0.00_P0.00_Y2.27, orientation:R0.00_P0.00_Y2.27)
+    entity(pose:classroom_c022-w002-R0.00_P0.00_Y2.27, [prov:type="geom:Pose"])
+    entity(point:classroom_c022-w002, [coord:x="54.4976" %% xsd:float, coord:y="31.5202" %% xsd:float, coord:z="0" %% xsd:float, prov:type="geom:Point"])
+    hadMember(pose:classroom_c022-w002-R0.00_P0.00_Y2.27, point:classroom_c022-w002)
+    hadMember(pose:classroom_c022-w002-R0.00_P0.00_Y2.27, orientation:R0.00_P0.00_Y2.27)
+  endBundle
+  bundle env:classroom_c018_bundle
+    prefix pose <https://www.sesame-project.org/scenarios/tasks/waypoints/>
+    prefix point <https://www.sesame-project.org/scenarios/tasks/points/>
+    prefix coord <https://robot-schema.org/coordinates/>
+    prefix orientation <https://www.sesame-project.org/scenarios/tasks/orientation/>
+    prefix angle <https://robot-schema.org/rotation/>
+    prefix geom <https://robot-schema.org/>
+    prefix env <https://www.sesame-project.org/scenarios/environments/>
+    
+    entity(pose:classroom_c018-w001-R0.00_P0.00_Y-0.64, [prov:type="geom:Pose"])
+    entity(point:classroom_c018-w001, [coord:x="48.2642" %% xsd:float, coord:y="24.6183" %% xsd:float, coord:z="0" %% xsd:float, prov:type="geom:Point"])
+    hadMember(pose:classroom_c018-w001-R0.00_P0.00_Y-0.64, point:classroom_c018-w001)
+    entity(orientation:R0.00_P0.00_Y-0.64, [angle:roll="0" %% xsd:float, angle:pitch="0" %% xsd:float, angle:yaw="-0.641" %% xsd:float, prov:type="geom:EulerAngles", geom:axes="sxyz"])
+    hadMember(pose:classroom_c018-w001-R0.00_P0.00_Y-0.64, orientation:R0.00_P0.00_Y-0.64)
+    entity(pose:classroom_c018-w002-R0.00_P0.00_Y-0.64, [prov:type="geom:Pose"])
+    entity(point:classroom_c018-w002, [coord:x="46.2556" %% xsd:float, coord:y="21.5865" %% xsd:float, coord:z="0" %% xsd:float, prov:type="geom:Point"])
+    hadMember(pose:classroom_c018-w002-R0.00_P0.00_Y-0.64, point:classroom_c018-w002)
+    hadMember(pose:classroom_c018-w002-R0.00_P0.00_Y-0.64, orientation:R0.00_P0.00_Y-0.64)
+  endBundle
+  bundle task:delivery_b.yaml_bundle
+    prefix task <https://www.sesame-project.org/scenarios/tasks/>
+    prefix ros <http://wiki.ros.org/>
+    prefix delivery_b.yaml-subtask_001 <https://www.sesame-project.org/scenarios/tasks/delivery_b.yaml-subtask_001/>
+    prefix pose <https://www.sesame-project.org/scenarios/tasks/waypoints/>
+    
+    entity(task:delivery_b.yaml, [prov:type="prov:Plan", ros:pkg="metamorphic_testing", ros:relative_path="config/tasks/delivery_b.yaml"])
+    entity(task:delivery_b.yaml-subtask_001, [prov:type="prov:Plan"])
+    wasDerivedFrom(task:delivery_b.yaml, task:delivery_b.yaml-subtask_001, -, -, -, [prov:role="subtask_001"])
+    wasDerivedFrom(delivery_b.yaml-subtask_001:w_001; task:delivery_b.yaml-subtask_001, pose:classroom_c022-w002-R0.00_P0.00_Y2.27, -, -, -, [prov:role="waypoint"])
+    wasDerivedFrom(delivery_b.yaml-subtask_001:w_002; task:delivery_b.yaml-subtask_001, pose:classroom_c018-w002-R0.00_P0.00_Y-0.64, -, -, -, [prov:role="waypoint"])
+  endBundle
+  bundle task:navigate_home_1.yaml_bundle
+    prefix task <https://www.sesame-project.org/scenarios/tasks/>
+    prefix ros <http://wiki.ros.org/>
+    prefix navigate_home_1.yaml-subtask_001 <https://www.sesame-project.org/scenarios/tasks/navigate_home_1.yaml-subtask_001/>
+    prefix pose <https://www.sesame-project.org/scenarios/tasks/waypoints/>
+    
+    entity(task:navigate_home_1.yaml, [prov:type="prov:Plan", ros:pkg="metamorphic_testing", ros:relative_path="config/tasks/navigate_home_1.yaml"])
+    entity(task:navigate_home_1.yaml-subtask_001, [prov:type="prov:Plan"])
+    wasDerivedFrom(task:navigate_home_1.yaml, task:navigate_home_1.yaml-subtask_001, -, -, -, [prov:role="subtask_001"])
+    wasDerivedFrom(navigate_home_1.yaml-subtask_001:w_001; task:navigate_home_1.yaml-subtask_001, pose:classroom_c025-w001-R0.00_P0.00_Y0.93, -, -, -, [prov:role="waypoint"])
+  endBundle
+endDocument

@@ -1,0 +1,28 @@
+document
+  prefix ros <http://wiki.ros.org/>
+  prefix exsce <https://www.sesame-project.org/scenarios/>
+  prefix geom <https://robot-schema.org/>
+  prefix coord <https://robot-schema.org/coordinates/>
+  prefix angle <https://robot-schema.org/rotation/>
+  prefix oracle <https://www.sesame-project.org/scenarios/oracles/>
+  
+  bundle env:classroom_c018_bundle
+    prefix pose <https://www.sesame-project.org/scenarios/tasks/waypoints/>
+    prefix point <https://www.sesame-project.org/scenarios/tasks/points/>
+    prefix coord <https://robot-schema.org/coordinates/>
+    prefix orientation <https://www.sesame-project.org/scenarios/tasks/orientation/>
+    prefix angle <https://robot-schema.org/rotation/>
+    prefix geom <https://robot-schema.org/>
+    prefix env <https://www.sesame-project.org/scenarios/environments/>
+    
+    entity(pose:classroom_c018-w001-R0.00_P0.00_Y-0.64, [prov:type="geom:Pose"])
+    entity(point:classroom_c018-w001, [coord:x="48.2642" %% xsd:float, coord:y="24.6183" %% xsd:float, coord:z="0" %% xsd:float, prov:type="geom:Point"])
+    hadMember(pose:classroom_c018-w001-R0.00_P0.00_Y-0.64, point:classroom_c018-w001)
+    entity(orientation:R0.00_P0.00_Y-0.64, [angle:roll="0" %% xsd:float, angle:pitch="0" %% xsd:float, angle:yaw="-0.641" %% xsd:float, prov:type="geom:EulerAngles", geom:axes="sxyz"])
+    hadMember(pose:classroom_c018-w001-R0.00_P0.00_Y-0.64, orientation:R0.00_P0.00_Y-0.64)
+    entity(pose:classroom_c018-w002-R0.00_P0.00_Y-0.64, [prov:type="geom:Pose"])
+    entity(point:classroom_c018-w002, [coord:x="46.2556" %% xsd:float, coord:y="21.5865" %% xsd:float, coord:z="0" %% xsd:float, prov:type="geom:Point"])
+    hadMember(pose:classroom_c018-w002-R0.00_P0.00_Y-0.64, point:classroom_c018-w002)
+    hadMember(pose:classroom_c018-w002-R0.00_P0.00_Y-0.64, orientation:R0.00_P0.00_Y-0.64)
+  endBundle
+endDocument
