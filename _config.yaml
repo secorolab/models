@@ -1,0 +1,50 @@
+remote_theme: pages-themes/minimal@v0.2.0
+plugins:
+- jekyll-remote-theme
+
+# General info
+title: Executable Scenario Models
+logo: /images/sesame_logo_tagline.svg
+show_downloads: true
+google_analytics:
+theme: jekyll-theme-minimal
+
+collections:
+  acceptance_criteria:
+    output: true
+    relative_directory: acceptance-criteria
+    permalink: /:collection/:name
+  agents:
+    output: true
+    relative_directory: agents
+  coordination:
+    output: true
+    relative_directory: coordination
+  environments:
+    output: true
+    relative_directory: environments
+  oracles:
+    output: true
+    relative_directory: oracles
+  robots:
+    output: true
+    relative_directory: robots
+    permalink: /:collection/:path
+  runs:
+    output: true
+    relative_directory: runs
+  scenarios:
+    output: true
+    relative_directory: scenarios
+  tasks:
+    output: true
+    relative_directory: tasks/brsu_building_c_with_doors
+    permalink: /:collection/:path
+
+defaults:
+  - scope:
+      path: ""
+      type: robots
+    values:
+      layout: default
+      robot: true
