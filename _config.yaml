@@ -48,3 +48,6 @@ defaults:
     values:
       layout: default
       robot: true
+
+site:
+  url: https://hbrs-sesame.github.io/models/
