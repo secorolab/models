@@ -25,7 +25,7 @@ layout: default
 ![{{file.name}}]({{ site.baseurl }}{% link {{ file.path }} %})
 
 {% else %}
-- [{{file.name}}]({{ site.baseurl }}{% {{ file.path }}%})
+- [{{file.name}}]({{ site.baseurl }}{% link {{ file.path }} %})
 {% endif %}
 
 
