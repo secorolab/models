@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% for file in site.files %}
+{% for file in site.static_files %}
 
 {% if file.path contains page.dir %}
 {% assign robot = file.basename | split: "." %}
