@@ -10,16 +10,9 @@ google_analytics:
 theme: jekyll-theme-minimal
 
 collections:
-  acceptance_criteria:
-    output: true
-    relative_directory: acceptance-criteria
-    permalink: /:collection/:name
   agents:
     output: true
     relative_directory: agents
-  coordination:
-    output: true
-    relative_directory: coordination
   environments:
     output: true
     relative_directory: environments
