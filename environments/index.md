@@ -22,10 +22,10 @@ layout: default
 
 {% if file.extname == ".svg" %}
 
-![{{file.name}}]({{ site.baseurl }}{% link {{file.path}} %})
+![{{file.name}}]({{ site.baseurl }}{{ file.path }})
 
 {% else %}
-- [{{file.name}}]({{ site.baseurl }}{% link {{file.path}} %})
+- [{{file.name}}]({{ site.baseurl }}{{ file.path }})
 {% endif %}
 
 
