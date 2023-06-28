@@ -13,12 +13,15 @@ collections:
   agents:
     output: true
     relative_directory: agents
+    permalink: /:collection/:path
   environments:
     output: true
     relative_directory: environments
+    permalink: /:collection/:path
   oracles:
     output: true
     relative_directory: oracles
+    permalink: /:collection/:path
   robots:
     output: true
     relative_directory: robots
@@ -26,9 +29,11 @@ collections:
   runs:
     output: true
     relative_directory: runs
+    permalink: /:collection/:path
   scenarios:
     output: true
     relative_directory: scenarios
+    permalink: /:collection/:path
   tasks:
     output: true
     relative_directory: tasks/brsu_building_c_with_doors
