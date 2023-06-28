@@ -44,10 +44,8 @@ collections:
 defaults:
   - scope:
       path: ""
-      type: robots
     values:
       layout: default
-      robot: true
 
 site:
   url: https://hbrs-sesame.github.io/models/
