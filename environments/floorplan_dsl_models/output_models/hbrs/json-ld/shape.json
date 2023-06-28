@@ -1,0 +1,180 @@
+{
+    "@context": [
+        {
+            "polytope": "https://hbrs-sesame.github.io/metamodels/polytope#"
+        },
+        "https://hbrs-sesame.github.io/metamodels/geometry/polytope.json"
+    ],
+    "@graph": [
+        {
+            "@id": "polytope:polygon-corridor_1",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-shape-corridor_1-0",
+                "geom:point-shape-corridor_1-1",
+                "geom:point-shape-corridor_1-2",
+                "geom:point-shape-corridor_1-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-corridor_1-wall-0",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-corridor_1-wall-0-0",
+                "geom:point-corner-corridor_1-wall-0-1",
+                "geom:point-corner-corridor_1-wall-0-2",
+                "geom:point-corner-corridor_1-wall-0-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-corridor_1-wall-1",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-corridor_1-wall-1-0",
+                "geom:point-corner-corridor_1-wall-1-1",
+                "geom:point-corner-corridor_1-wall-1-2",
+                "geom:point-corner-corridor_1-wall-1-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-corridor_1-wall-2",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-corridor_1-wall-2-0",
+                "geom:point-corner-corridor_1-wall-2-1",
+                "geom:point-corner-corridor_1-wall-2-2",
+                "geom:point-corner-corridor_1-wall-2-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-corridor_1-wall-3",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-corridor_1-wall-3-0",
+                "geom:point-corner-corridor_1-wall-3-1",
+                "geom:point-corner-corridor_1-wall-3-2",
+                "geom:point-corner-corridor_1-wall-3-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-corridor_1-feature-pillar_1",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-pillar_1-0",
+                "geom:point-feature-shape-pillar_1-1",
+                "geom:point-feature-shape-pillar_1-2",
+                "geom:point-feature-shape-pillar_1-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-corridor_1-feature-pillar_2",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-pillar_2-0",
+                "geom:point-feature-shape-pillar_2-1",
+                "geom:point-feature-shape-pillar_2-2",
+                "geom:point-feature-shape-pillar_2-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-room_c022",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-shape-room_c022-0",
+                "geom:point-shape-room_c022-1",
+                "geom:point-shape-room_c022-2",
+                "geom:point-shape-room_c022-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-room_c022-wall-0",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-room_c022-wall-0-0",
+                "geom:point-corner-room_c022-wall-0-1",
+                "geom:point-corner-room_c022-wall-0-2",
+                "geom:point-corner-room_c022-wall-0-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-room_c022-wall-1",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-room_c022-wall-1-0",
+                "geom:point-corner-room_c022-wall-1-1",
+                "geom:point-corner-room_c022-wall-1-2",
+                "geom:point-corner-room_c022-wall-1-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-room_c022-wall-2",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-room_c022-wall-2-0",
+                "geom:point-corner-room_c022-wall-2-1",
+                "geom:point-corner-room_c022-wall-2-2",
+                "geom:point-corner-room_c022-wall-2-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-room_c022-wall-3",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-room_c022-wall-3-0",
+                "geom:point-corner-room_c022-wall-3-1",
+                "geom:point-corner-room_c022-wall-3-2",
+                "geom:point-corner-room_c022-wall-3-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-room_c025",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-shape-room_c025-0",
+                "geom:point-shape-room_c025-1",
+                "geom:point-shape-room_c025-2",
+                "geom:point-shape-room_c025-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-room_c025-wall-0",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-room_c025-wall-0-0",
+                "geom:point-corner-room_c025-wall-0-1",
+                "geom:point-corner-room_c025-wall-0-2",
+                "geom:point-corner-room_c025-wall-0-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-room_c025-wall-1",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-room_c025-wall-1-0",
+                "geom:point-corner-room_c025-wall-1-1",
+                "geom:point-corner-room_c025-wall-1-2",
+                "geom:point-corner-room_c025-wall-1-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-room_c025-wall-2",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-room_c025-wall-2-0",
+                "geom:point-corner-room_c025-wall-2-1",
+                "geom:point-corner-room_c025-wall-2-2",
+                "geom:point-corner-room_c025-wall-2-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-room_c025-wall-3",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-room_c025-wall-3-0",
+                "geom:point-corner-room_c025-wall-3-1",
+                "geom:point-corner-room_c025-wall-3-2",
+                "geom:point-corner-room_c025-wall-3-3"
+            ]
+        }
+    ]
+}

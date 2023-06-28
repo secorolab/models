@@ -1,0 +1,1520 @@
+{
+    "@context": [
+        {
+            "polytope": "https://hbrs-sesame.github.io/metamodels/polytope#"
+        },
+        "https://hbrs-sesame.github.io/metamodels/geometry/polytope.json"
+    ],
+    "@graph": [
+        {
+            "@id": "polytope:polygon-stairway_room_center",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-shape-stairway_room_center-0",
+                "geom:point-shape-stairway_room_center-1",
+                "geom:point-shape-stairway_room_center-2",
+                "geom:point-shape-stairway_room_center-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-stairway_room_center-wall-0",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-stairway_room_center-wall-0-0",
+                "geom:point-corner-stairway_room_center-wall-0-1",
+                "geom:point-corner-stairway_room_center-wall-0-2",
+                "geom:point-corner-stairway_room_center-wall-0-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-stairway_room_center-wall-1",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-stairway_room_center-wall-1-0",
+                "geom:point-corner-stairway_room_center-wall-1-1",
+                "geom:point-corner-stairway_room_center-wall-1-2",
+                "geom:point-corner-stairway_room_center-wall-1-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-stairway_room_center-wall-2",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-stairway_room_center-wall-2-0",
+                "geom:point-corner-stairway_room_center-wall-2-1",
+                "geom:point-corner-stairway_room_center-wall-2-2",
+                "geom:point-corner-stairway_room_center-wall-2-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-stairway_room_center-wall-3",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-stairway_room_center-wall-3-0",
+                "geom:point-corner-stairway_room_center-wall-3-1",
+                "geom:point-corner-stairway_room_center-wall-3-2",
+                "geom:point-corner-stairway_room_center-wall-3-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-stairway_room_center-feature-column_1",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-column_1-0",
+                "geom:point-feature-shape-column_1-1",
+                "geom:point-feature-shape-column_1-2",
+                "geom:point-feature-shape-column_1-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-stairway_room_center-feature-column_2",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-column_2-0",
+                "geom:point-feature-shape-column_2-1",
+                "geom:point-feature-shape-column_2-2",
+                "geom:point-feature-shape-column_2-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-stairway_room_center-feature-column_3",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-column_3-0",
+                "geom:point-feature-shape-column_3-1",
+                "geom:point-feature-shape-column_3-2",
+                "geom:point-feature-shape-column_3-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-stairway_room_center-feature-column_4",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-column_4-0",
+                "geom:point-feature-shape-column_4-1",
+                "geom:point-feature-shape-column_4-2",
+                "geom:point-feature-shape-column_4-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-stairway_room_left",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-shape-stairway_room_left-0",
+                "geom:point-shape-stairway_room_left-1",
+                "geom:point-shape-stairway_room_left-2",
+                "geom:point-shape-stairway_room_left-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-stairway_room_left-wall-0",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-stairway_room_left-wall-0-0",
+                "geom:point-corner-stairway_room_left-wall-0-1",
+                "geom:point-corner-stairway_room_left-wall-0-2",
+                "geom:point-corner-stairway_room_left-wall-0-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-stairway_room_left-wall-1",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-stairway_room_left-wall-1-0",
+                "geom:point-corner-stairway_room_left-wall-1-1",
+                "geom:point-corner-stairway_room_left-wall-1-2",
+                "geom:point-corner-stairway_room_left-wall-1-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-stairway_room_left-wall-2",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-stairway_room_left-wall-2-0",
+                "geom:point-corner-stairway_room_left-wall-2-1",
+                "geom:point-corner-stairway_room_left-wall-2-2",
+                "geom:point-corner-stairway_room_left-wall-2-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-stairway_room_left-wall-3",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-stairway_room_left-wall-3-0",
+                "geom:point-corner-stairway_room_left-wall-3-1",
+                "geom:point-corner-stairway_room_left-wall-3-2",
+                "geom:point-corner-stairway_room_left-wall-3-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-stairway_room_exit",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-shape-stairway_room_exit-0",
+                "geom:point-shape-stairway_room_exit-1",
+                "geom:point-shape-stairway_room_exit-2",
+                "geom:point-shape-stairway_room_exit-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-stairway_room_exit-wall-0",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-stairway_room_exit-wall-0-0",
+                "geom:point-corner-stairway_room_exit-wall-0-1",
+                "geom:point-corner-stairway_room_exit-wall-0-2",
+                "geom:point-corner-stairway_room_exit-wall-0-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-stairway_room_exit-wall-1",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-stairway_room_exit-wall-1-0",
+                "geom:point-corner-stairway_room_exit-wall-1-1",
+                "geom:point-corner-stairway_room_exit-wall-1-2",
+                "geom:point-corner-stairway_room_exit-wall-1-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-stairway_room_exit-wall-2",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-stairway_room_exit-wall-2-0",
+                "geom:point-corner-stairway_room_exit-wall-2-1",
+                "geom:point-corner-stairway_room_exit-wall-2-2",
+                "geom:point-corner-stairway_room_exit-wall-2-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-stairway_room_exit-wall-3",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-stairway_room_exit-wall-3-0",
+                "geom:point-corner-stairway_room_exit-wall-3-1",
+                "geom:point-corner-stairway_room_exit-wall-3-2",
+                "geom:point-corner-stairway_room_exit-wall-3-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-left_short_connector",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-shape-left_short_connector-0",
+                "geom:point-shape-left_short_connector-1",
+                "geom:point-shape-left_short_connector-2",
+                "geom:point-shape-left_short_connector-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-left_short_connector-wall-0",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-left_short_connector-wall-0-0",
+                "geom:point-corner-left_short_connector-wall-0-1",
+                "geom:point-corner-left_short_connector-wall-0-2",
+                "geom:point-corner-left_short_connector-wall-0-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-left_short_connector-wall-1",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-left_short_connector-wall-1-0",
+                "geom:point-corner-left_short_connector-wall-1-1",
+                "geom:point-corner-left_short_connector-wall-1-2",
+                "geom:point-corner-left_short_connector-wall-1-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-left_short_connector-wall-2",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-left_short_connector-wall-2-0",
+                "geom:point-corner-left_short_connector-wall-2-1",
+                "geom:point-corner-left_short_connector-wall-2-2",
+                "geom:point-corner-left_short_connector-wall-2-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-left_short_connector-wall-3",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-left_short_connector-wall-3-0",
+                "geom:point-corner-left_short_connector-wall-3-1",
+                "geom:point-corner-left_short_connector-wall-3-2",
+                "geom:point-corner-left_short_connector-wall-3-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-left_short_connector-feature-column_1",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-column_1-0",
+                "geom:point-feature-shape-column_1-1",
+                "geom:point-feature-shape-column_1-2",
+                "geom:point-feature-shape-column_1-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-left_short_connector-feature-column_2",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-column_2-0",
+                "geom:point-feature-shape-column_2-1",
+                "geom:point-feature-shape-column_2-2",
+                "geom:point-feature-shape-column_2-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-study_nook_left",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-shape-study_nook_left-0",
+                "geom:point-shape-study_nook_left-1",
+                "geom:point-shape-study_nook_left-2",
+                "geom:point-shape-study_nook_left-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-study_nook_left-wall-0",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-study_nook_left-wall-0-0",
+                "geom:point-corner-study_nook_left-wall-0-1",
+                "geom:point-corner-study_nook_left-wall-0-2",
+                "geom:point-corner-study_nook_left-wall-0-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-study_nook_left-wall-1",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-study_nook_left-wall-1-0",
+                "geom:point-corner-study_nook_left-wall-1-1",
+                "geom:point-corner-study_nook_left-wall-1-2",
+                "geom:point-corner-study_nook_left-wall-1-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-study_nook_left-wall-2",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-study_nook_left-wall-2-0",
+                "geom:point-corner-study_nook_left-wall-2-1",
+                "geom:point-corner-study_nook_left-wall-2-2",
+                "geom:point-corner-study_nook_left-wall-2-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-study_nook_left-wall-3",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-study_nook_left-wall-3-0",
+                "geom:point-corner-study_nook_left-wall-3-1",
+                "geom:point-corner-study_nook_left-wall-3-2",
+                "geom:point-corner-study_nook_left-wall-3-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-left_long_corridor",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-shape-left_long_corridor-0",
+                "geom:point-shape-left_long_corridor-1",
+                "geom:point-shape-left_long_corridor-2",
+                "geom:point-shape-left_long_corridor-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-left_long_corridor-wall-0",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-left_long_corridor-wall-0-0",
+                "geom:point-corner-left_long_corridor-wall-0-1",
+                "geom:point-corner-left_long_corridor-wall-0-2",
+                "geom:point-corner-left_long_corridor-wall-0-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-left_long_corridor-wall-1",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-left_long_corridor-wall-1-0",
+                "geom:point-corner-left_long_corridor-wall-1-1",
+                "geom:point-corner-left_long_corridor-wall-1-2",
+                "geom:point-corner-left_long_corridor-wall-1-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-left_long_corridor-wall-2",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-left_long_corridor-wall-2-0",
+                "geom:point-corner-left_long_corridor-wall-2-1",
+                "geom:point-corner-left_long_corridor-wall-2-2",
+                "geom:point-corner-left_long_corridor-wall-2-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-left_long_corridor-wall-3",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-left_long_corridor-wall-3-0",
+                "geom:point-corner-left_long_corridor-wall-3-1",
+                "geom:point-corner-left_long_corridor-wall-3-2",
+                "geom:point-corner-left_long_corridor-wall-3-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-left_long_corridor-feature-column_1",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-column_1-0",
+                "geom:point-feature-shape-column_1-1",
+                "geom:point-feature-shape-column_1-2",
+                "geom:point-feature-shape-column_1-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-left_long_corridor-feature-column_2",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-column_2-0",
+                "geom:point-feature-shape-column_2-1",
+                "geom:point-feature-shape-column_2-2",
+                "geom:point-feature-shape-column_2-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-left_long_corridor-feature-column_3",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-column_3-0",
+                "geom:point-feature-shape-column_3-1",
+                "geom:point-feature-shape-column_3-2",
+                "geom:point-feature-shape-column_3-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-left_long_corridor-feature-column_4",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-column_4-0",
+                "geom:point-feature-shape-column_4-1",
+                "geom:point-feature-shape-column_4-2",
+                "geom:point-feature-shape-column_4-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-left_long_corridor-feature-column_5",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-column_5-0",
+                "geom:point-feature-shape-column_5-1",
+                "geom:point-feature-shape-column_5-2",
+                "geom:point-feature-shape-column_5-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-left_long_corridor-feature-column_6",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-column_6-0",
+                "geom:point-feature-shape-column_6-1",
+                "geom:point-feature-shape-column_6-2",
+                "geom:point-feature-shape-column_6-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-left_long_corridor-feature-column_7",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-column_7-0",
+                "geom:point-feature-shape-column_7-1",
+                "geom:point-feature-shape-column_7-2",
+                "geom:point-feature-shape-column_7-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-left_long_corridor-feature-column_8",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-column_8-0",
+                "geom:point-feature-shape-column_8-1",
+                "geom:point-feature-shape-column_8-2",
+                "geom:point-feature-shape-column_8-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-left_long_corridor-feature-column_9",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-column_9-0",
+                "geom:point-feature-shape-column_9-1",
+                "geom:point-feature-shape-column_9-2",
+                "geom:point-feature-shape-column_9-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-left_long_corridor-feature-column_10",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-column_10-0",
+                "geom:point-feature-shape-column_10-1",
+                "geom:point-feature-shape-column_10-2",
+                "geom:point-feature-shape-column_10-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-left_long_corridor-feature-column_11",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-column_11-0",
+                "geom:point-feature-shape-column_11-1",
+                "geom:point-feature-shape-column_11-2",
+                "geom:point-feature-shape-column_11-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-left_long_corridor-feature-column_12",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-column_12-0",
+                "geom:point-feature-shape-column_12-1",
+                "geom:point-feature-shape-column_12-2",
+                "geom:point-feature-shape-column_12-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-left_long_corridor-feature-column_13",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-column_13-0",
+                "geom:point-feature-shape-column_13-1",
+                "geom:point-feature-shape-column_13-2",
+                "geom:point-feature-shape-column_13-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-left_long_corridor-feature-column_14",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-column_14-0",
+                "geom:point-feature-shape-column_14-1",
+                "geom:point-feature-shape-column_14-2",
+                "geom:point-feature-shape-column_14-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-left_long_corridor-feature-column_15",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-column_15-0",
+                "geom:point-feature-shape-column_15-1",
+                "geom:point-feature-shape-column_15-2",
+                "geom:point-feature-shape-column_15-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-left_long_corridor-feature-column_16",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-column_16-0",
+                "geom:point-feature-shape-column_16-1",
+                "geom:point-feature-shape-column_16-2",
+                "geom:point-feature-shape-column_16-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-left_long_corridor-feature-column_17",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-column_17-0",
+                "geom:point-feature-shape-column_17-1",
+                "geom:point-feature-shape-column_17-2",
+                "geom:point-feature-shape-column_17-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-left_long_corridor-feature-column_18",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-column_18-0",
+                "geom:point-feature-shape-column_18-1",
+                "geom:point-feature-shape-column_18-2",
+                "geom:point-feature-shape-column_18-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-left_long_corridor-feature-column_19",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-column_19-0",
+                "geom:point-feature-shape-column_19-1",
+                "geom:point-feature-shape-column_19-2",
+                "geom:point-feature-shape-column_19-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-left_long_corridor-feature-column_20",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-column_20-0",
+                "geom:point-feature-shape-column_20-1",
+                "geom:point-feature-shape-column_20-2",
+                "geom:point-feature-shape-column_20-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-left_long_corridor-feature-trashcan_1",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-trashcan_1-0",
+                "geom:point-feature-shape-trashcan_1-1",
+                "geom:point-feature-shape-trashcan_1-2",
+                "geom:point-feature-shape-trashcan_1-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-left_long_corridor-feature-trashcan_2",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-trashcan_2-0",
+                "geom:point-feature-shape-trashcan_2-1",
+                "geom:point-feature-shape-trashcan_2-2",
+                "geom:point-feature-shape-trashcan_2-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-right_short_connector",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-shape-right_short_connector-0",
+                "geom:point-shape-right_short_connector-1",
+                "geom:point-shape-right_short_connector-2",
+                "geom:point-shape-right_short_connector-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-right_short_connector-wall-0",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-right_short_connector-wall-0-0",
+                "geom:point-corner-right_short_connector-wall-0-1",
+                "geom:point-corner-right_short_connector-wall-0-2",
+                "geom:point-corner-right_short_connector-wall-0-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-right_short_connector-wall-1",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-right_short_connector-wall-1-0",
+                "geom:point-corner-right_short_connector-wall-1-1",
+                "geom:point-corner-right_short_connector-wall-1-2",
+                "geom:point-corner-right_short_connector-wall-1-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-right_short_connector-wall-2",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-right_short_connector-wall-2-0",
+                "geom:point-corner-right_short_connector-wall-2-1",
+                "geom:point-corner-right_short_connector-wall-2-2",
+                "geom:point-corner-right_short_connector-wall-2-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-right_short_connector-wall-3",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-right_short_connector-wall-3-0",
+                "geom:point-corner-right_short_connector-wall-3-1",
+                "geom:point-corner-right_short_connector-wall-3-2",
+                "geom:point-corner-right_short_connector-wall-3-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-right_short_connector-feature-column_01",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-column_01-0",
+                "geom:point-feature-shape-column_01-1",
+                "geom:point-feature-shape-column_01-2",
+                "geom:point-feature-shape-column_01-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-right_short_connector-feature-column_02",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-column_02-0",
+                "geom:point-feature-shape-column_02-1",
+                "geom:point-feature-shape-column_02-2",
+                "geom:point-feature-shape-column_02-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-right_long_corridor",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-shape-right_long_corridor-0",
+                "geom:point-shape-right_long_corridor-1",
+                "geom:point-shape-right_long_corridor-2",
+                "geom:point-shape-right_long_corridor-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-right_long_corridor-wall-0",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-right_long_corridor-wall-0-0",
+                "geom:point-corner-right_long_corridor-wall-0-1",
+                "geom:point-corner-right_long_corridor-wall-0-2",
+                "geom:point-corner-right_long_corridor-wall-0-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-right_long_corridor-wall-1",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-right_long_corridor-wall-1-0",
+                "geom:point-corner-right_long_corridor-wall-1-1",
+                "geom:point-corner-right_long_corridor-wall-1-2",
+                "geom:point-corner-right_long_corridor-wall-1-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-right_long_corridor-wall-2",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-right_long_corridor-wall-2-0",
+                "geom:point-corner-right_long_corridor-wall-2-1",
+                "geom:point-corner-right_long_corridor-wall-2-2",
+                "geom:point-corner-right_long_corridor-wall-2-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-right_long_corridor-wall-3",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-right_long_corridor-wall-3-0",
+                "geom:point-corner-right_long_corridor-wall-3-1",
+                "geom:point-corner-right_long_corridor-wall-3-2",
+                "geom:point-corner-right_long_corridor-wall-3-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-right_long_corridor-feature-column_1",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-column_1-0",
+                "geom:point-feature-shape-column_1-1",
+                "geom:point-feature-shape-column_1-2",
+                "geom:point-feature-shape-column_1-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-right_long_corridor-feature-column_2",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-column_2-0",
+                "geom:point-feature-shape-column_2-1",
+                "geom:point-feature-shape-column_2-2",
+                "geom:point-feature-shape-column_2-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-right_long_corridor-feature-column_3",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-column_3-0",
+                "geom:point-feature-shape-column_3-1",
+                "geom:point-feature-shape-column_3-2",
+                "geom:point-feature-shape-column_3-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-right_long_corridor-feature-column_4",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-column_4-0",
+                "geom:point-feature-shape-column_4-1",
+                "geom:point-feature-shape-column_4-2",
+                "geom:point-feature-shape-column_4-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-right_long_corridor-feature-column_5",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-column_5-0",
+                "geom:point-feature-shape-column_5-1",
+                "geom:point-feature-shape-column_5-2",
+                "geom:point-feature-shape-column_5-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-right_long_corridor-feature-column_6",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-column_6-0",
+                "geom:point-feature-shape-column_6-1",
+                "geom:point-feature-shape-column_6-2",
+                "geom:point-feature-shape-column_6-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-right_long_corridor-feature-column_7",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-column_7-0",
+                "geom:point-feature-shape-column_7-1",
+                "geom:point-feature-shape-column_7-2",
+                "geom:point-feature-shape-column_7-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-right_long_corridor-feature-column_8",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-column_8-0",
+                "geom:point-feature-shape-column_8-1",
+                "geom:point-feature-shape-column_8-2",
+                "geom:point-feature-shape-column_8-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-right_long_corridor-feature-column_9",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-column_9-0",
+                "geom:point-feature-shape-column_9-1",
+                "geom:point-feature-shape-column_9-2",
+                "geom:point-feature-shape-column_9-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-right_long_corridor-feature-column_10",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-column_10-0",
+                "geom:point-feature-shape-column_10-1",
+                "geom:point-feature-shape-column_10-2",
+                "geom:point-feature-shape-column_10-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-right_long_corridor-feature-column_11",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-column_11-0",
+                "geom:point-feature-shape-column_11-1",
+                "geom:point-feature-shape-column_11-2",
+                "geom:point-feature-shape-column_11-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-right_long_corridor-feature-column_12",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-column_12-0",
+                "geom:point-feature-shape-column_12-1",
+                "geom:point-feature-shape-column_12-2",
+                "geom:point-feature-shape-column_12-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-right_long_corridor-feature-column_13",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-column_13-0",
+                "geom:point-feature-shape-column_13-1",
+                "geom:point-feature-shape-column_13-2",
+                "geom:point-feature-shape-column_13-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-right_long_corridor-feature-column_14",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-column_14-0",
+                "geom:point-feature-shape-column_14-1",
+                "geom:point-feature-shape-column_14-2",
+                "geom:point-feature-shape-column_14-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-right_long_corridor-feature-column_17",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-column_17-0",
+                "geom:point-feature-shape-column_17-1",
+                "geom:point-feature-shape-column_17-2",
+                "geom:point-feature-shape-column_17-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-right_long_corridor-feature-column_18",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-column_18-0",
+                "geom:point-feature-shape-column_18-1",
+                "geom:point-feature-shape-column_18-2",
+                "geom:point-feature-shape-column_18-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-right_long_corridor-feature-column_19",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-column_19-0",
+                "geom:point-feature-shape-column_19-1",
+                "geom:point-feature-shape-column_19-2",
+                "geom:point-feature-shape-column_19-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-right_long_corridor-feature-column_20",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-column_20-0",
+                "geom:point-feature-shape-column_20-1",
+                "geom:point-feature-shape-column_20-2",
+                "geom:point-feature-shape-column_20-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-right_long_corridor-feature-trashcan_1",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-trashcan_1-0",
+                "geom:point-feature-shape-trashcan_1-1",
+                "geom:point-feature-shape-trashcan_1-2",
+                "geom:point-feature-shape-trashcan_1-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-right_long_corridor-feature-trashcan_2",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-trashcan_2-0",
+                "geom:point-feature-shape-trashcan_2-1",
+                "geom:point-feature-shape-trashcan_2-2",
+                "geom:point-feature-shape-trashcan_2-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-diagonal_corridor_left",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-shape-diagonal_corridor_left-0",
+                "geom:point-shape-diagonal_corridor_left-1",
+                "geom:point-shape-diagonal_corridor_left-2",
+                "geom:point-shape-diagonal_corridor_left-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-diagonal_corridor_left-wall-0",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-diagonal_corridor_left-wall-0-0",
+                "geom:point-corner-diagonal_corridor_left-wall-0-1",
+                "geom:point-corner-diagonal_corridor_left-wall-0-2",
+                "geom:point-corner-diagonal_corridor_left-wall-0-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-diagonal_corridor_left-wall-1",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-diagonal_corridor_left-wall-1-0",
+                "geom:point-corner-diagonal_corridor_left-wall-1-1",
+                "geom:point-corner-diagonal_corridor_left-wall-1-2",
+                "geom:point-corner-diagonal_corridor_left-wall-1-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-diagonal_corridor_left-wall-2",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-diagonal_corridor_left-wall-2-0",
+                "geom:point-corner-diagonal_corridor_left-wall-2-1",
+                "geom:point-corner-diagonal_corridor_left-wall-2-2",
+                "geom:point-corner-diagonal_corridor_left-wall-2-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-diagonal_corridor_left-wall-3",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-diagonal_corridor_left-wall-3-0",
+                "geom:point-corner-diagonal_corridor_left-wall-3-1",
+                "geom:point-corner-diagonal_corridor_left-wall-3-2",
+                "geom:point-corner-diagonal_corridor_left-wall-3-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-diagonal_corridor_center_right",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-shape-diagonal_corridor_center_right-0",
+                "geom:point-shape-diagonal_corridor_center_right-1",
+                "geom:point-shape-diagonal_corridor_center_right-2",
+                "geom:point-shape-diagonal_corridor_center_right-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-diagonal_corridor_center_right-wall-0",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-diagonal_corridor_center_right-wall-0-0",
+                "geom:point-corner-diagonal_corridor_center_right-wall-0-1",
+                "geom:point-corner-diagonal_corridor_center_right-wall-0-2",
+                "geom:point-corner-diagonal_corridor_center_right-wall-0-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-diagonal_corridor_center_right-wall-1",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-diagonal_corridor_center_right-wall-1-0",
+                "geom:point-corner-diagonal_corridor_center_right-wall-1-1",
+                "geom:point-corner-diagonal_corridor_center_right-wall-1-2",
+                "geom:point-corner-diagonal_corridor_center_right-wall-1-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-diagonal_corridor_center_right-wall-2",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-diagonal_corridor_center_right-wall-2-0",
+                "geom:point-corner-diagonal_corridor_center_right-wall-2-1",
+                "geom:point-corner-diagonal_corridor_center_right-wall-2-2",
+                "geom:point-corner-diagonal_corridor_center_right-wall-2-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-diagonal_corridor_center_right-wall-3",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-diagonal_corridor_center_right-wall-3-0",
+                "geom:point-corner-diagonal_corridor_center_right-wall-3-1",
+                "geom:point-corner-diagonal_corridor_center_right-wall-3-2",
+                "geom:point-corner-diagonal_corridor_center_right-wall-3-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-diagonal_corridor_center",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-shape-diagonal_corridor_center-0",
+                "geom:point-shape-diagonal_corridor_center-1",
+                "geom:point-shape-diagonal_corridor_center-2",
+                "geom:point-shape-diagonal_corridor_center-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-diagonal_corridor_center-wall-0",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-diagonal_corridor_center-wall-0-0",
+                "geom:point-corner-diagonal_corridor_center-wall-0-1",
+                "geom:point-corner-diagonal_corridor_center-wall-0-2",
+                "geom:point-corner-diagonal_corridor_center-wall-0-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-diagonal_corridor_center-wall-1",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-diagonal_corridor_center-wall-1-0",
+                "geom:point-corner-diagonal_corridor_center-wall-1-1",
+                "geom:point-corner-diagonal_corridor_center-wall-1-2",
+                "geom:point-corner-diagonal_corridor_center-wall-1-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-diagonal_corridor_center-wall-2",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-diagonal_corridor_center-wall-2-0",
+                "geom:point-corner-diagonal_corridor_center-wall-2-1",
+                "geom:point-corner-diagonal_corridor_center-wall-2-2",
+                "geom:point-corner-diagonal_corridor_center-wall-2-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-diagonal_corridor_center-wall-3",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-diagonal_corridor_center-wall-3-0",
+                "geom:point-corner-diagonal_corridor_center-wall-3-1",
+                "geom:point-corner-diagonal_corridor_center-wall-3-2",
+                "geom:point-corner-diagonal_corridor_center-wall-3-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-diagonal_corridor_center_left",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-shape-diagonal_corridor_center_left-0",
+                "geom:point-shape-diagonal_corridor_center_left-1",
+                "geom:point-shape-diagonal_corridor_center_left-2",
+                "geom:point-shape-diagonal_corridor_center_left-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-diagonal_corridor_center_left-wall-0",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-diagonal_corridor_center_left-wall-0-0",
+                "geom:point-corner-diagonal_corridor_center_left-wall-0-1",
+                "geom:point-corner-diagonal_corridor_center_left-wall-0-2",
+                "geom:point-corner-diagonal_corridor_center_left-wall-0-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-diagonal_corridor_center_left-wall-1",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-diagonal_corridor_center_left-wall-1-0",
+                "geom:point-corner-diagonal_corridor_center_left-wall-1-1",
+                "geom:point-corner-diagonal_corridor_center_left-wall-1-2",
+                "geom:point-corner-diagonal_corridor_center_left-wall-1-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-diagonal_corridor_center_left-wall-2",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-diagonal_corridor_center_left-wall-2-0",
+                "geom:point-corner-diagonal_corridor_center_left-wall-2-1",
+                "geom:point-corner-diagonal_corridor_center_left-wall-2-2",
+                "geom:point-corner-diagonal_corridor_center_left-wall-2-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-diagonal_corridor_center_left-wall-3",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-diagonal_corridor_center_left-wall-3-0",
+                "geom:point-corner-diagonal_corridor_center_left-wall-3-1",
+                "geom:point-corner-diagonal_corridor_center_left-wall-3-2",
+                "geom:point-corner-diagonal_corridor_center_left-wall-3-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-diagonal_corridor_right",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-shape-diagonal_corridor_right-0",
+                "geom:point-shape-diagonal_corridor_right-1",
+                "geom:point-shape-diagonal_corridor_right-2",
+                "geom:point-shape-diagonal_corridor_right-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-diagonal_corridor_right-wall-0",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-diagonal_corridor_right-wall-0-0",
+                "geom:point-corner-diagonal_corridor_right-wall-0-1",
+                "geom:point-corner-diagonal_corridor_right-wall-0-2",
+                "geom:point-corner-diagonal_corridor_right-wall-0-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-diagonal_corridor_right-wall-1",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-diagonal_corridor_right-wall-1-0",
+                "geom:point-corner-diagonal_corridor_right-wall-1-1",
+                "geom:point-corner-diagonal_corridor_right-wall-1-2",
+                "geom:point-corner-diagonal_corridor_right-wall-1-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-diagonal_corridor_right-wall-2",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-diagonal_corridor_right-wall-2-0",
+                "geom:point-corner-diagonal_corridor_right-wall-2-1",
+                "geom:point-corner-diagonal_corridor_right-wall-2-2",
+                "geom:point-corner-diagonal_corridor_right-wall-2-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-diagonal_corridor_right-wall-3",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-diagonal_corridor_right-wall-3-0",
+                "geom:point-corner-diagonal_corridor_right-wall-3-1",
+                "geom:point-corner-diagonal_corridor_right-wall-3-2",
+                "geom:point-corner-diagonal_corridor_right-wall-3-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-study_nook_c069",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-shape-study_nook_c069-0",
+                "geom:point-shape-study_nook_c069-1",
+                "geom:point-shape-study_nook_c069-2",
+                "geom:point-shape-study_nook_c069-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-study_nook_c069-wall-0",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-study_nook_c069-wall-0-0",
+                "geom:point-corner-study_nook_c069-wall-0-1",
+                "geom:point-corner-study_nook_c069-wall-0-2",
+                "geom:point-corner-study_nook_c069-wall-0-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-study_nook_c069-wall-1",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-study_nook_c069-wall-1-0",
+                "geom:point-corner-study_nook_c069-wall-1-1",
+                "geom:point-corner-study_nook_c069-wall-1-2",
+                "geom:point-corner-study_nook_c069-wall-1-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-study_nook_c069-wall-2",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-study_nook_c069-wall-2-0",
+                "geom:point-corner-study_nook_c069-wall-2-1",
+                "geom:point-corner-study_nook_c069-wall-2-2",
+                "geom:point-corner-study_nook_c069-wall-2-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-study_nook_c069-wall-3",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-study_nook_c069-wall-3-0",
+                "geom:point-corner-study_nook_c069-wall-3-1",
+                "geom:point-corner-study_nook_c069-wall-3-2",
+                "geom:point-corner-study_nook_c069-wall-3-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-left_corridor_extra_end",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-shape-left_corridor_extra_end-0",
+                "geom:point-shape-left_corridor_extra_end-1",
+                "geom:point-shape-left_corridor_extra_end-2",
+                "geom:point-shape-left_corridor_extra_end-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-left_corridor_extra_end-wall-0",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-left_corridor_extra_end-wall-0-0",
+                "geom:point-corner-left_corridor_extra_end-wall-0-1",
+                "geom:point-corner-left_corridor_extra_end-wall-0-2",
+                "geom:point-corner-left_corridor_extra_end-wall-0-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-left_corridor_extra_end-wall-1",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-left_corridor_extra_end-wall-1-0",
+                "geom:point-corner-left_corridor_extra_end-wall-1-1",
+                "geom:point-corner-left_corridor_extra_end-wall-1-2",
+                "geom:point-corner-left_corridor_extra_end-wall-1-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-left_corridor_extra_end-wall-2",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-left_corridor_extra_end-wall-2-0",
+                "geom:point-corner-left_corridor_extra_end-wall-2-1",
+                "geom:point-corner-left_corridor_extra_end-wall-2-2",
+                "geom:point-corner-left_corridor_extra_end-wall-2-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-left_corridor_extra_end-wall-3",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-left_corridor_extra_end-wall-3-0",
+                "geom:point-corner-left_corridor_extra_end-wall-3-1",
+                "geom:point-corner-left_corridor_extra_end-wall-3-2",
+                "geom:point-corner-left_corridor_extra_end-wall-3-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-left_corridor_extra_end-feature-trashcan_2",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-feature-shape-trashcan_2-0",
+                "geom:point-feature-shape-trashcan_2-1",
+                "geom:point-feature-shape-trashcan_2-2",
+                "geom:point-feature-shape-trashcan_2-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-right_corridor_extra_space",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-shape-right_corridor_extra_space-0",
+                "geom:point-shape-right_corridor_extra_space-1",
+                "geom:point-shape-right_corridor_extra_space-2",
+                "geom:point-shape-right_corridor_extra_space-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-right_corridor_extra_space-wall-0",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-right_corridor_extra_space-wall-0-0",
+                "geom:point-corner-right_corridor_extra_space-wall-0-1",
+                "geom:point-corner-right_corridor_extra_space-wall-0-2",
+                "geom:point-corner-right_corridor_extra_space-wall-0-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-right_corridor_extra_space-wall-1",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-right_corridor_extra_space-wall-1-0",
+                "geom:point-corner-right_corridor_extra_space-wall-1-1",
+                "geom:point-corner-right_corridor_extra_space-wall-1-2",
+                "geom:point-corner-right_corridor_extra_space-wall-1-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-right_corridor_extra_space-wall-2",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-right_corridor_extra_space-wall-2-0",
+                "geom:point-corner-right_corridor_extra_space-wall-2-1",
+                "geom:point-corner-right_corridor_extra_space-wall-2-2",
+                "geom:point-corner-right_corridor_extra_space-wall-2-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-right_corridor_extra_space-wall-3",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-right_corridor_extra_space-wall-3-0",
+                "geom:point-corner-right_corridor_extra_space-wall-3-1",
+                "geom:point-corner-right_corridor_extra_space-wall-3-2",
+                "geom:point-corner-right_corridor_extra_space-wall-3-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-classroom_c022",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-shape-classroom_c022-0",
+                "geom:point-shape-classroom_c022-1",
+                "geom:point-shape-classroom_c022-2",
+                "geom:point-shape-classroom_c022-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-classroom_c022-wall-0",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-classroom_c022-wall-0-0",
+                "geom:point-corner-classroom_c022-wall-0-1",
+                "geom:point-corner-classroom_c022-wall-0-2",
+                "geom:point-corner-classroom_c022-wall-0-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-classroom_c022-wall-1",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-classroom_c022-wall-1-0",
+                "geom:point-corner-classroom_c022-wall-1-1",
+                "geom:point-corner-classroom_c022-wall-1-2",
+                "geom:point-corner-classroom_c022-wall-1-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-classroom_c022-wall-2",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-classroom_c022-wall-2-0",
+                "geom:point-corner-classroom_c022-wall-2-1",
+                "geom:point-corner-classroom_c022-wall-2-2",
+                "geom:point-corner-classroom_c022-wall-2-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-classroom_c022-wall-3",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-classroom_c022-wall-3-0",
+                "geom:point-corner-classroom_c022-wall-3-1",
+                "geom:point-corner-classroom_c022-wall-3-2",
+                "geom:point-corner-classroom_c022-wall-3-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-classroom_c025",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-shape-classroom_c025-0",
+                "geom:point-shape-classroom_c025-1",
+                "geom:point-shape-classroom_c025-2",
+                "geom:point-shape-classroom_c025-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-classroom_c025-wall-0",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-classroom_c025-wall-0-0",
+                "geom:point-corner-classroom_c025-wall-0-1",
+                "geom:point-corner-classroom_c025-wall-0-2",
+                "geom:point-corner-classroom_c025-wall-0-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-classroom_c025-wall-1",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-classroom_c025-wall-1-0",
+                "geom:point-corner-classroom_c025-wall-1-1",
+                "geom:point-corner-classroom_c025-wall-1-2",
+                "geom:point-corner-classroom_c025-wall-1-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-classroom_c025-wall-2",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-classroom_c025-wall-2-0",
+                "geom:point-corner-classroom_c025-wall-2-1",
+                "geom:point-corner-classroom_c025-wall-2-2",
+                "geom:point-corner-classroom_c025-wall-2-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-classroom_c025-wall-3",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-classroom_c025-wall-3-0",
+                "geom:point-corner-classroom_c025-wall-3-1",
+                "geom:point-corner-classroom_c025-wall-3-2",
+                "geom:point-corner-classroom_c025-wall-3-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-classroom_c069",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-shape-classroom_c069-0",
+                "geom:point-shape-classroom_c069-1",
+                "geom:point-shape-classroom_c069-2",
+                "geom:point-shape-classroom_c069-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-classroom_c069-wall-0",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-classroom_c069-wall-0-0",
+                "geom:point-corner-classroom_c069-wall-0-1",
+                "geom:point-corner-classroom_c069-wall-0-2",
+                "geom:point-corner-classroom_c069-wall-0-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-classroom_c069-wall-1",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-classroom_c069-wall-1-0",
+                "geom:point-corner-classroom_c069-wall-1-1",
+                "geom:point-corner-classroom_c069-wall-1-2",
+                "geom:point-corner-classroom_c069-wall-1-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-classroom_c069-wall-2",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-classroom_c069-wall-2-0",
+                "geom:point-corner-classroom_c069-wall-2-1",
+                "geom:point-corner-classroom_c069-wall-2-2",
+                "geom:point-corner-classroom_c069-wall-2-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-classroom_c069-wall-3",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-classroom_c069-wall-3-0",
+                "geom:point-corner-classroom_c069-wall-3-1",
+                "geom:point-corner-classroom_c069-wall-3-2",
+                "geom:point-corner-classroom_c069-wall-3-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-classroom_c018",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-shape-classroom_c018-0",
+                "geom:point-shape-classroom_c018-1",
+                "geom:point-shape-classroom_c018-2",
+                "geom:point-shape-classroom_c018-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-classroom_c018-wall-0",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-classroom_c018-wall-0-0",
+                "geom:point-corner-classroom_c018-wall-0-1",
+                "geom:point-corner-classroom_c018-wall-0-2",
+                "geom:point-corner-classroom_c018-wall-0-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-classroom_c018-wall-1",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-classroom_c018-wall-1-0",
+                "geom:point-corner-classroom_c018-wall-1-1",
+                "geom:point-corner-classroom_c018-wall-1-2",
+                "geom:point-corner-classroom_c018-wall-1-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-classroom_c018-wall-2",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-classroom_c018-wall-2-0",
+                "geom:point-corner-classroom_c018-wall-2-1",
+                "geom:point-corner-classroom_c018-wall-2-2",
+                "geom:point-corner-classroom_c018-wall-2-3"
+            ]
+        },
+        {
+            "@id": "polytope:polygon-classroom_c018-wall-3",
+            "@type": "Polygon",
+            "points": [
+                "geom:point-corner-classroom_c018-wall-3-0",
+                "geom:point-corner-classroom_c018-wall-3-1",
+                "geom:point-corner-classroom_c018-wall-3-2",
+                "geom:point-corner-classroom_c018-wall-3-3"
+            ]
+        }
+    ]
+}

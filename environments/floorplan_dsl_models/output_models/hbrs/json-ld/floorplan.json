@@ -1,0 +1,128 @@
+{
+    "@context": [
+        {
+            "floorplan": "https://hbrs-sesame.github.io/metamodels/floorplan#"
+        },
+        "https://hbrs-sesame.github.io/metamodels/floor-plan/floor-plan.json"
+    ],
+    "@graph": [
+        {
+            "@id": "floorplan:space-corridor_1-wall-0",
+            "@type": "Wall",
+            "shape": "polytope:polygon-corridor_1-wall-0"
+        },
+        {
+            "@id": "floorplan:space-corridor_1-wall-1",
+            "@type": "Wall",
+            "shape": "polytope:polygon-corridor_1-wall-1"
+        },
+        {
+            "@id": "floorplan:space-corridor_1-wall-2",
+            "@type": "Wall",
+            "shape": "polytope:polygon-corridor_1-wall-2"
+        },
+        {
+            "@id": "floorplan:space-corridor_1-wall-3",
+            "@type": "Wall",
+            "shape": "polytope:polygon-corridor_1-wall-3"
+        },
+        {
+            "@id": "floorplan:feature-corridor_1-pillar_1",
+            "@type": "Feature",
+            "shape": "polytope:polygon-corridor_1-feature-pillar_1"
+        },
+        {
+            "@id": "floorplan:feature-corridor_1-pillar_2",
+            "@type": "Feature",
+            "shape": "polytope:polygon-corridor_1-feature-pillar_2"
+        },
+        {
+            "@id": "floorplan:space-corridor_1",
+            "@type": "Space",
+            "walls": [
+                "floorplan:space-corridor_1-wall-0",
+                "floorplan:space-corridor_1-wall-1",
+                "floorplan:space-corridor_1-wall-2",
+                "floorplan:space-corridor_1-wall-3"
+            ],
+            "feature": [
+                "floorplan:feature-corridor_1-pillar_1",
+                "floorplan:feature-corridor_1-pillar_2"
+            ],
+            "shape": "polytope:polygon-corridor_1"
+        },
+        {
+            "@id": "floorplan:space-room_c022-wall-0",
+            "@type": "Wall",
+            "shape": "polytope:polygon-room_c022-wall-0"
+        },
+        {
+            "@id": "floorplan:space-room_c022-wall-1",
+            "@type": "Wall",
+            "shape": "polytope:polygon-room_c022-wall-1"
+        },
+        {
+            "@id": "floorplan:space-room_c022-wall-2",
+            "@type": "Wall",
+            "shape": "polytope:polygon-room_c022-wall-2"
+        },
+        {
+            "@id": "floorplan:space-room_c022-wall-3",
+            "@type": "Wall",
+            "shape": "polytope:polygon-room_c022-wall-3"
+        },
+        {
+            "@id": "floorplan:space-room_c022",
+            "@type": "Space",
+            "walls": [
+                "floorplan:space-room_c022-wall-0",
+                "floorplan:space-room_c022-wall-1",
+                "floorplan:space-room_c022-wall-2",
+                "floorplan:space-room_c022-wall-3"
+            ],
+            "feature": [],
+            "shape": "polytope:polygon-room_c022"
+        },
+        {
+            "@id": "floorplan:space-room_c025-wall-0",
+            "@type": "Wall",
+            "shape": "polytope:polygon-room_c025-wall-0"
+        },
+        {
+            "@id": "floorplan:space-room_c025-wall-1",
+            "@type": "Wall",
+            "shape": "polytope:polygon-room_c025-wall-1"
+        },
+        {
+            "@id": "floorplan:space-room_c025-wall-2",
+            "@type": "Wall",
+            "shape": "polytope:polygon-room_c025-wall-2"
+        },
+        {
+            "@id": "floorplan:space-room_c025-wall-3",
+            "@type": "Wall",
+            "shape": "polytope:polygon-room_c025-wall-3"
+        },
+        {
+            "@id": "floorplan:space-room_c025",
+            "@type": "Space",
+            "walls": [
+                "floorplan:space-room_c025-wall-0",
+                "floorplan:space-room_c025-wall-1",
+                "floorplan:space-room_c025-wall-2",
+                "floorplan:space-room_c025-wall-3"
+            ],
+            "feature": [],
+            "shape": "polytope:polygon-room_c025"
+        },
+        {
+            "@id": "floorplan:hbrs",
+            "@type": "FloorPlan",
+            "spaces": [
+                "floorplan:space-corridor_1",
+                "floorplan:space-room_c022",
+                "floorplan:space-room_c025"
+            ]
+        }
+    ]
+}

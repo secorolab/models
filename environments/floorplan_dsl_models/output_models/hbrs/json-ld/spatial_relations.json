@@ -1,0 +1,460 @@
+{
+    "@context": [
+        {
+            "geor": "https://comp-rob2b.github.io/metamodels/geometry/spatial-relations#"
+        },
+        "https://comp-rob2b.github.io/metamodels/geometry/spatial-relations.json"
+    ],
+    "@graph": [
+        {
+            "@id": "geor:pose-frame-center-corridor_1-to-world-frame",
+            "@type": "Pose",
+            "of": "geom:frame-center-corridor_1",
+            "with-respect-to": "geom:world-frame"
+        },
+        {
+            "@id": "geor:position-point-0-to-corridor_1-frame",
+            "@type": "Position",
+            "of": "geom:point-shape-corridor_1-0",
+            "with-respect-to": "geom:point-center-corridor_1"
+        },
+        {
+            "@id": "geor:position-point-1-to-corridor_1-frame",
+            "@type": "Position",
+            "of": "geom:point-shape-corridor_1-1",
+            "with-respect-to": "geom:point-center-corridor_1"
+        },
+        {
+            "@id": "geor:position-point-2-to-corridor_1-frame",
+            "@type": "Position",
+            "of": "geom:point-shape-corridor_1-2",
+            "with-respect-to": "geom:point-center-corridor_1"
+        },
+        {
+            "@id": "geor:position-point-3-to-corridor_1-frame",
+            "@type": "Position",
+            "of": "geom:point-shape-corridor_1-3",
+            "with-respect-to": "geom:point-center-corridor_1"
+        },
+        {
+            "@id": "geor:pose-of-wall-0-frame-to-corridor_1-frame",
+            "@type": "Pose",
+            "of": "geom:frame-corridor_1-wall-0",
+            "with-respect-to": "geom:frame-center-corridor_1"
+        },
+        {
+            "@id": "geor:position-corner-0-to-corridor_1-wall-0-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-corridor_1-wall-0-0",
+            "with-respect-to": "geom:frame-corridor_1-wall-0"
+        },
+        {
+            "@id": "geor:position-corner-1-to-corridor_1-wall-0-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-corridor_1-wall-0-1",
+            "with-respect-to": "geom:frame-corridor_1-wall-0"
+        },
+        {
+            "@id": "geor:position-corner-2-to-corridor_1-wall-0-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-corridor_1-wall-0-2",
+            "with-respect-to": "geom:frame-corridor_1-wall-0"
+        },
+        {
+            "@id": "geor:position-corner-3-to-corridor_1-wall-0-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-corridor_1-wall-0-3",
+            "with-respect-to": "geom:frame-corridor_1-wall-0"
+        },
+        {
+            "@id": "geor:pose-of-wall-1-frame-to-corridor_1-frame",
+            "@type": "Pose",
+            "of": "geom:frame-corridor_1-wall-1",
+            "with-respect-to": "geom:frame-center-corridor_1"
+        },
+        {
+            "@id": "geor:position-corner-0-to-corridor_1-wall-1-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-corridor_1-wall-1-0",
+            "with-respect-to": "geom:frame-corridor_1-wall-1"
+        },
+        {
+            "@id": "geor:position-corner-1-to-corridor_1-wall-1-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-corridor_1-wall-1-1",
+            "with-respect-to": "geom:frame-corridor_1-wall-1"
+        },
+        {
+            "@id": "geor:position-corner-2-to-corridor_1-wall-1-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-corridor_1-wall-1-2",
+            "with-respect-to": "geom:frame-corridor_1-wall-1"
+        },
+        {
+            "@id": "geor:position-corner-3-to-corridor_1-wall-1-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-corridor_1-wall-1-3",
+            "with-respect-to": "geom:frame-corridor_1-wall-1"
+        },
+        {
+            "@id": "geor:pose-of-wall-2-frame-to-corridor_1-frame",
+            "@type": "Pose",
+            "of": "geom:frame-corridor_1-wall-2",
+            "with-respect-to": "geom:frame-center-corridor_1"
+        },
+        {
+            "@id": "geor:position-corner-0-to-corridor_1-wall-2-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-corridor_1-wall-2-0",
+            "with-respect-to": "geom:frame-corridor_1-wall-2"
+        },
+        {
+            "@id": "geor:position-corner-1-to-corridor_1-wall-2-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-corridor_1-wall-2-1",
+            "with-respect-to": "geom:frame-corridor_1-wall-2"
+        },
+        {
+            "@id": "geor:position-corner-2-to-corridor_1-wall-2-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-corridor_1-wall-2-2",
+            "with-respect-to": "geom:frame-corridor_1-wall-2"
+        },
+        {
+            "@id": "geor:position-corner-3-to-corridor_1-wall-2-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-corridor_1-wall-2-3",
+            "with-respect-to": "geom:frame-corridor_1-wall-2"
+        },
+        {
+            "@id": "geor:pose-of-wall-3-frame-to-corridor_1-frame",
+            "@type": "Pose",
+            "of": "geom:frame-corridor_1-wall-3",
+            "with-respect-to": "geom:frame-center-corridor_1"
+        },
+        {
+            "@id": "geor:position-corner-0-to-corridor_1-wall-3-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-corridor_1-wall-3-0",
+            "with-respect-to": "geom:frame-corridor_1-wall-3"
+        },
+        {
+            "@id": "geor:position-corner-1-to-corridor_1-wall-3-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-corridor_1-wall-3-1",
+            "with-respect-to": "geom:frame-corridor_1-wall-3"
+        },
+        {
+            "@id": "geor:position-corner-2-to-corridor_1-wall-3-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-corridor_1-wall-3-2",
+            "with-respect-to": "geom:frame-corridor_1-wall-3"
+        },
+        {
+            "@id": "geor:position-corner-3-to-corridor_1-wall-3-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-corridor_1-wall-3-3",
+            "with-respect-to": "geom:frame-corridor_1-wall-3"
+        },
+        {
+            "@id": "geor:pose-frame-room_c022-wall-0-to-frame-corridor_1-wall-3",
+            "@type": "Pose",
+            "of": "geom:frame-room_c022-wall-0",
+            "with-respect-to": "geom:frame-corridor_1-wall-3"
+        },
+        {
+            "@id": "geor:position-point-0-to-room_c022-frame",
+            "@type": "Position",
+            "of": "geom:point-shape-room_c022-0",
+            "with-respect-to": "geom:point-center-room_c022"
+        },
+        {
+            "@id": "geor:position-point-1-to-room_c022-frame",
+            "@type": "Position",
+            "of": "geom:point-shape-room_c022-1",
+            "with-respect-to": "geom:point-center-room_c022"
+        },
+        {
+            "@id": "geor:position-point-2-to-room_c022-frame",
+            "@type": "Position",
+            "of": "geom:point-shape-room_c022-2",
+            "with-respect-to": "geom:point-center-room_c022"
+        },
+        {
+            "@id": "geor:position-point-3-to-room_c022-frame",
+            "@type": "Position",
+            "of": "geom:point-shape-room_c022-3",
+            "with-respect-to": "geom:point-center-room_c022"
+        },
+        {
+            "@id": "geor:pose-of-wall-0-frame-to-room_c022-frame",
+            "@type": "Pose",
+            "of": "geom:frame-room_c022-wall-0",
+            "with-respect-to": "geom:frame-center-room_c022"
+        },
+        {
+            "@id": "geor:position-corner-0-to-room_c022-wall-0-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-room_c022-wall-0-0",
+            "with-respect-to": "geom:frame-room_c022-wall-0"
+        },
+        {
+            "@id": "geor:position-corner-1-to-room_c022-wall-0-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-room_c022-wall-0-1",
+            "with-respect-to": "geom:frame-room_c022-wall-0"
+        },
+        {
+            "@id": "geor:position-corner-2-to-room_c022-wall-0-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-room_c022-wall-0-2",
+            "with-respect-to": "geom:frame-room_c022-wall-0"
+        },
+        {
+            "@id": "geor:position-corner-3-to-room_c022-wall-0-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-room_c022-wall-0-3",
+            "with-respect-to": "geom:frame-room_c022-wall-0"
+        },
+        {
+            "@id": "geor:pose-of-wall-1-frame-to-room_c022-frame",
+            "@type": "Pose",
+            "of": "geom:frame-room_c022-wall-1",
+            "with-respect-to": "geom:frame-center-room_c022"
+        },
+        {
+            "@id": "geor:position-corner-0-to-room_c022-wall-1-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-room_c022-wall-1-0",
+            "with-respect-to": "geom:frame-room_c022-wall-1"
+        },
+        {
+            "@id": "geor:position-corner-1-to-room_c022-wall-1-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-room_c022-wall-1-1",
+            "with-respect-to": "geom:frame-room_c022-wall-1"
+        },
+        {
+            "@id": "geor:position-corner-2-to-room_c022-wall-1-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-room_c022-wall-1-2",
+            "with-respect-to": "geom:frame-room_c022-wall-1"
+        },
+        {
+            "@id": "geor:position-corner-3-to-room_c022-wall-1-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-room_c022-wall-1-3",
+            "with-respect-to": "geom:frame-room_c022-wall-1"
+        },
+        {
+            "@id": "geor:pose-of-wall-2-frame-to-room_c022-frame",
+            "@type": "Pose",
+            "of": "geom:frame-room_c022-wall-2",
+            "with-respect-to": "geom:frame-center-room_c022"
+        },
+        {
+            "@id": "geor:position-corner-0-to-room_c022-wall-2-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-room_c022-wall-2-0",
+            "with-respect-to": "geom:frame-room_c022-wall-2"
+        },
+        {
+            "@id": "geor:position-corner-1-to-room_c022-wall-2-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-room_c022-wall-2-1",
+            "with-respect-to": "geom:frame-room_c022-wall-2"
+        },
+        {
+            "@id": "geor:position-corner-2-to-room_c022-wall-2-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-room_c022-wall-2-2",
+            "with-respect-to": "geom:frame-room_c022-wall-2"
+        },
+        {
+            "@id": "geor:position-corner-3-to-room_c022-wall-2-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-room_c022-wall-2-3",
+            "with-respect-to": "geom:frame-room_c022-wall-2"
+        },
+        {
+            "@id": "geor:pose-of-wall-3-frame-to-room_c022-frame",
+            "@type": "Pose",
+            "of": "geom:frame-room_c022-wall-3",
+            "with-respect-to": "geom:frame-center-room_c022"
+        },
+        {
+            "@id": "geor:position-corner-0-to-room_c022-wall-3-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-room_c022-wall-3-0",
+            "with-respect-to": "geom:frame-room_c022-wall-3"
+        },
+        {
+            "@id": "geor:position-corner-1-to-room_c022-wall-3-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-room_c022-wall-3-1",
+            "with-respect-to": "geom:frame-room_c022-wall-3"
+        },
+        {
+            "@id": "geor:position-corner-2-to-room_c022-wall-3-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-room_c022-wall-3-2",
+            "with-respect-to": "geom:frame-room_c022-wall-3"
+        },
+        {
+            "@id": "geor:position-corner-3-to-room_c022-wall-3-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-room_c022-wall-3-3",
+            "with-respect-to": "geom:frame-room_c022-wall-3"
+        },
+        {
+            "@id": "geor:pose-frame-room_c025-wall-0-to-frame-corridor_1-wall-1",
+            "@type": "Pose",
+            "of": "geom:frame-room_c025-wall-0",
+            "with-respect-to": "geom:frame-corridor_1-wall-1"
+        },
+        {
+            "@id": "geor:position-point-0-to-room_c025-frame",
+            "@type": "Position",
+            "of": "geom:point-shape-room_c025-0",
+            "with-respect-to": "geom:point-center-room_c025"
+        },
+        {
+            "@id": "geor:position-point-1-to-room_c025-frame",
+            "@type": "Position",
+            "of": "geom:point-shape-room_c025-1",
+            "with-respect-to": "geom:point-center-room_c025"
+        },
+        {
+            "@id": "geor:position-point-2-to-room_c025-frame",
+            "@type": "Position",
+            "of": "geom:point-shape-room_c025-2",
+            "with-respect-to": "geom:point-center-room_c025"
+        },
+        {
+            "@id": "geor:position-point-3-to-room_c025-frame",
+            "@type": "Position",
+            "of": "geom:point-shape-room_c025-3",
+            "with-respect-to": "geom:point-center-room_c025"
+        },
+        {
+            "@id": "geor:pose-of-wall-0-frame-to-room_c025-frame",
+            "@type": "Pose",
+            "of": "geom:frame-room_c025-wall-0",
+            "with-respect-to": "geom:frame-center-room_c025"
+        },
+        {
+            "@id": "geor:position-corner-0-to-room_c025-wall-0-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-room_c025-wall-0-0",
+            "with-respect-to": "geom:frame-room_c025-wall-0"
+        },
+        {
+            "@id": "geor:position-corner-1-to-room_c025-wall-0-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-room_c025-wall-0-1",
+            "with-respect-to": "geom:frame-room_c025-wall-0"
+        },
+        {
+            "@id": "geor:position-corner-2-to-room_c025-wall-0-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-room_c025-wall-0-2",
+            "with-respect-to": "geom:frame-room_c025-wall-0"
+        },
+        {
+            "@id": "geor:position-corner-3-to-room_c025-wall-0-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-room_c025-wall-0-3",
+            "with-respect-to": "geom:frame-room_c025-wall-0"
+        },
+        {
+            "@id": "geor:pose-of-wall-1-frame-to-room_c025-frame",
+            "@type": "Pose",
+            "of": "geom:frame-room_c025-wall-1",
+            "with-respect-to": "geom:frame-center-room_c025"
+        },
+        {
+            "@id": "geor:position-corner-0-to-room_c025-wall-1-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-room_c025-wall-1-0",
+            "with-respect-to": "geom:frame-room_c025-wall-1"
+        },
+        {
+            "@id": "geor:position-corner-1-to-room_c025-wall-1-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-room_c025-wall-1-1",
+            "with-respect-to": "geom:frame-room_c025-wall-1"
+        },
+        {
+            "@id": "geor:position-corner-2-to-room_c025-wall-1-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-room_c025-wall-1-2",
+            "with-respect-to": "geom:frame-room_c025-wall-1"
+        },
+        {
+            "@id": "geor:position-corner-3-to-room_c025-wall-1-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-room_c025-wall-1-3",
+            "with-respect-to": "geom:frame-room_c025-wall-1"
+        },
+        {
+            "@id": "geor:pose-of-wall-2-frame-to-room_c025-frame",
+            "@type": "Pose",
+            "of": "geom:frame-room_c025-wall-2",
+            "with-respect-to": "geom:frame-center-room_c025"
+        },
+        {
+            "@id": "geor:position-corner-0-to-room_c025-wall-2-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-room_c025-wall-2-0",
+            "with-respect-to": "geom:frame-room_c025-wall-2"
+        },
+        {
+            "@id": "geor:position-corner-1-to-room_c025-wall-2-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-room_c025-wall-2-1",
+            "with-respect-to": "geom:frame-room_c025-wall-2"
+        },
+        {
+            "@id": "geor:position-corner-2-to-room_c025-wall-2-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-room_c025-wall-2-2",
+            "with-respect-to": "geom:frame-room_c025-wall-2"
+        },
+        {
+            "@id": "geor:position-corner-3-to-room_c025-wall-2-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-room_c025-wall-2-3",
+            "with-respect-to": "geom:frame-room_c025-wall-2"
+        },
+        {
+            "@id": "geor:pose-of-wall-3-frame-to-room_c025-frame",
+            "@type": "Pose",
+            "of": "geom:frame-room_c025-wall-3",
+            "with-respect-to": "geom:frame-center-room_c025"
+        },
+        {
+            "@id": "geor:position-corner-0-to-room_c025-wall-3-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-room_c025-wall-3-0",
+            "with-respect-to": "geom:frame-room_c025-wall-3"
+        },
+        {
+            "@id": "geor:position-corner-1-to-room_c025-wall-3-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-room_c025-wall-3-1",
+            "with-respect-to": "geom:frame-room_c025-wall-3"
+        },
+        {
+            "@id": "geor:position-corner-2-to-room_c025-wall-3-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-room_c025-wall-3-2",
+            "with-respect-to": "geom:frame-room_c025-wall-3"
+        },
+        {
+            "@id": "geor:position-corner-3-to-room_c025-wall-3-frame",
+            "@type": "Position",
+            "of": "geom:point-corner-room_c025-wall-3-3",
+            "with-respect-to": "geom:frame-room_c025-wall-3"
+        }
+    ]
+}

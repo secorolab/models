@@ -1,0 +1,1108 @@
+{
+    "@context": [
+        {
+            "coord": "https://comp-rob2b.github.io/metamodels/geometry/coordinates#",
+            "coordinate": "https://hbrs-sesame.github.io/metamodels/coordinates#"
+        },
+        "https://comp-rob2b.github.io/metamodels/qudt.json",
+        "https://comp-rob2b.github.io/metamodels/geometry/coordinates.json",
+        "https://hbrs-sesame.github.io/metamodels/geometry/coordinate-extension.json"
+    ],
+    "@graph": [
+        {
+            "@id": "coord:coord-pose-frame-center-corridor_1-to-world-frame",
+            "@type": [
+                "PoseReference",
+                "PoseCoordinate",
+                "VectorXY"
+            ],
+            "of-pose": "geor:pose-frame-center-corridor_1-to-world-frame",
+            "as-seen-by": "world-frame",
+            "unit": [
+                "M",
+                "degrees"
+            ],
+            "theta": 0.0,
+            "x": 0.0,
+            "y": 0.0
+        },
+        {
+            "@id": "coord:coord-position-point-0-to-corridor_1-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-point-0-to-corridor_1-frame",
+            "with-respect-to": "geom:point-center-corridor_1",
+            "as-seen-by": "geom:frame-center-corridor_1",
+            "unit": "M",
+            "x": -1.75,
+            "y": 5.0
+        },
+        {
+            "@id": "coord:coord-position-point-1-to-corridor_1-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-point-1-to-corridor_1-frame",
+            "with-respect-to": "geom:point-center-corridor_1",
+            "as-seen-by": "geom:frame-center-corridor_1",
+            "unit": "M",
+            "x": 1.75,
+            "y": 5.0
+        },
+        {
+            "@id": "coord:coord-position-point-2-to-corridor_1-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-point-2-to-corridor_1-frame",
+            "with-respect-to": "geom:point-center-corridor_1",
+            "as-seen-by": "geom:frame-center-corridor_1",
+            "unit": "M",
+            "x": 1.75,
+            "y": -5.0
+        },
+        {
+            "@id": "coord:coord-position-point-3-to-corridor_1-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-point-3-to-corridor_1-frame",
+            "with-respect-to": "geom:point-center-corridor_1",
+            "as-seen-by": "geom:frame-center-corridor_1",
+            "unit": "M",
+            "x": -1.75,
+            "y": -5.0
+        },
+        {
+            "@id": "coord:coord-pose-of-wall-0-frame-to-corridor_1-frame",
+            "@type": [
+                "PoseReference",
+                "PoseCoordinate",
+                "VectorXY"
+            ],
+            "of-pose": "geor:pose-of-wall-0-frame-to-corridor_1-frame",
+            "as-seen-by": "geom:frame-center-corridor_1",
+            "unit": [
+                "M",
+                "degrees"
+            ],
+            "theta": 0.0,
+            "x": 0.0,
+            "y": 5.0
+        },
+        {
+            "@id": "coord:coord-position-corner-0-to-corridor_1-wall-0-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-0-to-corridor_1-wall-0-frame",
+            "with-respect-to": "geom:point-frame-corridor_1-wall-0",
+            "as-seen-by": "geom:frame-corridor_1-wall-0",
+            "unit": "M",
+            "x": -1.95,
+            "y": 5.2
+        },
+        {
+            "@id": "coord:coord-position-corner-1-to-corridor_1-wall-0-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-1-to-corridor_1-wall-0-frame",
+            "with-respect-to": "geom:point-frame-corridor_1-wall-0",
+            "as-seen-by": "geom:frame-corridor_1-wall-0",
+            "unit": "M",
+            "x": 1.95,
+            "y": 5.2
+        },
+        {
+            "@id": "coord:coord-position-corner-2-to-corridor_1-wall-0-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-2-to-corridor_1-wall-0-frame",
+            "with-respect-to": "geom:point-frame-corridor_1-wall-0",
+            "as-seen-by": "geom:frame-corridor_1-wall-0",
+            "unit": "M",
+            "x": 1.75,
+            "y": 5.0
+        },
+        {
+            "@id": "coord:coord-position-corner-3-to-corridor_1-wall-0-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-3-to-corridor_1-wall-0-frame",
+            "with-respect-to": "geom:point-frame-corridor_1-wall-0",
+            "as-seen-by": "geom:frame-corridor_1-wall-0",
+            "unit": "M",
+            "x": -1.75,
+            "y": 5.0
+        },
+        {
+            "@id": "coord:coord-pose-of-wall-1-frame-to-corridor_1-frame",
+            "@type": [
+                "PoseReference",
+                "PoseCoordinate",
+                "VectorXY"
+            ],
+            "of-pose": "geor:pose-of-wall-1-frame-to-corridor_1-frame",
+            "as-seen-by": "geom:frame-center-corridor_1",
+            "unit": [
+                "M",
+                "degrees"
+            ],
+            "theta": -90.0,
+            "x": 1.75,
+            "y": 0.0
+        },
+        {
+            "@id": "coord:coord-position-corner-0-to-corridor_1-wall-1-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-0-to-corridor_1-wall-1-frame",
+            "with-respect-to": "geom:point-frame-corridor_1-wall-1",
+            "as-seen-by": "geom:frame-corridor_1-wall-1",
+            "unit": "M",
+            "x": 1.95,
+            "y": 5.2
+        },
+        {
+            "@id": "coord:coord-position-corner-1-to-corridor_1-wall-1-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-1-to-corridor_1-wall-1-frame",
+            "with-respect-to": "geom:point-frame-corridor_1-wall-1",
+            "as-seen-by": "geom:frame-corridor_1-wall-1",
+            "unit": "M",
+            "x": 1.95,
+            "y": -5.2
+        },
+        {
+            "@id": "coord:coord-position-corner-2-to-corridor_1-wall-1-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-2-to-corridor_1-wall-1-frame",
+            "with-respect-to": "geom:point-frame-corridor_1-wall-1",
+            "as-seen-by": "geom:frame-corridor_1-wall-1",
+            "unit": "M",
+            "x": 1.75,
+            "y": -5.0
+        },
+        {
+            "@id": "coord:coord-position-corner-3-to-corridor_1-wall-1-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-3-to-corridor_1-wall-1-frame",
+            "with-respect-to": "geom:point-frame-corridor_1-wall-1",
+            "as-seen-by": "geom:frame-corridor_1-wall-1",
+            "unit": "M",
+            "x": 1.75,
+            "y": 5.0
+        },
+        {
+            "@id": "coord:coord-pose-of-wall-2-frame-to-corridor_1-frame",
+            "@type": [
+                "PoseReference",
+                "PoseCoordinate",
+                "VectorXY"
+            ],
+            "of-pose": "geor:pose-of-wall-2-frame-to-corridor_1-frame",
+            "as-seen-by": "geom:frame-center-corridor_1",
+            "unit": [
+                "M",
+                "degrees"
+            ],
+            "theta": 180.0,
+            "x": 0.0,
+            "y": -5.0
+        },
+        {
+            "@id": "coord:coord-position-corner-0-to-corridor_1-wall-2-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-0-to-corridor_1-wall-2-frame",
+            "with-respect-to": "geom:point-frame-corridor_1-wall-2",
+            "as-seen-by": "geom:frame-corridor_1-wall-2",
+            "unit": "M",
+            "x": 1.95,
+            "y": -5.2
+        },
+        {
+            "@id": "coord:coord-position-corner-1-to-corridor_1-wall-2-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-1-to-corridor_1-wall-2-frame",
+            "with-respect-to": "geom:point-frame-corridor_1-wall-2",
+            "as-seen-by": "geom:frame-corridor_1-wall-2",
+            "unit": "M",
+            "x": -1.95,
+            "y": -5.2
+        },
+        {
+            "@id": "coord:coord-position-corner-2-to-corridor_1-wall-2-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-2-to-corridor_1-wall-2-frame",
+            "with-respect-to": "geom:point-frame-corridor_1-wall-2",
+            "as-seen-by": "geom:frame-corridor_1-wall-2",
+            "unit": "M",
+            "x": -1.75,
+            "y": -5.0
+        },
+        {
+            "@id": "coord:coord-position-corner-3-to-corridor_1-wall-2-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-3-to-corridor_1-wall-2-frame",
+            "with-respect-to": "geom:point-frame-corridor_1-wall-2",
+            "as-seen-by": "geom:frame-corridor_1-wall-2",
+            "unit": "M",
+            "x": 1.75,
+            "y": -5.0
+        },
+        {
+            "@id": "coord:coord-pose-of-wall-3-frame-to-corridor_1-frame",
+            "@type": [
+                "PoseReference",
+                "PoseCoordinate",
+                "VectorXY"
+            ],
+            "of-pose": "geor:pose-of-wall-3-frame-to-corridor_1-frame",
+            "as-seen-by": "geom:frame-center-corridor_1",
+            "unit": [
+                "M",
+                "degrees"
+            ],
+            "theta": 90.0,
+            "x": -1.75,
+            "y": 0.0
+        },
+        {
+            "@id": "coord:coord-position-corner-0-to-corridor_1-wall-3-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-0-to-corridor_1-wall-3-frame",
+            "with-respect-to": "geom:point-frame-corridor_1-wall-3",
+            "as-seen-by": "geom:frame-corridor_1-wall-3",
+            "unit": "M",
+            "x": -1.95,
+            "y": -5.2
+        },
+        {
+            "@id": "coord:coord-position-corner-1-to-corridor_1-wall-3-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-1-to-corridor_1-wall-3-frame",
+            "with-respect-to": "geom:point-frame-corridor_1-wall-3",
+            "as-seen-by": "geom:frame-corridor_1-wall-3",
+            "unit": "M",
+            "x": -1.95,
+            "y": 5.2
+        },
+        {
+            "@id": "coord:coord-position-corner-2-to-corridor_1-wall-3-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-2-to-corridor_1-wall-3-frame",
+            "with-respect-to": "geom:point-frame-corridor_1-wall-3",
+            "as-seen-by": "geom:frame-corridor_1-wall-3",
+            "unit": "M",
+            "x": -1.75,
+            "y": 5.0
+        },
+        {
+            "@id": "coord:coord-position-corner-3-to-corridor_1-wall-3-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-3-to-corridor_1-wall-3-frame",
+            "with-respect-to": "geom:point-frame-corridor_1-wall-3",
+            "as-seen-by": "geom:frame-corridor_1-wall-3",
+            "unit": "M",
+            "x": -1.75,
+            "y": -5.0
+        },
+        {
+            "@id": "coord:coord-pose-frame-room_c022-wall-0-to-frame-corridor_1-wall-3",
+            "@type": [
+                "PoseReference",
+                "PoseCoordinate",
+                "VectorXY"
+            ],
+            "of-pose": "geor:pose-frame-room_c022-wall-0-to-frame-corridor_1-wall-3",
+            "as-seen-by": "frame-corridor_1-wall-3",
+            "unit": [
+                "M",
+                "degrees"
+            ],
+            "theta": 180.0,
+            "x": 0.5,
+            "y": 0.7
+        },
+        {
+            "@id": "coord:coord-position-point-0-to-room_c022-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-point-0-to-room_c022-frame",
+            "with-respect-to": "geom:point-center-room_c022",
+            "as-seen-by": "geom:frame-center-room_c022",
+            "unit": "M",
+            "x": -1.75,
+            "y": 2.5
+        },
+        {
+            "@id": "coord:coord-position-point-1-to-room_c022-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-point-1-to-room_c022-frame",
+            "with-respect-to": "geom:point-center-room_c022",
+            "as-seen-by": "geom:frame-center-room_c022",
+            "unit": "M",
+            "x": 1.75,
+            "y": 2.5
+        },
+        {
+            "@id": "coord:coord-position-point-2-to-room_c022-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-point-2-to-room_c022-frame",
+            "with-respect-to": "geom:point-center-room_c022",
+            "as-seen-by": "geom:frame-center-room_c022",
+            "unit": "M",
+            "x": 1.75,
+            "y": -2.5
+        },
+        {
+            "@id": "coord:coord-position-point-3-to-room_c022-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-point-3-to-room_c022-frame",
+            "with-respect-to": "geom:point-center-room_c022",
+            "as-seen-by": "geom:frame-center-room_c022",
+            "unit": "M",
+            "x": -1.75,
+            "y": -2.5
+        },
+        {
+            "@id": "coord:coord-pose-of-wall-0-frame-to-room_c022-frame",
+            "@type": [
+                "PoseReference",
+                "PoseCoordinate",
+                "VectorXY"
+            ],
+            "of-pose": "geor:pose-of-wall-0-frame-to-room_c022-frame",
+            "as-seen-by": "geom:frame-center-room_c022",
+            "unit": [
+                "M",
+                "degrees"
+            ],
+            "theta": 0.0,
+            "x": 0.0,
+            "y": 2.5
+        },
+        {
+            "@id": "coord:coord-position-corner-0-to-room_c022-wall-0-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-0-to-room_c022-wall-0-frame",
+            "with-respect-to": "geom:point-frame-room_c022-wall-0",
+            "as-seen-by": "geom:frame-room_c022-wall-0",
+            "unit": "M",
+            "x": -2.25,
+            "y": 3.0
+        },
+        {
+            "@id": "coord:coord-position-corner-1-to-room_c022-wall-0-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-1-to-room_c022-wall-0-frame",
+            "with-respect-to": "geom:point-frame-room_c022-wall-0",
+            "as-seen-by": "geom:frame-room_c022-wall-0",
+            "unit": "M",
+            "x": 2.25,
+            "y": 3.0
+        },
+        {
+            "@id": "coord:coord-position-corner-2-to-room_c022-wall-0-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-2-to-room_c022-wall-0-frame",
+            "with-respect-to": "geom:point-frame-room_c022-wall-0",
+            "as-seen-by": "geom:frame-room_c022-wall-0",
+            "unit": "M",
+            "x": 1.75,
+            "y": 2.5
+        },
+        {
+            "@id": "coord:coord-position-corner-3-to-room_c022-wall-0-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-3-to-room_c022-wall-0-frame",
+            "with-respect-to": "geom:point-frame-room_c022-wall-0",
+            "as-seen-by": "geom:frame-room_c022-wall-0",
+            "unit": "M",
+            "x": -1.75,
+            "y": 2.5
+        },
+        {
+            "@id": "coord:coord-pose-of-wall-1-frame-to-room_c022-frame",
+            "@type": [
+                "PoseReference",
+                "PoseCoordinate",
+                "VectorXY"
+            ],
+            "of-pose": "geor:pose-of-wall-1-frame-to-room_c022-frame",
+            "as-seen-by": "geom:frame-center-room_c022",
+            "unit": [
+                "M",
+                "degrees"
+            ],
+            "theta": -90.0,
+            "x": 1.75,
+            "y": 0.0
+        },
+        {
+            "@id": "coord:coord-position-corner-0-to-room_c022-wall-1-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-0-to-room_c022-wall-1-frame",
+            "with-respect-to": "geom:point-frame-room_c022-wall-1",
+            "as-seen-by": "geom:frame-room_c022-wall-1",
+            "unit": "M",
+            "x": 2.25,
+            "y": 3.0
+        },
+        {
+            "@id": "coord:coord-position-corner-1-to-room_c022-wall-1-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-1-to-room_c022-wall-1-frame",
+            "with-respect-to": "geom:point-frame-room_c022-wall-1",
+            "as-seen-by": "geom:frame-room_c022-wall-1",
+            "unit": "M",
+            "x": 2.25,
+            "y": -3.0
+        },
+        {
+            "@id": "coord:coord-position-corner-2-to-room_c022-wall-1-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-2-to-room_c022-wall-1-frame",
+            "with-respect-to": "geom:point-frame-room_c022-wall-1",
+            "as-seen-by": "geom:frame-room_c022-wall-1",
+            "unit": "M",
+            "x": 1.75,
+            "y": -2.5
+        },
+        {
+            "@id": "coord:coord-position-corner-3-to-room_c022-wall-1-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-3-to-room_c022-wall-1-frame",
+            "with-respect-to": "geom:point-frame-room_c022-wall-1",
+            "as-seen-by": "geom:frame-room_c022-wall-1",
+            "unit": "M",
+            "x": 1.75,
+            "y": 2.5
+        },
+        {
+            "@id": "coord:coord-pose-of-wall-2-frame-to-room_c022-frame",
+            "@type": [
+                "PoseReference",
+                "PoseCoordinate",
+                "VectorXY"
+            ],
+            "of-pose": "geor:pose-of-wall-2-frame-to-room_c022-frame",
+            "as-seen-by": "geom:frame-center-room_c022",
+            "unit": [
+                "M",
+                "degrees"
+            ],
+            "theta": 180.0,
+            "x": 0.0,
+            "y": -2.5
+        },
+        {
+            "@id": "coord:coord-position-corner-0-to-room_c022-wall-2-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-0-to-room_c022-wall-2-frame",
+            "with-respect-to": "geom:point-frame-room_c022-wall-2",
+            "as-seen-by": "geom:frame-room_c022-wall-2",
+            "unit": "M",
+            "x": 2.25,
+            "y": -3.0
+        },
+        {
+            "@id": "coord:coord-position-corner-1-to-room_c022-wall-2-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-1-to-room_c022-wall-2-frame",
+            "with-respect-to": "geom:point-frame-room_c022-wall-2",
+            "as-seen-by": "geom:frame-room_c022-wall-2",
+            "unit": "M",
+            "x": -2.25,
+            "y": -3.0
+        },
+        {
+            "@id": "coord:coord-position-corner-2-to-room_c022-wall-2-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-2-to-room_c022-wall-2-frame",
+            "with-respect-to": "geom:point-frame-room_c022-wall-2",
+            "as-seen-by": "geom:frame-room_c022-wall-2",
+            "unit": "M",
+            "x": -1.75,
+            "y": -2.5
+        },
+        {
+            "@id": "coord:coord-position-corner-3-to-room_c022-wall-2-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-3-to-room_c022-wall-2-frame",
+            "with-respect-to": "geom:point-frame-room_c022-wall-2",
+            "as-seen-by": "geom:frame-room_c022-wall-2",
+            "unit": "M",
+            "x": 1.75,
+            "y": -2.5
+        },
+        {
+            "@id": "coord:coord-pose-of-wall-3-frame-to-room_c022-frame",
+            "@type": [
+                "PoseReference",
+                "PoseCoordinate",
+                "VectorXY"
+            ],
+            "of-pose": "geor:pose-of-wall-3-frame-to-room_c022-frame",
+            "as-seen-by": "geom:frame-center-room_c022",
+            "unit": [
+                "M",
+                "degrees"
+            ],
+            "theta": 90.0,
+            "x": -1.75,
+            "y": 0.0
+        },
+        {
+            "@id": "coord:coord-position-corner-0-to-room_c022-wall-3-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-0-to-room_c022-wall-3-frame",
+            "with-respect-to": "geom:point-frame-room_c022-wall-3",
+            "as-seen-by": "geom:frame-room_c022-wall-3",
+            "unit": "M",
+            "x": -2.25,
+            "y": -3.0
+        },
+        {
+            "@id": "coord:coord-position-corner-1-to-room_c022-wall-3-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-1-to-room_c022-wall-3-frame",
+            "with-respect-to": "geom:point-frame-room_c022-wall-3",
+            "as-seen-by": "geom:frame-room_c022-wall-3",
+            "unit": "M",
+            "x": -2.25,
+            "y": 3.0
+        },
+        {
+            "@id": "coord:coord-position-corner-2-to-room_c022-wall-3-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-2-to-room_c022-wall-3-frame",
+            "with-respect-to": "geom:point-frame-room_c022-wall-3",
+            "as-seen-by": "geom:frame-room_c022-wall-3",
+            "unit": "M",
+            "x": -1.75,
+            "y": 2.5
+        },
+        {
+            "@id": "coord:coord-position-corner-3-to-room_c022-wall-3-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-3-to-room_c022-wall-3-frame",
+            "with-respect-to": "geom:point-frame-room_c022-wall-3",
+            "as-seen-by": "geom:frame-room_c022-wall-3",
+            "unit": "M",
+            "x": -1.75,
+            "y": -2.5
+        },
+        {
+            "@id": "coord:coord-pose-frame-room_c025-wall-0-to-frame-corridor_1-wall-1",
+            "@type": [
+                "PoseReference",
+                "PoseCoordinate",
+                "VectorXY"
+            ],
+            "of-pose": "geor:pose-frame-room_c025-wall-0-to-frame-corridor_1-wall-1",
+            "as-seen-by": "frame-corridor_1-wall-1",
+            "unit": [
+                "M",
+                "degrees"
+            ],
+            "theta": 180.0,
+            "x": 1.0,
+            "y": 0.2
+        },
+        {
+            "@id": "coord:coord-position-point-0-to-room_c025-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-point-0-to-room_c025-frame",
+            "with-respect-to": "geom:point-center-room_c025",
+            "as-seen-by": "geom:frame-center-room_c025",
+            "unit": "M",
+            "x": -1.75,
+            "y": 2.5
+        },
+        {
+            "@id": "coord:coord-position-point-1-to-room_c025-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-point-1-to-room_c025-frame",
+            "with-respect-to": "geom:point-center-room_c025",
+            "as-seen-by": "geom:frame-center-room_c025",
+            "unit": "M",
+            "x": 1.75,
+            "y": 2.5
+        },
+        {
+            "@id": "coord:coord-position-point-2-to-room_c025-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-point-2-to-room_c025-frame",
+            "with-respect-to": "geom:point-center-room_c025",
+            "as-seen-by": "geom:frame-center-room_c025",
+            "unit": "M",
+            "x": 1.75,
+            "y": -2.5
+        },
+        {
+            "@id": "coord:coord-position-point-3-to-room_c025-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-point-3-to-room_c025-frame",
+            "with-respect-to": "geom:point-center-room_c025",
+            "as-seen-by": "geom:frame-center-room_c025",
+            "unit": "M",
+            "x": -1.75,
+            "y": -2.5
+        },
+        {
+            "@id": "coord:coord-pose-of-wall-0-frame-to-room_c025-frame",
+            "@type": [
+                "PoseReference",
+                "PoseCoordinate",
+                "VectorXY"
+            ],
+            "of-pose": "geor:pose-of-wall-0-frame-to-room_c025-frame",
+            "as-seen-by": "geom:frame-center-room_c025",
+            "unit": [
+                "M",
+                "degrees"
+            ],
+            "theta": 0.0,
+            "x": 0.0,
+            "y": 2.5
+        },
+        {
+            "@id": "coord:coord-position-corner-0-to-room_c025-wall-0-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-0-to-room_c025-wall-0-frame",
+            "with-respect-to": "geom:point-frame-room_c025-wall-0",
+            "as-seen-by": "geom:frame-room_c025-wall-0",
+            "unit": "M",
+            "x": -2.25,
+            "y": 3.0
+        },
+        {
+            "@id": "coord:coord-position-corner-1-to-room_c025-wall-0-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-1-to-room_c025-wall-0-frame",
+            "with-respect-to": "geom:point-frame-room_c025-wall-0",
+            "as-seen-by": "geom:frame-room_c025-wall-0",
+            "unit": "M",
+            "x": 2.25,
+            "y": 3.0
+        },
+        {
+            "@id": "coord:coord-position-corner-2-to-room_c025-wall-0-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-2-to-room_c025-wall-0-frame",
+            "with-respect-to": "geom:point-frame-room_c025-wall-0",
+            "as-seen-by": "geom:frame-room_c025-wall-0",
+            "unit": "M",
+            "x": 1.75,
+            "y": 2.5
+        },
+        {
+            "@id": "coord:coord-position-corner-3-to-room_c025-wall-0-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-3-to-room_c025-wall-0-frame",
+            "with-respect-to": "geom:point-frame-room_c025-wall-0",
+            "as-seen-by": "geom:frame-room_c025-wall-0",
+            "unit": "M",
+            "x": -1.75,
+            "y": 2.5
+        },
+        {
+            "@id": "coord:coord-pose-of-wall-1-frame-to-room_c025-frame",
+            "@type": [
+                "PoseReference",
+                "PoseCoordinate",
+                "VectorXY"
+            ],
+            "of-pose": "geor:pose-of-wall-1-frame-to-room_c025-frame",
+            "as-seen-by": "geom:frame-center-room_c025",
+            "unit": [
+                "M",
+                "degrees"
+            ],
+            "theta": -90.0,
+            "x": 1.75,
+            "y": 0.0
+        },
+        {
+            "@id": "coord:coord-position-corner-0-to-room_c025-wall-1-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-0-to-room_c025-wall-1-frame",
+            "with-respect-to": "geom:point-frame-room_c025-wall-1",
+            "as-seen-by": "geom:frame-room_c025-wall-1",
+            "unit": "M",
+            "x": 2.25,
+            "y": 3.0
+        },
+        {
+            "@id": "coord:coord-position-corner-1-to-room_c025-wall-1-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-1-to-room_c025-wall-1-frame",
+            "with-respect-to": "geom:point-frame-room_c025-wall-1",
+            "as-seen-by": "geom:frame-room_c025-wall-1",
+            "unit": "M",
+            "x": 2.25,
+            "y": -3.0
+        },
+        {
+            "@id": "coord:coord-position-corner-2-to-room_c025-wall-1-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-2-to-room_c025-wall-1-frame",
+            "with-respect-to": "geom:point-frame-room_c025-wall-1",
+            "as-seen-by": "geom:frame-room_c025-wall-1",
+            "unit": "M",
+            "x": 1.75,
+            "y": -2.5
+        },
+        {
+            "@id": "coord:coord-position-corner-3-to-room_c025-wall-1-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-3-to-room_c025-wall-1-frame",
+            "with-respect-to": "geom:point-frame-room_c025-wall-1",
+            "as-seen-by": "geom:frame-room_c025-wall-1",
+            "unit": "M",
+            "x": 1.75,
+            "y": 2.5
+        },
+        {
+            "@id": "coord:coord-pose-of-wall-2-frame-to-room_c025-frame",
+            "@type": [
+                "PoseReference",
+                "PoseCoordinate",
+                "VectorXY"
+            ],
+            "of-pose": "geor:pose-of-wall-2-frame-to-room_c025-frame",
+            "as-seen-by": "geom:frame-center-room_c025",
+            "unit": [
+                "M",
+                "degrees"
+            ],
+            "theta": 180.0,
+            "x": 0.0,
+            "y": -2.5
+        },
+        {
+            "@id": "coord:coord-position-corner-0-to-room_c025-wall-2-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-0-to-room_c025-wall-2-frame",
+            "with-respect-to": "geom:point-frame-room_c025-wall-2",
+            "as-seen-by": "geom:frame-room_c025-wall-2",
+            "unit": "M",
+            "x": 2.25,
+            "y": -3.0
+        },
+        {
+            "@id": "coord:coord-position-corner-1-to-room_c025-wall-2-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-1-to-room_c025-wall-2-frame",
+            "with-respect-to": "geom:point-frame-room_c025-wall-2",
+            "as-seen-by": "geom:frame-room_c025-wall-2",
+            "unit": "M",
+            "x": -2.25,
+            "y": -3.0
+        },
+        {
+            "@id": "coord:coord-position-corner-2-to-room_c025-wall-2-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-2-to-room_c025-wall-2-frame",
+            "with-respect-to": "geom:point-frame-room_c025-wall-2",
+            "as-seen-by": "geom:frame-room_c025-wall-2",
+            "unit": "M",
+            "x": -1.75,
+            "y": -2.5
+        },
+        {
+            "@id": "coord:coord-position-corner-3-to-room_c025-wall-2-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-3-to-room_c025-wall-2-frame",
+            "with-respect-to": "geom:point-frame-room_c025-wall-2",
+            "as-seen-by": "geom:frame-room_c025-wall-2",
+            "unit": "M",
+            "x": 1.75,
+            "y": -2.5
+        },
+        {
+            "@id": "coord:coord-pose-of-wall-3-frame-to-room_c025-frame",
+            "@type": [
+                "PoseReference",
+                "PoseCoordinate",
+                "VectorXY"
+            ],
+            "of-pose": "geor:pose-of-wall-3-frame-to-room_c025-frame",
+            "as-seen-by": "geom:frame-center-room_c025",
+            "unit": [
+                "M",
+                "degrees"
+            ],
+            "theta": 90.0,
+            "x": -1.75,
+            "y": 0.0
+        },
+        {
+            "@id": "coord:coord-position-corner-0-to-room_c025-wall-3-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-0-to-room_c025-wall-3-frame",
+            "with-respect-to": "geom:point-frame-room_c025-wall-3",
+            "as-seen-by": "geom:frame-room_c025-wall-3",
+            "unit": "M",
+            "x": -2.25,
+            "y": -3.0
+        },
+        {
+            "@id": "coord:coord-position-corner-1-to-room_c025-wall-3-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-1-to-room_c025-wall-3-frame",
+            "with-respect-to": "geom:point-frame-room_c025-wall-3",
+            "as-seen-by": "geom:frame-room_c025-wall-3",
+            "unit": "M",
+            "x": -2.25,
+            "y": 3.0
+        },
+        {
+            "@id": "coord:coord-position-corner-2-to-room_c025-wall-3-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-2-to-room_c025-wall-3-frame",
+            "with-respect-to": "geom:point-frame-room_c025-wall-3",
+            "as-seen-by": "geom:frame-room_c025-wall-3",
+            "unit": "M",
+            "x": -1.75,
+            "y": 2.5
+        },
+        {
+            "@id": "coord:coord-position-corner-3-to-room_c025-wall-3-frame",
+            "@type": [
+                "PositionReference",
+                "PositionCoordinate",
+                "VectorXY"
+            ],
+            "of-position": "geor:position-corner-3-to-room_c025-wall-3-frame",
+            "with-respect-to": "geom:point-frame-room_c025-wall-3",
+            "as-seen-by": "geom:frame-room_c025-wall-3",
+            "unit": "M",
+            "x": -1.75,
+            "y": -2.5
+        }
+    ]
+}

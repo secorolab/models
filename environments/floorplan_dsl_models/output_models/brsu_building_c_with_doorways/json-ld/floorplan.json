@@ -1,0 +1,988 @@
+{
+    "@context": [
+        {
+            "floorplan": "https://hbrs-sesame.github.io/metamodels/floorplan#"
+        },
+        "https://hbrs-sesame.github.io/metamodels/floor-plan/floor-plan.json"
+    ],
+    "@graph": [
+        {
+            "@id": "floorplan:space-stairway_room_center-wall-0",
+            "@type": "Wall",
+            "shape": "polytope:polygon-stairway_room_center-wall-0"
+        },
+        {
+            "@id": "floorplan:space-stairway_room_center-wall-1",
+            "@type": "Wall",
+            "shape": "polytope:polygon-stairway_room_center-wall-1"
+        },
+        {
+            "@id": "floorplan:space-stairway_room_center-wall-2",
+            "@type": "Wall",
+            "shape": "polytope:polygon-stairway_room_center-wall-2"
+        },
+        {
+            "@id": "floorplan:space-stairway_room_center-wall-3",
+            "@type": "Wall",
+            "shape": "polytope:polygon-stairway_room_center-wall-3"
+        },
+        {
+            "@id": "floorplan:feature-stairway_room_center-column_1",
+            "@type": "Feature",
+            "shape": "polytope:polygon-stairway_room_center-feature-column_1"
+        },
+        {
+            "@id": "floorplan:feature-stairway_room_center-column_2",
+            "@type": "Feature",
+            "shape": "polytope:polygon-stairway_room_center-feature-column_2"
+        },
+        {
+            "@id": "floorplan:feature-stairway_room_center-column_3",
+            "@type": "Feature",
+            "shape": "polytope:polygon-stairway_room_center-feature-column_3"
+        },
+        {
+            "@id": "floorplan:feature-stairway_room_center-column_4",
+            "@type": "Feature",
+            "shape": "polytope:polygon-stairway_room_center-feature-column_4"
+        },
+        {
+            "@id": "floorplan:space-stairway_room_center",
+            "@type": "Space",
+            "walls": [
+                "floorplan:space-stairway_room_center-wall-0",
+                "floorplan:space-stairway_room_center-wall-1",
+                "floorplan:space-stairway_room_center-wall-2",
+                "floorplan:space-stairway_room_center-wall-3"
+            ],
+            "feature": [
+                "floorplan:feature-stairway_room_center-column_1",
+                "floorplan:feature-stairway_room_center-column_2",
+                "floorplan:feature-stairway_room_center-column_3",
+                "floorplan:feature-stairway_room_center-column_4"
+            ],
+            "shape": "polytope:polygon-stairway_room_center"
+        },
+        {
+            "@id": "floorplan:space-stairway_room_left-wall-0",
+            "@type": "Wall",
+            "shape": "polytope:polygon-stairway_room_left-wall-0"
+        },
+        {
+            "@id": "floorplan:space-stairway_room_left-wall-1",
+            "@type": "Wall",
+            "shape": "polytope:polygon-stairway_room_left-wall-1"
+        },
+        {
+            "@id": "floorplan:space-stairway_room_left-wall-2",
+            "@type": "Wall",
+            "shape": "polytope:polygon-stairway_room_left-wall-2"
+        },
+        {
+            "@id": "floorplan:space-stairway_room_left-wall-3",
+            "@type": "Wall",
+            "shape": "polytope:polygon-stairway_room_left-wall-3"
+        },
+        {
+            "@id": "floorplan:space-stairway_room_left",
+            "@type": "Space",
+            "walls": [
+                "floorplan:space-stairway_room_left-wall-0",
+                "floorplan:space-stairway_room_left-wall-1",
+                "floorplan:space-stairway_room_left-wall-2",
+                "floorplan:space-stairway_room_left-wall-3"
+            ],
+            "feature": [],
+            "shape": "polytope:polygon-stairway_room_left"
+        },
+        {
+            "@id": "floorplan:space-stairway_room_exit-wall-0",
+            "@type": "Wall",
+            "shape": "polytope:polygon-stairway_room_exit-wall-0"
+        },
+        {
+            "@id": "floorplan:space-stairway_room_exit-wall-1",
+            "@type": "Wall",
+            "shape": "polytope:polygon-stairway_room_exit-wall-1"
+        },
+        {
+            "@id": "floorplan:space-stairway_room_exit-wall-2",
+            "@type": "Wall",
+            "shape": "polytope:polygon-stairway_room_exit-wall-2"
+        },
+        {
+            "@id": "floorplan:space-stairway_room_exit-wall-3",
+            "@type": "Wall",
+            "shape": "polytope:polygon-stairway_room_exit-wall-3"
+        },
+        {
+            "@id": "floorplan:space-stairway_room_exit",
+            "@type": "Space",
+            "walls": [
+                "floorplan:space-stairway_room_exit-wall-0",
+                "floorplan:space-stairway_room_exit-wall-1",
+                "floorplan:space-stairway_room_exit-wall-2",
+                "floorplan:space-stairway_room_exit-wall-3"
+            ],
+            "feature": [],
+            "shape": "polytope:polygon-stairway_room_exit"
+        },
+        {
+            "@id": "floorplan:space-left_short_connector-wall-0",
+            "@type": "Wall",
+            "shape": "polytope:polygon-left_short_connector-wall-0"
+        },
+        {
+            "@id": "floorplan:space-left_short_connector-wall-1",
+            "@type": "Wall",
+            "shape": "polytope:polygon-left_short_connector-wall-1"
+        },
+        {
+            "@id": "floorplan:space-left_short_connector-wall-2",
+            "@type": "Wall",
+            "shape": "polytope:polygon-left_short_connector-wall-2"
+        },
+        {
+            "@id": "floorplan:space-left_short_connector-wall-3",
+            "@type": "Wall",
+            "shape": "polytope:polygon-left_short_connector-wall-3"
+        },
+        {
+            "@id": "floorplan:feature-left_short_connector-column_1",
+            "@type": "Feature",
+            "shape": "polytope:polygon-left_short_connector-feature-column_1"
+        },
+        {
+            "@id": "floorplan:feature-left_short_connector-column_2",
+            "@type": "Feature",
+            "shape": "polytope:polygon-left_short_connector-feature-column_2"
+        },
+        {
+            "@id": "floorplan:space-left_short_connector",
+            "@type": "Space",
+            "walls": [
+                "floorplan:space-left_short_connector-wall-0",
+                "floorplan:space-left_short_connector-wall-1",
+                "floorplan:space-left_short_connector-wall-2",
+                "floorplan:space-left_short_connector-wall-3"
+            ],
+            "feature": [
+                "floorplan:feature-left_short_connector-column_1",
+                "floorplan:feature-left_short_connector-column_2"
+            ],
+            "shape": "polytope:polygon-left_short_connector"
+        },
+        {
+            "@id": "floorplan:space-study_nook_left-wall-0",
+            "@type": "Wall",
+            "shape": "polytope:polygon-study_nook_left-wall-0"
+        },
+        {
+            "@id": "floorplan:space-study_nook_left-wall-1",
+            "@type": "Wall",
+            "shape": "polytope:polygon-study_nook_left-wall-1"
+        },
+        {
+            "@id": "floorplan:space-study_nook_left-wall-2",
+            "@type": "Wall",
+            "shape": "polytope:polygon-study_nook_left-wall-2"
+        },
+        {
+            "@id": "floorplan:space-study_nook_left-wall-3",
+            "@type": "Wall",
+            "shape": "polytope:polygon-study_nook_left-wall-3"
+        },
+        {
+            "@id": "floorplan:space-study_nook_left",
+            "@type": "Space",
+            "walls": [
+                "floorplan:space-study_nook_left-wall-0",
+                "floorplan:space-study_nook_left-wall-1",
+                "floorplan:space-study_nook_left-wall-2",
+                "floorplan:space-study_nook_left-wall-3"
+            ],
+            "feature": [],
+            "shape": "polytope:polygon-study_nook_left"
+        },
+        {
+            "@id": "floorplan:space-left_long_corridor-wall-0",
+            "@type": "Wall",
+            "shape": "polytope:polygon-left_long_corridor-wall-0"
+        },
+        {
+            "@id": "floorplan:space-left_long_corridor-wall-1",
+            "@type": "Wall",
+            "shape": "polytope:polygon-left_long_corridor-wall-1"
+        },
+        {
+            "@id": "floorplan:space-left_long_corridor-wall-2",
+            "@type": "Wall",
+            "shape": "polytope:polygon-left_long_corridor-wall-2"
+        },
+        {
+            "@id": "floorplan:space-left_long_corridor-wall-3",
+            "@type": "Wall",
+            "shape": "polytope:polygon-left_long_corridor-wall-3"
+        },
+        {
+            "@id": "floorplan:feature-left_long_corridor-column_1",
+            "@type": "Feature",
+            "shape": "polytope:polygon-left_long_corridor-feature-column_1"
+        },
+        {
+            "@id": "floorplan:feature-left_long_corridor-column_2",
+            "@type": "Feature",
+            "shape": "polytope:polygon-left_long_corridor-feature-column_2"
+        },
+        {
+            "@id": "floorplan:feature-left_long_corridor-column_3",
+            "@type": "Feature",
+            "shape": "polytope:polygon-left_long_corridor-feature-column_3"
+        },
+        {
+            "@id": "floorplan:feature-left_long_corridor-column_4",
+            "@type": "Feature",
+            "shape": "polytope:polygon-left_long_corridor-feature-column_4"
+        },
+        {
+            "@id": "floorplan:feature-left_long_corridor-column_5",
+            "@type": "Feature",
+            "shape": "polytope:polygon-left_long_corridor-feature-column_5"
+        },
+        {
+            "@id": "floorplan:feature-left_long_corridor-column_6",
+            "@type": "Feature",
+            "shape": "polytope:polygon-left_long_corridor-feature-column_6"
+        },
+        {
+            "@id": "floorplan:feature-left_long_corridor-column_7",
+            "@type": "Feature",
+            "shape": "polytope:polygon-left_long_corridor-feature-column_7"
+        },
+        {
+            "@id": "floorplan:feature-left_long_corridor-column_8",
+            "@type": "Feature",
+            "shape": "polytope:polygon-left_long_corridor-feature-column_8"
+        },
+        {
+            "@id": "floorplan:feature-left_long_corridor-column_9",
+            "@type": "Feature",
+            "shape": "polytope:polygon-left_long_corridor-feature-column_9"
+        },
+        {
+            "@id": "floorplan:feature-left_long_corridor-column_10",
+            "@type": "Feature",
+            "shape": "polytope:polygon-left_long_corridor-feature-column_10"
+        },
+        {
+            "@id": "floorplan:feature-left_long_corridor-column_11",
+            "@type": "Feature",
+            "shape": "polytope:polygon-left_long_corridor-feature-column_11"
+        },
+        {
+            "@id": "floorplan:feature-left_long_corridor-column_12",
+            "@type": "Feature",
+            "shape": "polytope:polygon-left_long_corridor-feature-column_12"
+        },
+        {
+            "@id": "floorplan:feature-left_long_corridor-column_13",
+            "@type": "Feature",
+            "shape": "polytope:polygon-left_long_corridor-feature-column_13"
+        },
+        {
+            "@id": "floorplan:feature-left_long_corridor-column_14",
+            "@type": "Feature",
+            "shape": "polytope:polygon-left_long_corridor-feature-column_14"
+        },
+        {
+            "@id": "floorplan:feature-left_long_corridor-column_15",
+            "@type": "Feature",
+            "shape": "polytope:polygon-left_long_corridor-feature-column_15"
+        },
+        {
+            "@id": "floorplan:feature-left_long_corridor-column_16",
+            "@type": "Feature",
+            "shape": "polytope:polygon-left_long_corridor-feature-column_16"
+        },
+        {
+            "@id": "floorplan:feature-left_long_corridor-column_17",
+            "@type": "Feature",
+            "shape": "polytope:polygon-left_long_corridor-feature-column_17"
+        },
+        {
+            "@id": "floorplan:feature-left_long_corridor-column_18",
+            "@type": "Feature",
+            "shape": "polytope:polygon-left_long_corridor-feature-column_18"
+        },
+        {
+            "@id": "floorplan:feature-left_long_corridor-column_19",
+            "@type": "Feature",
+            "shape": "polytope:polygon-left_long_corridor-feature-column_19"
+        },
+        {
+            "@id": "floorplan:feature-left_long_corridor-column_20",
+            "@type": "Feature",
+            "shape": "polytope:polygon-left_long_corridor-feature-column_20"
+        },
+        {
+            "@id": "floorplan:feature-left_long_corridor-trashcan_1",
+            "@type": "Feature",
+            "shape": "polytope:polygon-left_long_corridor-feature-trashcan_1"
+        },
+        {
+            "@id": "floorplan:feature-left_long_corridor-trashcan_2",
+            "@type": "Feature",
+            "shape": "polytope:polygon-left_long_corridor-feature-trashcan_2"
+        },
+        {
+            "@id": "floorplan:space-left_long_corridor",
+            "@type": "Space",
+            "walls": [
+                "floorplan:space-left_long_corridor-wall-0",
+                "floorplan:space-left_long_corridor-wall-1",
+                "floorplan:space-left_long_corridor-wall-2",
+                "floorplan:space-left_long_corridor-wall-3"
+            ],
+            "feature": [
+                "floorplan:feature-left_long_corridor-column_1",
+                "floorplan:feature-left_long_corridor-column_2",
+                "floorplan:feature-left_long_corridor-column_3",
+                "floorplan:feature-left_long_corridor-column_4",
+                "floorplan:feature-left_long_corridor-column_5",
+                "floorplan:feature-left_long_corridor-column_6",
+                "floorplan:feature-left_long_corridor-column_7",
+                "floorplan:feature-left_long_corridor-column_8",
+                "floorplan:feature-left_long_corridor-column_9",
+                "floorplan:feature-left_long_corridor-column_10",
+                "floorplan:feature-left_long_corridor-column_11",
+                "floorplan:feature-left_long_corridor-column_12",
+                "floorplan:feature-left_long_corridor-column_13",
+                "floorplan:feature-left_long_corridor-column_14",
+                "floorplan:feature-left_long_corridor-column_15",
+                "floorplan:feature-left_long_corridor-column_16",
+                "floorplan:feature-left_long_corridor-column_17",
+                "floorplan:feature-left_long_corridor-column_18",
+                "floorplan:feature-left_long_corridor-column_19",
+                "floorplan:feature-left_long_corridor-column_20",
+                "floorplan:feature-left_long_corridor-trashcan_1",
+                "floorplan:feature-left_long_corridor-trashcan_2"
+            ],
+            "shape": "polytope:polygon-left_long_corridor"
+        },
+        {
+            "@id": "floorplan:space-right_short_connector-wall-0",
+            "@type": "Wall",
+            "shape": "polytope:polygon-right_short_connector-wall-0"
+        },
+        {
+            "@id": "floorplan:space-right_short_connector-wall-1",
+            "@type": "Wall",
+            "shape": "polytope:polygon-right_short_connector-wall-1"
+        },
+        {
+            "@id": "floorplan:space-right_short_connector-wall-2",
+            "@type": "Wall",
+            "shape": "polytope:polygon-right_short_connector-wall-2"
+        },
+        {
+            "@id": "floorplan:space-right_short_connector-wall-3",
+            "@type": "Wall",
+            "shape": "polytope:polygon-right_short_connector-wall-3"
+        },
+        {
+            "@id": "floorplan:feature-right_short_connector-column_01",
+            "@type": "Feature",
+            "shape": "polytope:polygon-right_short_connector-feature-column_01"
+        },
+        {
+            "@id": "floorplan:feature-right_short_connector-column_02",
+            "@type": "Feature",
+            "shape": "polytope:polygon-right_short_connector-feature-column_02"
+        },
+        {
+            "@id": "floorplan:space-right_short_connector",
+            "@type": "Space",
+            "walls": [
+                "floorplan:space-right_short_connector-wall-0",
+                "floorplan:space-right_short_connector-wall-1",
+                "floorplan:space-right_short_connector-wall-2",
+                "floorplan:space-right_short_connector-wall-3"
+            ],
+            "feature": [
+                "floorplan:feature-right_short_connector-column_01",
+                "floorplan:feature-right_short_connector-column_02"
+            ],
+            "shape": "polytope:polygon-right_short_connector"
+        },
+        {
+            "@id": "floorplan:space-right_long_corridor-wall-0",
+            "@type": "Wall",
+            "shape": "polytope:polygon-right_long_corridor-wall-0"
+        },
+        {
+            "@id": "floorplan:space-right_long_corridor-wall-1",
+            "@type": "Wall",
+            "shape": "polytope:polygon-right_long_corridor-wall-1"
+        },
+        {
+            "@id": "floorplan:space-right_long_corridor-wall-2",
+            "@type": "Wall",
+            "shape": "polytope:polygon-right_long_corridor-wall-2"
+        },
+        {
+            "@id": "floorplan:space-right_long_corridor-wall-3",
+            "@type": "Wall",
+            "shape": "polytope:polygon-right_long_corridor-wall-3"
+        },
+        {
+            "@id": "floorplan:feature-right_long_corridor-column_1",
+            "@type": "Feature",
+            "shape": "polytope:polygon-right_long_corridor-feature-column_1"
+        },
+        {
+            "@id": "floorplan:feature-right_long_corridor-column_2",
+            "@type": "Feature",
+            "shape": "polytope:polygon-right_long_corridor-feature-column_2"
+        },
+        {
+            "@id": "floorplan:feature-right_long_corridor-column_3",
+            "@type": "Feature",
+            "shape": "polytope:polygon-right_long_corridor-feature-column_3"
+        },
+        {
+            "@id": "floorplan:feature-right_long_corridor-column_4",
+            "@type": "Feature",
+            "shape": "polytope:polygon-right_long_corridor-feature-column_4"
+        },
+        {
+            "@id": "floorplan:feature-right_long_corridor-column_5",
+            "@type": "Feature",
+            "shape": "polytope:polygon-right_long_corridor-feature-column_5"
+        },
+        {
+            "@id": "floorplan:feature-right_long_corridor-column_6",
+            "@type": "Feature",
+            "shape": "polytope:polygon-right_long_corridor-feature-column_6"
+        },
+        {
+            "@id": "floorplan:feature-right_long_corridor-column_7",
+            "@type": "Feature",
+            "shape": "polytope:polygon-right_long_corridor-feature-column_7"
+        },
+        {
+            "@id": "floorplan:feature-right_long_corridor-column_8",
+            "@type": "Feature",
+            "shape": "polytope:polygon-right_long_corridor-feature-column_8"
+        },
+        {
+            "@id": "floorplan:feature-right_long_corridor-column_9",
+            "@type": "Feature",
+            "shape": "polytope:polygon-right_long_corridor-feature-column_9"
+        },
+        {
+            "@id": "floorplan:feature-right_long_corridor-column_10",
+            "@type": "Feature",
+            "shape": "polytope:polygon-right_long_corridor-feature-column_10"
+        },
+        {
+            "@id": "floorplan:feature-right_long_corridor-column_11",
+            "@type": "Feature",
+            "shape": "polytope:polygon-right_long_corridor-feature-column_11"
+        },
+        {
+            "@id": "floorplan:feature-right_long_corridor-column_12",
+            "@type": "Feature",
+            "shape": "polytope:polygon-right_long_corridor-feature-column_12"
+        },
+        {
+            "@id": "floorplan:feature-right_long_corridor-column_13",
+            "@type": "Feature",
+            "shape": "polytope:polygon-right_long_corridor-feature-column_13"
+        },
+        {
+            "@id": "floorplan:feature-right_long_corridor-column_14",
+            "@type": "Feature",
+            "shape": "polytope:polygon-right_long_corridor-feature-column_14"
+        },
+        {
+            "@id": "floorplan:feature-right_long_corridor-column_17",
+            "@type": "Feature",
+            "shape": "polytope:polygon-right_long_corridor-feature-column_17"
+        },
+        {
+            "@id": "floorplan:feature-right_long_corridor-column_18",
+            "@type": "Feature",
+            "shape": "polytope:polygon-right_long_corridor-feature-column_18"
+        },
+        {
+            "@id": "floorplan:feature-right_long_corridor-column_19",
+            "@type": "Feature",
+            "shape": "polytope:polygon-right_long_corridor-feature-column_19"
+        },
+        {
+            "@id": "floorplan:feature-right_long_corridor-column_20",
+            "@type": "Feature",
+            "shape": "polytope:polygon-right_long_corridor-feature-column_20"
+        },
+        {
+            "@id": "floorplan:feature-right_long_corridor-trashcan_1",
+            "@type": "Feature",
+            "shape": "polytope:polygon-right_long_corridor-feature-trashcan_1"
+        },
+        {
+            "@id": "floorplan:feature-right_long_corridor-trashcan_2",
+            "@type": "Feature",
+            "shape": "polytope:polygon-right_long_corridor-feature-trashcan_2"
+        },
+        {
+            "@id": "floorplan:space-right_long_corridor",
+            "@type": "Space",
+            "walls": [
+                "floorplan:space-right_long_corridor-wall-0",
+                "floorplan:space-right_long_corridor-wall-1",
+                "floorplan:space-right_long_corridor-wall-2",
+                "floorplan:space-right_long_corridor-wall-3"
+            ],
+            "feature": [
+                "floorplan:feature-right_long_corridor-column_1",
+                "floorplan:feature-right_long_corridor-column_2",
+                "floorplan:feature-right_long_corridor-column_3",
+                "floorplan:feature-right_long_corridor-column_4",
+                "floorplan:feature-right_long_corridor-column_5",
+                "floorplan:feature-right_long_corridor-column_6",
+                "floorplan:feature-right_long_corridor-column_7",
+                "floorplan:feature-right_long_corridor-column_8",
+                "floorplan:feature-right_long_corridor-column_9",
+                "floorplan:feature-right_long_corridor-column_10",
+                "floorplan:feature-right_long_corridor-column_11",
+                "floorplan:feature-right_long_corridor-column_12",
+                "floorplan:feature-right_long_corridor-column_13",
+                "floorplan:feature-right_long_corridor-column_14",
+                "floorplan:feature-right_long_corridor-column_17",
+                "floorplan:feature-right_long_corridor-column_18",
+                "floorplan:feature-right_long_corridor-column_19",
+                "floorplan:feature-right_long_corridor-column_20",
+                "floorplan:feature-right_long_corridor-trashcan_1",
+                "floorplan:feature-right_long_corridor-trashcan_2"
+            ],
+            "shape": "polytope:polygon-right_long_corridor"
+        },
+        {
+            "@id": "floorplan:space-diagonal_corridor_left-wall-0",
+            "@type": "Wall",
+            "shape": "polytope:polygon-diagonal_corridor_left-wall-0"
+        },
+        {
+            "@id": "floorplan:space-diagonal_corridor_left-wall-1",
+            "@type": "Wall",
+            "shape": "polytope:polygon-diagonal_corridor_left-wall-1"
+        },
+        {
+            "@id": "floorplan:space-diagonal_corridor_left-wall-2",
+            "@type": "Wall",
+            "shape": "polytope:polygon-diagonal_corridor_left-wall-2"
+        },
+        {
+            "@id": "floorplan:space-diagonal_corridor_left-wall-3",
+            "@type": "Wall",
+            "shape": "polytope:polygon-diagonal_corridor_left-wall-3"
+        },
+        {
+            "@id": "floorplan:space-diagonal_corridor_left",
+            "@type": "Space",
+            "walls": [
+                "floorplan:space-diagonal_corridor_left-wall-0",
+                "floorplan:space-diagonal_corridor_left-wall-1",
+                "floorplan:space-diagonal_corridor_left-wall-2",
+                "floorplan:space-diagonal_corridor_left-wall-3"
+            ],
+            "feature": [],
+            "shape": "polytope:polygon-diagonal_corridor_left"
+        },
+        {
+            "@id": "floorplan:space-diagonal_corridor_center_right-wall-0",
+            "@type": "Wall",
+            "shape": "polytope:polygon-diagonal_corridor_center_right-wall-0"
+        },
+        {
+            "@id": "floorplan:space-diagonal_corridor_center_right-wall-1",
+            "@type": "Wall",
+            "shape": "polytope:polygon-diagonal_corridor_center_right-wall-1"
+        },
+        {
+            "@id": "floorplan:space-diagonal_corridor_center_right-wall-2",
+            "@type": "Wall",
+            "shape": "polytope:polygon-diagonal_corridor_center_right-wall-2"
+        },
+        {
+            "@id": "floorplan:space-diagonal_corridor_center_right-wall-3",
+            "@type": "Wall",
+            "shape": "polytope:polygon-diagonal_corridor_center_right-wall-3"
+        },
+        {
+            "@id": "floorplan:space-diagonal_corridor_center_right",
+            "@type": "Space",
+            "walls": [
+                "floorplan:space-diagonal_corridor_center_right-wall-0",
+                "floorplan:space-diagonal_corridor_center_right-wall-1",
+                "floorplan:space-diagonal_corridor_center_right-wall-2",
+                "floorplan:space-diagonal_corridor_center_right-wall-3"
+            ],
+            "feature": [],
+            "shape": "polytope:polygon-diagonal_corridor_center_right"
+        },
+        {
+            "@id": "floorplan:space-diagonal_corridor_center-wall-0",
+            "@type": "Wall",
+            "shape": "polytope:polygon-diagonal_corridor_center-wall-0"
+        },
+        {
+            "@id": "floorplan:space-diagonal_corridor_center-wall-1",
+            "@type": "Wall",
+            "shape": "polytope:polygon-diagonal_corridor_center-wall-1"
+        },
+        {
+            "@id": "floorplan:space-diagonal_corridor_center-wall-2",
+            "@type": "Wall",
+            "shape": "polytope:polygon-diagonal_corridor_center-wall-2"
+        },
+        {
+            "@id": "floorplan:space-diagonal_corridor_center-wall-3",
+            "@type": "Wall",
+            "shape": "polytope:polygon-diagonal_corridor_center-wall-3"
+        },
+        {
+            "@id": "floorplan:space-diagonal_corridor_center",
+            "@type": "Space",
+            "walls": [
+                "floorplan:space-diagonal_corridor_center-wall-0",
+                "floorplan:space-diagonal_corridor_center-wall-1",
+                "floorplan:space-diagonal_corridor_center-wall-2",
+                "floorplan:space-diagonal_corridor_center-wall-3"
+            ],
+            "feature": [],
+            "shape": "polytope:polygon-diagonal_corridor_center"
+        },
+        {
+            "@id": "floorplan:space-diagonal_corridor_center_left-wall-0",
+            "@type": "Wall",
+            "shape": "polytope:polygon-diagonal_corridor_center_left-wall-0"
+        },
+        {
+            "@id": "floorplan:space-diagonal_corridor_center_left-wall-1",
+            "@type": "Wall",
+            "shape": "polytope:polygon-diagonal_corridor_center_left-wall-1"
+        },
+        {
+            "@id": "floorplan:space-diagonal_corridor_center_left-wall-2",
+            "@type": "Wall",
+            "shape": "polytope:polygon-diagonal_corridor_center_left-wall-2"
+        },
+        {
+            "@id": "floorplan:space-diagonal_corridor_center_left-wall-3",
+            "@type": "Wall",
+            "shape": "polytope:polygon-diagonal_corridor_center_left-wall-3"
+        },
+        {
+            "@id": "floorplan:space-diagonal_corridor_center_left",
+            "@type": "Space",
+            "walls": [
+                "floorplan:space-diagonal_corridor_center_left-wall-0",
+                "floorplan:space-diagonal_corridor_center_left-wall-1",
+                "floorplan:space-diagonal_corridor_center_left-wall-2",
+                "floorplan:space-diagonal_corridor_center_left-wall-3"
+            ],
+            "feature": [],
+            "shape": "polytope:polygon-diagonal_corridor_center_left"
+        },
+        {
+            "@id": "floorplan:space-diagonal_corridor_right-wall-0",
+            "@type": "Wall",
+            "shape": "polytope:polygon-diagonal_corridor_right-wall-0"
+        },
+        {
+            "@id": "floorplan:space-diagonal_corridor_right-wall-1",
+            "@type": "Wall",
+            "shape": "polytope:polygon-diagonal_corridor_right-wall-1"
+        },
+        {
+            "@id": "floorplan:space-diagonal_corridor_right-wall-2",
+            "@type": "Wall",
+            "shape": "polytope:polygon-diagonal_corridor_right-wall-2"
+        },
+        {
+            "@id": "floorplan:space-diagonal_corridor_right-wall-3",
+            "@type": "Wall",
+            "shape": "polytope:polygon-diagonal_corridor_right-wall-3"
+        },
+        {
+            "@id": "floorplan:space-diagonal_corridor_right",
+            "@type": "Space",
+            "walls": [
+                "floorplan:space-diagonal_corridor_right-wall-0",
+                "floorplan:space-diagonal_corridor_right-wall-1",
+                "floorplan:space-diagonal_corridor_right-wall-2",
+                "floorplan:space-diagonal_corridor_right-wall-3"
+            ],
+            "feature": [],
+            "shape": "polytope:polygon-diagonal_corridor_right"
+        },
+        {
+            "@id": "floorplan:space-study_nook_c069-wall-0",
+            "@type": "Wall",
+            "shape": "polytope:polygon-study_nook_c069-wall-0"
+        },
+        {
+            "@id": "floorplan:space-study_nook_c069-wall-1",
+            "@type": "Wall",
+            "shape": "polytope:polygon-study_nook_c069-wall-1"
+        },
+        {
+            "@id": "floorplan:space-study_nook_c069-wall-2",
+            "@type": "Wall",
+            "shape": "polytope:polygon-study_nook_c069-wall-2"
+        },
+        {
+            "@id": "floorplan:space-study_nook_c069-wall-3",
+            "@type": "Wall",
+            "shape": "polytope:polygon-study_nook_c069-wall-3"
+        },
+        {
+            "@id": "floorplan:space-study_nook_c069",
+            "@type": "Space",
+            "walls": [
+                "floorplan:space-study_nook_c069-wall-0",
+                "floorplan:space-study_nook_c069-wall-1",
+                "floorplan:space-study_nook_c069-wall-2",
+                "floorplan:space-study_nook_c069-wall-3"
+            ],
+            "feature": [],
+            "shape": "polytope:polygon-study_nook_c069"
+        },
+        {
+            "@id": "floorplan:space-left_corridor_extra_end-wall-0",
+            "@type": "Wall",
+            "shape": "polytope:polygon-left_corridor_extra_end-wall-0"
+        },
+        {
+            "@id": "floorplan:space-left_corridor_extra_end-wall-1",
+            "@type": "Wall",
+            "shape": "polytope:polygon-left_corridor_extra_end-wall-1"
+        },
+        {
+            "@id": "floorplan:space-left_corridor_extra_end-wall-2",
+            "@type": "Wall",
+            "shape": "polytope:polygon-left_corridor_extra_end-wall-2"
+        },
+        {
+            "@id": "floorplan:space-left_corridor_extra_end-wall-3",
+            "@type": "Wall",
+            "shape": "polytope:polygon-left_corridor_extra_end-wall-3"
+        },
+        {
+            "@id": "floorplan:feature-left_corridor_extra_end-trashcan_2",
+            "@type": "Feature",
+            "shape": "polytope:polygon-left_corridor_extra_end-feature-trashcan_2"
+        },
+        {
+            "@id": "floorplan:space-left_corridor_extra_end",
+            "@type": "Space",
+            "walls": [
+                "floorplan:space-left_corridor_extra_end-wall-0",
+                "floorplan:space-left_corridor_extra_end-wall-1",
+                "floorplan:space-left_corridor_extra_end-wall-2",
+                "floorplan:space-left_corridor_extra_end-wall-3"
+            ],
+            "feature": [
+                "floorplan:feature-left_corridor_extra_end-trashcan_2"
+            ],
+            "shape": "polytope:polygon-left_corridor_extra_end"
+        },
+        {
+            "@id": "floorplan:space-right_corridor_extra_space-wall-0",
+            "@type": "Wall",
+            "shape": "polytope:polygon-right_corridor_extra_space-wall-0"
+        },
+        {
+            "@id": "floorplan:space-right_corridor_extra_space-wall-1",
+            "@type": "Wall",
+            "shape": "polytope:polygon-right_corridor_extra_space-wall-1"
+        },
+        {
+            "@id": "floorplan:space-right_corridor_extra_space-wall-2",
+            "@type": "Wall",
+            "shape": "polytope:polygon-right_corridor_extra_space-wall-2"
+        },
+        {
+            "@id": "floorplan:space-right_corridor_extra_space-wall-3",
+            "@type": "Wall",
+            "shape": "polytope:polygon-right_corridor_extra_space-wall-3"
+        },
+        {
+            "@id": "floorplan:space-right_corridor_extra_space",
+            "@type": "Space",
+            "walls": [
+                "floorplan:space-right_corridor_extra_space-wall-0",
+                "floorplan:space-right_corridor_extra_space-wall-1",
+                "floorplan:space-right_corridor_extra_space-wall-2",
+                "floorplan:space-right_corridor_extra_space-wall-3"
+            ],
+            "feature": [],
+            "shape": "polytope:polygon-right_corridor_extra_space"
+        },
+        {
+            "@id": "floorplan:space-classroom_c022-wall-0",
+            "@type": "Wall",
+            "shape": "polytope:polygon-classroom_c022-wall-0"
+        },
+        {
+            "@id": "floorplan:space-classroom_c022-wall-1",
+            "@type": "Wall",
+            "shape": "polytope:polygon-classroom_c022-wall-1"
+        },
+        {
+            "@id": "floorplan:space-classroom_c022-wall-2",
+            "@type": "Wall",
+            "shape": "polytope:polygon-classroom_c022-wall-2"
+        },
+        {
+            "@id": "floorplan:space-classroom_c022-wall-3",
+            "@type": "Wall",
+            "shape": "polytope:polygon-classroom_c022-wall-3"
+        },
+        {
+            "@id": "floorplan:space-classroom_c022",
+            "@type": "Space",
+            "walls": [
+                "floorplan:space-classroom_c022-wall-0",
+                "floorplan:space-classroom_c022-wall-1",
+                "floorplan:space-classroom_c022-wall-2",
+                "floorplan:space-classroom_c022-wall-3"
+            ],
+            "feature": [],
+            "shape": "polytope:polygon-classroom_c022"
+        },
+        {
+            "@id": "floorplan:space-classroom_c025-wall-0",
+            "@type": "Wall",
+            "shape": "polytope:polygon-classroom_c025-wall-0"
+        },
+        {
+            "@id": "floorplan:space-classroom_c025-wall-1",
+            "@type": "Wall",
+            "shape": "polytope:polygon-classroom_c025-wall-1"
+        },
+        {
+            "@id": "floorplan:space-classroom_c025-wall-2",
+            "@type": "Wall",
+            "shape": "polytope:polygon-classroom_c025-wall-2"
+        },
+        {
+            "@id": "floorplan:space-classroom_c025-wall-3",
+            "@type": "Wall",
+            "shape": "polytope:polygon-classroom_c025-wall-3"
+        },
+        {
+            "@id": "floorplan:space-classroom_c025",
+            "@type": "Space",
+            "walls": [
+                "floorplan:space-classroom_c025-wall-0",
+                "floorplan:space-classroom_c025-wall-1",
+                "floorplan:space-classroom_c025-wall-2",
+                "floorplan:space-classroom_c025-wall-3"
+            ],
+            "feature": [],
+            "shape": "polytope:polygon-classroom_c025"
+        },
+        {
+            "@id": "floorplan:space-classroom_c069-wall-0",
+            "@type": "Wall",
+            "shape": "polytope:polygon-classroom_c069-wall-0"
+        },
+        {
+            "@id": "floorplan:space-classroom_c069-wall-1",
+            "@type": "Wall",
+            "shape": "polytope:polygon-classroom_c069-wall-1"
+        },
+        {
+            "@id": "floorplan:space-classroom_c069-wall-2",
+            "@type": "Wall",
+            "shape": "polytope:polygon-classroom_c069-wall-2"
+        },
+        {
+            "@id": "floorplan:space-classroom_c069-wall-3",
+            "@type": "Wall",
+            "shape": "polytope:polygon-classroom_c069-wall-3"
+        },
+        {
+            "@id": "floorplan:space-classroom_c069",
+            "@type": "Space",
+            "walls": [
+                "floorplan:space-classroom_c069-wall-0",
+                "floorplan:space-classroom_c069-wall-1",
+                "floorplan:space-classroom_c069-wall-2",
+                "floorplan:space-classroom_c069-wall-3"
+            ],
+            "feature": [],
+            "shape": "polytope:polygon-classroom_c069"
+        },
+        {
+            "@id": "floorplan:space-classroom_c018-wall-0",
+            "@type": "Wall",
+            "shape": "polytope:polygon-classroom_c018-wall-0"
+        },
+        {
+            "@id": "floorplan:space-classroom_c018-wall-1",
+            "@type": "Wall",
+            "shape": "polytope:polygon-classroom_c018-wall-1"
+        },
+        {
+            "@id": "floorplan:space-classroom_c018-wall-2",
+            "@type": "Wall",
+            "shape": "polytope:polygon-classroom_c018-wall-2"
+        },
+        {
+            "@id": "floorplan:space-classroom_c018-wall-3",
+            "@type": "Wall",
+            "shape": "polytope:polygon-classroom_c018-wall-3"
+        },
+        {
+            "@id": "floorplan:space-classroom_c018",
+            "@type": "Space",
+            "walls": [
+                "floorplan:space-classroom_c018-wall-0",
+                "floorplan:space-classroom_c018-wall-1",
+                "floorplan:space-classroom_c018-wall-2",
+                "floorplan:space-classroom_c018-wall-3"
+            ],
+            "feature": [],
+            "shape": "polytope:polygon-classroom_c018"
+        },
+        {
+            "@id": "floorplan:brsu_building_c_with_doorways",
+            "@type": "FloorPlan",
+            "spaces": [
+                "floorplan:space-stairway_room_center",
+                "floorplan:space-stairway_room_left",
+                "floorplan:space-stairway_room_exit",
+                "floorplan:space-left_short_connector",
+                "floorplan:space-study_nook_left",
+                "floorplan:space-left_long_corridor",
+                "floorplan:space-right_short_connector",
+                "floorplan:space-right_long_corridor",
+                "floorplan:space-diagonal_corridor_left",
+                "floorplan:space-diagonal_corridor_center_right",
+                "floorplan:space-diagonal_corridor_center",
+                "floorplan:space-diagonal_corridor_center_left",
+                "floorplan:space-diagonal_corridor_right",
+                "floorplan:space-study_nook_c069",
+                "floorplan:space-left_corridor_extra_end",
+                "floorplan:space-right_corridor_extra_space",
+                "floorplan:space-classroom_c022",
+                "floorplan:space-classroom_c025",
+                "floorplan:space-classroom_c069",
+                "floorplan:space-classroom_c018"
+            ]
+        }
+    ]
+}
