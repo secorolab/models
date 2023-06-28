@@ -41,4 +41,5 @@ defaults:
       layout: default
 
 site:
-  url: https://hbrs-sesame.github.io/models/
+  url: https://hbrs-sesame.github.io
+  baseurl: /models
