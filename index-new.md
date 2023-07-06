@@ -15,15 +15,11 @@ listed on the
 <th>Filename</th>
 <th>Extension</th>
 <th>Path</th>
+<th style="display:none"></th>
 </tr>
 </thead>
 <tbody>
 {% for item in site.data.file_paths%}
-<tr>
-  <td colspan="3"><b>{{ item[0]  }}</b></td>
-  <td style="display:none"></td>
-  <td style="display:none"></td>
-</tr>
 {% for file_data in item[1] %}
 <tr>
 <td>
@@ -34,6 +30,9 @@ listed on the
 </td>
 <td>
   <a href="{{ file_data.path }}">{{ file_data.path }}</a>
+</td>
+<td style="display:none">
+{{ item[0]  }}
 </td>
 </tr>
 {% endfor %}
@@ -46,6 +45,10 @@ listed on the
 <script src="assets/js/dataTables.bootstrap5.min.js"></script>
 <script>
 new DataTable('#models', {
-    scrollX: true
+    scrollX: true,
+    order: [[2, 'desc']],
+    rowGroup: {
+        dataSrc: 3
+    }
 });
 </script>
