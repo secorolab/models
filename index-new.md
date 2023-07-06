@@ -43,10 +43,12 @@ listed on the
 <script src="assets/js/jquery-3.5.1.min.js"></script>
 <script src="assets/js/jquery.dataTables.min.js"></script>
 <script src="assets/js/dataTables.bootstrap5.min.js"></script>
+<script src="https://cdn.datatables.net/rowgroup/1.4.0/js/dataTables.rowGroup.min.js"></script>
+
 <script>
 new DataTable('#models', {
     scrollX: true,
-    order: [[2, 'desc']],
+    order: [[2, 'asc']],
     rowGroup: {
         dataSrc: 3
     }
