@@ -30,7 +30,7 @@ layout: default
   {{ file_data.extension }}
 </td>
 <td>
-  [{{ file_data.path }}]({{ file_data.path }})
+  <a href="{{ file_data.path }}">{{ file_data.path }}</a>
 </td>
 </tr>
 {% endfor %}
