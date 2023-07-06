@@ -5,45 +5,9 @@ plugins:
 # General info
 title: Executable Scenario Models
 logo: assets/img/sesame_logo_tagline.svg
+project_url: https://www.sesame-project.org/
+description: Repository for models created to support the ExSce workbench in the context of the SESAME project
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-minimal
 
-collections:
-  agents:
-    output: true
-    relative_directory: agents
-    permalink: /:collection/:path
-  environments:
-    output: true
-    relative_directory: environments
-    permalink: /:collection/:path
-  oracles:
-    output: true
-    relative_directory: oracles
-    permalink: /:collection/:path
-  robots:
-    output: true
-    relative_directory: robots
-    permalink: /:collection/:path
-  runs:
-    output: true
-    relative_directory: runs
-    permalink: /:collection/:path
-  scenarios:
-    output: true
-    relative_directory: scenarios
-    permalink: /:collection/:path
-  tasks:
-    output: true
-    relative_directory: tasks/brsu_building_c_with_doors
-    permalink: /:collection/:path
-
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: default
-
-url: https://hbrs-sesame.github.io
-baseurl: /models
