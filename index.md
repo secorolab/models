@@ -8,6 +8,7 @@ In the below table are all the models created during the development
 of the ExSce Workbench. They are referred to from the various tutorials
 listed on the
 [Repository of Executable Scenarios](https://sesame-project.github.io/exsce/exsce-repo.html).
+Models are grouped by their top-level directory.
 
 <table id="models" class="table table-striped" style="width:100%;white-space:nowrap;">
 <thead>
