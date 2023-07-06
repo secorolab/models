@@ -20,6 +20,7 @@ layout: default
 </tr>
 </thead>
 <tbody>
+{% for item in site.data.file_paths%}
 {% for file_data in item[1] %}
 <tr>
 <td>{{ file_data[1] }}</td>
