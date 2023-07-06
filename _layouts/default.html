@@ -24,7 +24,9 @@
         <p>{{ site.description | default: site.github.project_tagline }}</p>
 
         {% if site.github.is_project_page %}
+        {% unless site.show_downloads %}
         <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
+        {% endunless %}
         {% endif %}
 
         {% if site.github.is_user_page %}
