@@ -4,7 +4,7 @@ plugins:
 
 # General info
 title: Executable Scenario Models
-logo: /images/sesame_logo_tagline.svg
+logo: assets/img/sesame_logo_tagline.svg
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-minimal

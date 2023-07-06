@@ -131,10 +131,6 @@ environments:
 - extension: FLOORPLAN
   name: hbrs.floorplan
   path: environments/floorplan_dsl_models/input_models/hbrs.floorplan
-images:
-- extension: SVG
-  name: sesame_logo_tagline.svg
-  path: images/sesame_logo_tagline.svg
 oracles:
 - extension: YAML
   name: scenario_c.yaml
