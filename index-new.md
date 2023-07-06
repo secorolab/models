@@ -22,10 +22,9 @@ layout: default
 <tbody>
 {% for file_data in item[1] %}
 <tr>
-<td>{{ file_data.name }}</td>
-<td>{{ file_data.extension }}</td>
-<td>Edinburgh</td>
-<td><a href="{{ file_data.path }}">{{ file_data.path }}</a></td>
+<td>{{ file_data[1] }}</td>
+<td>{{ file_data[0] }}</td>
+<td><a href="{{ file_data[2] }}">{{ file_data[2] }}</a></td>
 </tr>
 {% endfor %}
 {% endfor %}
