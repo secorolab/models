@@ -21,6 +21,8 @@ listed on the
 {% for item in site.data.file_paths%}
 <tr>
   <td colspan="3"><b>{{ item[0]  }}</b></td>
+  <td style="display:none"></td>
+  <td style="display:none"></td>
 </tr>
 {% for file_data in item[1] %}
 <tr>
@@ -43,5 +45,7 @@ listed on the
 <script src="assets/js/jquery.dataTables.min.js"></script>
 <script src="assets/js/dataTables.bootstrap5.min.js"></script>
 <script>
-new DataTable('#models');
+new DataTable('#models', {
+    scrollX: true
+});
 </script>
