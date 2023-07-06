@@ -1,20 +1,23 @@
 import glob
 import os
 import yaml
+from pprint import pprint
 
 
 ROOT_DIR = os.path.join(os.path.dirname(__file__), "..")
 SKIP_TOP_DIRS = ["assets", "_data", "script"]
 EXTENSIONS = [
+    ".stl",
+    ".svg",
+    ".floorplan",
+    ".jinja",
+    ".sdf",
+    ".pgm",
     ".json",
-    ".provn",
     ".rosparams",
     ".yaml",
-    ".svg",
-    ".png",
-    ".pgm",
-    ".stl",
-    ".floorplan",
+    ".config",
+    ".provn",
     ".variation",
 ]
 OUTPUT_FILE = "file_paths.yml"
@@ -22,9 +25,12 @@ OUTPUT_DIR = os.path.join(ROOT_DIR, "_data")
 
 
 def main():
+    extensions = set()
     file_list = glob.glob(os.path.join(ROOT_DIR, "**"), recursive=True)
     filtered_file_data = {}
     for file_path in file_list:
+        if os.path.isdir(file_path):
+            continue
         rel_path = os.path.relpath(file_path, ROOT_DIR)
         skip_dir = False
         for skip_top_dir in SKIP_TOP_DIRS:
@@ -39,6 +45,7 @@ def main():
             # skip top directory
             continue
         file_base_name, extension = os.path.splitext(file_name)
+        extensions.add(extension)
         if extension not in EXTENSIONS:
             continue
 
@@ -48,6 +55,8 @@ def main():
         filtered_file_data[top_dir].append(
             {"path": rel_path, "name": file_name, "extension": extension[1:].upper()}
         )
+    print("detected the following extensions:")
+    pprint(extensions)
 
     if not os.path.exists(OUTPUT_DIR):
         os.makedirs(OUTPUT_DIR)

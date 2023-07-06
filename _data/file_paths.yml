@@ -5,6 +5,9 @@ acceptance-criteria:
 - extension: JSON
   name: pickup-variants.json
   path: acceptance-criteria/bdd/pickup-variants.json
+- extension: JINJA
+  name: feature.jinja
+  path: acceptance-criteria/bdd/feature.jinja
 agents:
 - extension: JSON
   name: brsu.json
@@ -122,6 +125,12 @@ environments:
 - extension: STL
   name: brsu_building_c_with_doorways.stl
   path: environments/floorplan_dsl_models/output_models/brsu_building_c_with_doorways/mesh/meshes/brsu_building_c_with_doorways.stl
+- extension: CONFIG
+  name: model.config
+  path: environments/floorplan_dsl_models/output_models/brsu_building_c_with_doorways/mesh/model.config
+- extension: SDF
+  name: model.sdf
+  path: environments/floorplan_dsl_models/output_models/brsu_building_c_with_doorways/mesh/model.sdf
 - extension: FLOORPLAN
   name: brsu_building_c_with_doorways.floorplan
   path: environments/floorplan_dsl_models/input_models/brsu_building_c_with_doorways.floorplan
