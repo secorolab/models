@@ -4,14 +4,12 @@ layout: default
 
 # ExSce Models
 
-{% for item in site.data.file_paths%}
-## `{{ item[0]  }}`
-{% for file_data in item[1] %}
-- [{{ file_data.path }}]({{ file_data.path }})
-{% endfor %}
-{% endfor %}
+In the below table are all the models created during the development
+of the ExSce Workbench. They are referred to from the various tutorials
+listed on the
+[Repository of Executable Scenarios](https://sesame-project.github.io/exsce/exsce-repo.html).
 
-<table id="models" class="table table-striped" style="width:100%">
+<table id="models" class="table table-striped" style="width:100%;white-space:nowrap;">
 <thead>
 <tr>
 <th>Filename</th>
@@ -21,6 +19,9 @@ layout: default
 </thead>
 <tbody>
 {% for item in site.data.file_paths%}
+<tr>
+  <td colspan="3"><b>{{ item[0]  }}</b></td>
+</tr>
 {% for file_data in item[1] %}
 <tr>
 <td>
