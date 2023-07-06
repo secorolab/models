@@ -46,10 +46,11 @@ listed on the
 <script src="assets/js/dataTables.rowGroup.min.js"></script>
 <script>
 new DataTable('#models', {
-    scrollX: true,
-    order: [[2, 'asc']],
-    rowGroup: {
-        dataSrc: 3
-    }
+  scrollX: true,
+  order: [[2, 'asc']],
+  rowGroup: {
+    dataSrc: 3
+  },
+  pageLength: 25
 });
 </script>
