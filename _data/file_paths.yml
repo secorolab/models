@@ -1,75 +1,297 @@
 acceptance-criteria:
-- acceptance-criteria/bdd/templates/pickup.json
-- acceptance-criteria/bdd/pickup-variants.json
+- extension: JSON
+  name: pickup.json
+  path: acceptance-criteria/bdd/templates/pickup.json
+- extension: JSON
+  name: pickup-variants.json
+  path: acceptance-criteria/bdd/pickup-variants.json
+- extension: JINJA
+  name: feature.jinja
+  path: acceptance-criteria/bdd/feature.jinja
 agents:
-- agents/brsu.json
+- extension: JSON
+  name: brsu.json
+  path: agents/brsu.json
 coordination:
-- coordination/pickup-events.json
-- coordination/bt/pickup-behaviours.json
-- coordination/bt/pickup-dual-arm-behaviours.json
+- extension: JSON
+  name: pickup-events.json
+  path: coordination/pickup-events.json
+- extension: JSON
+  name: pickup-behaviours.json
+  path: coordination/bt/pickup-behaviours.json
+- extension: JSON
+  name: pickup-dual-arm-behaviours.json
+  path: coordination/bt/pickup-dual-arm-behaviours.json
 environments:
-- environments/brsu.json
-- environments/brsu_building_c_with_doors/classroom_c025/classroom_c025_bundle.prov.json
-- environments/brsu_building_c_with_doors/classroom_c025/classroom_c025_bundle.provn
-- environments/brsu_building_c_with_doors/classroom_c022/classroom_c022_bundle.provn
-- environments/brsu_building_c_with_doors/classroom_c022/classroom_c022_bundle.prov.json
-- environments/brsu_building_c_with_doors/brsu_building_c_with_doors_bundle.prov.json
-- environments/brsu_building_c_with_doors/classroom_c018/classroom_c018_bundle.prov.json
-- environments/brsu_building_c_with_doors/classroom_c018/classroom_c018_bundle.provn
-- environments/brsu_building_c_with_doors/brsu_building_c_with_doors_bundle.provn
-- environments/avl.json
-- environments/floorplan_dsl_models/output_models/hbrs/json-ld/spatial_relations.json
-- environments/floorplan_dsl_models/output_models/hbrs/json-ld/coordinate.json
-- environments/floorplan_dsl_models/output_models/hbrs/json-ld/shape.json
-- environments/floorplan_dsl_models/output_models/hbrs/json-ld/skeleton.json
-- environments/floorplan_dsl_models/output_models/hbrs/json-ld/floorplan.json
-- environments/floorplan_dsl_models/output_models/hbrs/map/hbrs.yaml
-- environments/floorplan_dsl_models/output_models/brsu_building_c_with_doorways/json-ld/spatial_relations.json
-- environments/floorplan_dsl_models/output_models/brsu_building_c_with_doorways/json-ld/coordinate.json
-- environments/floorplan_dsl_models/output_models/brsu_building_c_with_doorways/json-ld/shape.json
-- environments/floorplan_dsl_models/output_models/brsu_building_c_with_doorways/json-ld/skeleton.json
-- environments/floorplan_dsl_models/output_models/brsu_building_c_with_doorways/json-ld/floorplan.json
-- environments/floorplan_dsl_models/output_models/brsu_building_c_with_doorways/map/brsu_building_c_with_doorways.yaml
+- extension: JSON
+  name: brsu.json
+  path: environments/brsu.json
+- extension: SVG
+  name: classroom_c025_bundle.svg
+  path: environments/brsu_building_c_with_doors/classroom_c025/classroom_c025_bundle.svg
+- extension: JSON
+  name: classroom_c025_bundle.prov.json
+  path: environments/brsu_building_c_with_doors/classroom_c025/classroom_c025_bundle.prov.json
+- extension: PROVN
+  name: classroom_c025_bundle.provn
+  path: environments/brsu_building_c_with_doors/classroom_c025/classroom_c025_bundle.provn
+- extension: PROVN
+  name: classroom_c022_bundle.provn
+  path: environments/brsu_building_c_with_doors/classroom_c022/classroom_c022_bundle.provn
+- extension: JSON
+  name: classroom_c022_bundle.prov.json
+  path: environments/brsu_building_c_with_doors/classroom_c022/classroom_c022_bundle.prov.json
+- extension: SVG
+  name: classroom_c022_bundle.svg
+  path: environments/brsu_building_c_with_doors/classroom_c022/classroom_c022_bundle.svg
+- extension: JSON
+  name: brsu_building_c_with_doors_bundle.prov.json
+  path: environments/brsu_building_c_with_doors/brsu_building_c_with_doors_bundle.prov.json
+- extension: SVG
+  name: brsu_building_c_with_doors_bundle.svg
+  path: environments/brsu_building_c_with_doors/brsu_building_c_with_doors_bundle.svg
+- extension: SVG
+  name: classroom_c018_bundle.svg
+  path: environments/brsu_building_c_with_doors/classroom_c018/classroom_c018_bundle.svg
+- extension: JSON
+  name: classroom_c018_bundle.prov.json
+  path: environments/brsu_building_c_with_doors/classroom_c018/classroom_c018_bundle.prov.json
+- extension: PROVN
+  name: classroom_c018_bundle.provn
+  path: environments/brsu_building_c_with_doors/classroom_c018/classroom_c018_bundle.provn
+- extension: PROVN
+  name: brsu_building_c_with_doors_bundle.provn
+  path: environments/brsu_building_c_with_doors/brsu_building_c_with_doors_bundle.provn
+- extension: JSON
+  name: avl.json
+  path: environments/avl.json
+- extension: FLOORPLAN
+  name: hbrs_3805.floorplan
+  path: environments/floorplan_dsl_models/output_models/hbrs/variations/hbrs_3805.floorplan
+- extension: FLOORPLAN
+  name: hbrs_1411.floorplan
+  path: environments/floorplan_dsl_models/output_models/hbrs/variations/hbrs_1411.floorplan
+- extension: FLOORPLAN
+  name: hbrs_4735.floorplan
+  path: environments/floorplan_dsl_models/output_models/hbrs/variations/hbrs_4735.floorplan
+- extension: FLOORPLAN
+  name: hbrs_3614.floorplan
+  path: environments/floorplan_dsl_models/output_models/hbrs/variations/hbrs_3614.floorplan
+- extension: JSON
+  name: spatial_relations.json
+  path: environments/floorplan_dsl_models/output_models/hbrs/json-ld/spatial_relations.json
+- extension: JSON
+  name: coordinate.json
+  path: environments/floorplan_dsl_models/output_models/hbrs/json-ld/coordinate.json
+- extension: JSON
+  name: shape.json
+  path: environments/floorplan_dsl_models/output_models/hbrs/json-ld/shape.json
+- extension: JSON
+  name: skeleton.json
+  path: environments/floorplan_dsl_models/output_models/hbrs/json-ld/skeleton.json
+- extension: JSON
+  name: floorplan.json
+  path: environments/floorplan_dsl_models/output_models/hbrs/json-ld/floorplan.json
+- extension: YAML
+  name: hbrs.yaml
+  path: environments/floorplan_dsl_models/output_models/hbrs/map/hbrs.yaml
+- extension: PGM
+  name: hbrs.pgm
+  path: environments/floorplan_dsl_models/output_models/hbrs/map/hbrs.pgm
+- extension: STL
+  name: hbrs.stl
+  path: environments/floorplan_dsl_models/output_models/hbrs/mesh/hbrs.stl
+- extension: JSON
+  name: spatial_relations.json
+  path: environments/floorplan_dsl_models/output_models/brsu_building_c_with_doorways/json-ld/spatial_relations.json
+- extension: JSON
+  name: coordinate.json
+  path: environments/floorplan_dsl_models/output_models/brsu_building_c_with_doorways/json-ld/coordinate.json
+- extension: JSON
+  name: shape.json
+  path: environments/floorplan_dsl_models/output_models/brsu_building_c_with_doorways/json-ld/shape.json
+- extension: JSON
+  name: skeleton.json
+  path: environments/floorplan_dsl_models/output_models/brsu_building_c_with_doorways/json-ld/skeleton.json
+- extension: JSON
+  name: floorplan.json
+  path: environments/floorplan_dsl_models/output_models/brsu_building_c_with_doorways/json-ld/floorplan.json
+- extension: PGM
+  name: brsu_building_c_with_doorways.pgm
+  path: environments/floorplan_dsl_models/output_models/brsu_building_c_with_doorways/map/brsu_building_c_with_doorways.pgm
+- extension: YAML
+  name: brsu_building_c_with_doorways.yaml
+  path: environments/floorplan_dsl_models/output_models/brsu_building_c_with_doorways/map/brsu_building_c_with_doorways.yaml
+- extension: STL
+  name: brsu_building_c_with_doorways.stl
+  path: environments/floorplan_dsl_models/output_models/brsu_building_c_with_doorways/mesh/meshes/brsu_building_c_with_doorways.stl
+- extension: CONFIG
+  name: model.config
+  path: environments/floorplan_dsl_models/output_models/brsu_building_c_with_doorways/mesh/model.config
+- extension: SDF
+  name: model.sdf
+  path: environments/floorplan_dsl_models/output_models/brsu_building_c_with_doorways/mesh/model.sdf
+- extension: FLOORPLAN
+  name: brsu_building_c_with_doorways.floorplan
+  path: environments/floorplan_dsl_models/input_models/brsu_building_c_with_doorways.floorplan
+- extension: VARIATION
+  name: hbrs.variation
+  path: environments/floorplan_dsl_models/input_models/hbrs.variation
+- extension: FLOORPLAN
+  name: hbrs.floorplan
+  path: environments/floorplan_dsl_models/input_models/hbrs.floorplan
 oracles:
-- oracles/scenario_c.yaml
+- extension: YAML
+  name: scenario_c.yaml
+  path: oracles/scenario_c.yaml
 robots:
-- robots/tiago1_bundle.provn
-- robots/tiago2_bundle.provn
-- robots/tiago1_bundle.prov.json
-- robots/tiago2_bundle.prov.json
+- extension: PROVN
+  name: tiago1_bundle.provn
+  path: robots/tiago1_bundle.provn
+- extension: SVG
+  name: tiago2_bundle.svg
+  path: robots/tiago2_bundle.svg
+- extension: PROVN
+  name: tiago2_bundle.provn
+  path: robots/tiago2_bundle.provn
+- extension: JSON
+  name: tiago1_bundle.prov.json
+  path: robots/tiago1_bundle.prov.json
+- extension: JSON
+  name: tiago2_bundle.prov.json
+  path: robots/tiago2_bundle.prov.json
+- extension: SVG
+  name: tiago1_bundle.svg
+  path: robots/tiago1_bundle.svg
 runs:
-- runs/2023-06-26T21-47-04_scenario_c_run-30af607a.prov.json
-- runs/2023-06-26T21-47-04_scenario_c_run-30af607a.rosparams
+- extension: JSON
+  name: 2023-06-26T21-47-04_scenario_c_run-30af607a.prov.json
+  path: runs/2023-06-26T21-47-04_scenario_c_run-30af607a.prov.json
+- extension: ROSPARAMS
+  name: 2023-06-26T21-47-04_scenario_c_run-30af607a.rosparams
+  path: runs/2023-06-26T21-47-04_scenario_c_run-30af607a.rosparams
 scenarios:
-- scenarios/scenario_b.provn
-- scenarios/scenario_e.prov.json
-- scenarios/scenario_a.prov.json
-- scenarios/scenario_a.yaml
-- scenarios/scenario_c_bundle.prov.json
-- scenarios/scenario_e.yaml
-- scenarios/scenario_b.yaml
-- scenarios/scenario_c.yaml
-- scenarios/scenario_e.provn
-- scenarios/scenario_a.provn
-- scenarios/scenario_d.yaml
-- scenarios/scenario_c_bundle.provn
-- scenarios/scenario_d.provn
-- scenarios/scenario_c.provn
-- scenarios/scenario_b.prov.json
-- scenarios/scenario_d.prov.json
-- scenarios/scenario_c.prov.json
+- extension: PROVN
+  name: scenario_b.provn
+  path: scenarios/scenario_b.provn
+- extension: JSON
+  name: scenario_e.prov.json
+  path: scenarios/scenario_e.prov.json
+- extension: JSON
+  name: scenario_a.prov.json
+  path: scenarios/scenario_a.prov.json
+- extension: YAML
+  name: scenario_a.yaml
+  path: scenarios/scenario_a.yaml
+- extension: JSON
+  name: scenario_c_bundle.prov.json
+  path: scenarios/scenario_c_bundle.prov.json
+- extension: YAML
+  name: scenario_e.yaml
+  path: scenarios/scenario_e.yaml
+- extension: YAML
+  name: scenario_b.yaml
+  path: scenarios/scenario_b.yaml
+- extension: YAML
+  name: scenario_c.yaml
+  path: scenarios/scenario_c.yaml
+- extension: SVG
+  name: scenario_a.svg
+  path: scenarios/scenario_a.svg
+- extension: SVG
+  name: scenario_c_bundle.svg
+  path: scenarios/scenario_c_bundle.svg
+- extension: SVG
+  name: scenario_e.svg
+  path: scenarios/scenario_e.svg
+- extension: PROVN
+  name: scenario_e.provn
+  path: scenarios/scenario_e.provn
+- extension: PROVN
+  name: scenario_a.provn
+  path: scenarios/scenario_a.provn
+- extension: YAML
+  name: scenario_d.yaml
+  path: scenarios/scenario_d.yaml
+- extension: PROVN
+  name: scenario_c_bundle.provn
+  path: scenarios/scenario_c_bundle.provn
+- extension: SVG
+  name: scenario_c.svg
+  path: scenarios/scenario_c.svg
+- extension: PROVN
+  name: scenario_d.provn
+  path: scenarios/scenario_d.provn
+- extension: SVG
+  name: scenario_b.svg
+  path: scenarios/scenario_b.svg
+- extension: PROVN
+  name: scenario_c.provn
+  path: scenarios/scenario_c.provn
+- extension: JSON
+  name: scenario_b.prov.json
+  path: scenarios/scenario_b.prov.json
+- extension: JSON
+  name: scenario_d.prov.json
+  path: scenarios/scenario_d.prov.json
+- extension: SVG
+  name: scenario_d.svg
+  path: scenarios/scenario_d.svg
+- extension: JSON
+  name: scenario_c.prov.json
+  path: scenarios/scenario_c.prov.json
 tasks:
-- tasks/brsu_building_c_with_doors/navigate_home_2.yaml
-- tasks/brsu_building_c_with_doors/navigate_home_1.yaml_bundle.provn
-- tasks/brsu_building_c_with_doors/navigate_home_1.yaml
-- tasks/brsu_building_c_with_doors/delivery_b.yaml_bundle.provn
-- tasks/brsu_building_c_with_doors/delivery_b.yaml_bundle.prov.json
-- tasks/brsu_building_c_with_doors/delivery_c.yaml
-- tasks/brsu_building_c_with_doors/delivery_a.yaml
-- tasks/brsu_building_c_with_doors/navigate_home_2.yaml_bundle.prov.json
-- tasks/brsu_building_c_with_doors/delivery_d.yaml
-- tasks/brsu_building_c_with_doors/delivery_b.yaml
-- tasks/brsu_building_c_with_doors/delivery_a.yaml_bundle.provn
-- tasks/brsu_building_c_with_doors/navigate_home_1.yaml_bundle.prov.json
-- tasks/brsu_building_c_with_doors/delivery_a.yaml_bundle.prov.json
-- tasks/brsu_building_c_with_doors/navigate_home_2.yaml_bundle.provn
+- extension: YAML
+  name: navigate_home_2.yaml
+  path: tasks/brsu_building_c_with_doors/navigate_home_2.yaml
+- extension: PROVN
+  name: navigate_home_1.yaml_bundle.provn
+  path: tasks/brsu_building_c_with_doors/navigate_home_1.yaml_bundle.provn
+- extension: YAML
+  name: navigate_home_1.yaml
+  path: tasks/brsu_building_c_with_doors/navigate_home_1.yaml
+- extension: PROVN
+  name: delivery_b.yaml_bundle.provn
+  path: tasks/brsu_building_c_with_doors/delivery_b.yaml_bundle.provn
+- extension: SVG
+  name: navigate_home_1.yaml_bundle.svg
+  path: tasks/brsu_building_c_with_doors/navigate_home_1.yaml_bundle.svg
+- extension: JSON
+  name: delivery_b.yaml_bundle.prov.json
+  path: tasks/brsu_building_c_with_doors/delivery_b.yaml_bundle.prov.json
+- extension: YAML
+  name: delivery_c.yaml
+  path: tasks/brsu_building_c_with_doors/delivery_c.yaml
+- extension: YAML
+  name: delivery_a.yaml
+  path: tasks/brsu_building_c_with_doors/delivery_a.yaml
+- extension: SVG
+  name: delivery_a.yaml_bundle.svg
+  path: tasks/brsu_building_c_with_doors/delivery_a.yaml_bundle.svg
+- extension: SVG
+  name: navigate_home_2.yaml_bundle.svg
+  path: tasks/brsu_building_c_with_doors/navigate_home_2.yaml_bundle.svg
+- extension: JSON
+  name: navigate_home_2.yaml_bundle.prov.json
+  path: tasks/brsu_building_c_with_doors/navigate_home_2.yaml_bundle.prov.json
+- extension: YAML
+  name: delivery_d.yaml
+  path: tasks/brsu_building_c_with_doors/delivery_d.yaml
+- extension: YAML
+  name: delivery_b.yaml
+  path: tasks/brsu_building_c_with_doors/delivery_b.yaml
+- extension: PROVN
+  name: delivery_a.yaml_bundle.provn
+  path: tasks/brsu_building_c_with_doors/delivery_a.yaml_bundle.provn
+- extension: JSON
+  name: navigate_home_1.yaml_bundle.prov.json
+  path: tasks/brsu_building_c_with_doors/navigate_home_1.yaml_bundle.prov.json
+- extension: JSON
+  name: delivery_a.yaml_bundle.prov.json
+  path: tasks/brsu_building_c_with_doors/delivery_a.yaml_bundle.prov.json
+- extension: SVG
+  name: delivery_b.yaml_bundle.svg
+  path: tasks/brsu_building_c_with_doors/delivery_b.yaml_bundle.svg
+- extension: PROVN
+  name: navigate_home_2.yaml_bundle.provn
+  path: tasks/brsu_building_c_with_doors/navigate_home_2.yaml_bundle.provn
