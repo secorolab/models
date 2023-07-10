@@ -6,20 +6,7 @@ from pprint import pprint
 
 ROOT_DIR = os.path.join(os.path.dirname(__file__), "..")
 SKIP_TOP_DIRS = ["assets", "_data", "script"]
-EXTENSIONS = [
-    ".stl",
-    ".svg",
-    ".floorplan",
-    ".jinja",
-    ".sdf",
-    ".pgm",
-    ".json",
-    ".rosparams",
-    ".yaml",
-    ".config",
-    ".provn",
-    ".variation",
-]
+IGNORE_EXTENSIONS = [".html", ".md", ""]
 OUTPUT_FILE = "file_paths.yml"
 OUTPUT_DIR = os.path.join(ROOT_DIR, "_data")
 
@@ -46,7 +33,7 @@ def main():
             continue
         file_base_name, extension = os.path.splitext(file_name)
         extensions.add(extension)
-        if extension not in EXTENSIONS:
+        if extension in IGNORE_EXTENSIONS:
             continue
 
         top_dir = dir_name.split(os.sep)[0]
