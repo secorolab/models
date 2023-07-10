@@ -2,10 +2,10 @@
 layout: default
 ---
 
-# Scenarios
+# Runs
 
 {% for file in site.static_files %}
-{% if file.path contains "/scenarios/" %}
+{% if file.path contains "/runs/" %}
 {% assign robot = file.basename | split: "." %}
 {% if current_robot != robot[0] %}
 
