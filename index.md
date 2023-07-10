@@ -9,7 +9,8 @@ of the ExSce Workbench. They are referred to from the various tutorials
 listed on the
 [Repository of Executable Scenarios](https://sesame-project.github.io/exsce/exsce-repo.html).
 
-Custom views of the following directories are available:
+Custom views of the following top-level directories are available:
+
 {% for dir in site.data.custom_dirs %}
 - [{{ dir }}]({{ dir }})
 {% endfor %}
