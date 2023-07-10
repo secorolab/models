@@ -15,11 +15,11 @@ layout: default
 
 {% if file.extname == ".svg" %}
 
-![{{ robot[0] }}]({{ file.path }})
+![{{ robot[0] }}]({{ site.baseurl }}{{ file.path }})
 
 {% else %}
 
-- [{{file.name}}]({{ file.path }})
+- [{{file.name}}]({{ site.baseurl }}{{ file.path }})
 
 {% endif %}
 
