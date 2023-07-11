@@ -16,7 +16,7 @@ Custom views of the following top-level directories are available:
 {% endfor %}
 
 Additionally, all models in this repository can be found in the following table,
-grouped by their top-level directory.
+grouped by the directory where they are located.
 
 <table id="models" class="table table-striped" style="width:100%;white-space:nowrap;">
 <thead>
