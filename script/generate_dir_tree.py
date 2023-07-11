@@ -7,7 +7,8 @@ from pprint import pprint
 ROOT_DIR = os.path.join(os.path.dirname(__file__), "..")
 SKIP_TOP_DIRS = ["assets", "_data", "script"]
 IGNORE_EXTENSIONS = [".html", ".md", ""]
-OUTPUT_FILE = "file_paths.yml"
+PATHS_FILE = "file_paths.yml"
+CUSTOM_DIR_FILE = "custom_dirs.yml"
 OUTPUT_DIR = os.path.join(ROOT_DIR, "_data")
 
 
@@ -15,10 +16,13 @@ def main():
     extensions = set()
     file_list = glob.glob(os.path.join(ROOT_DIR, "**"), recursive=True)
     filtered_file_data = {}
+    custom_view_dirs = []
     for file_path in file_list:
-        if os.path.isdir(file_path):
-            continue
         rel_path = os.path.relpath(file_path, ROOT_DIR)
+        if os.path.isdir(file_path):
+            if rel_path != "." and os.path.exists(os.path.join(file_path, "index.md")):
+                custom_view_dirs.append(rel_path)
+            continue
         skip_dir = False
         for skip_top_dir in SKIP_TOP_DIRS:
             if rel_path.startswith(skip_top_dir):
@@ -44,12 +48,16 @@ def main():
         )
     print("detected the following extensions:")
     pprint(extensions)
+    print("directories with 'index.md':")
+    pprint(custom_view_dirs)
 
     if not os.path.exists(OUTPUT_DIR):
         os.makedirs(OUTPUT_DIR)
 
-    with open(os.path.join(OUTPUT_DIR, OUTPUT_FILE), "w") as out_file:
+    with open(os.path.join(OUTPUT_DIR, PATHS_FILE), "w") as out_file:
         yaml.dump(filtered_file_data, out_file)
+    with open(os.path.join(OUTPUT_DIR, CUSTOM_DIR_FILE), "w") as out_file:
+        yaml.dump(custom_view_dirs, out_file)
 
 
 if __name__ == "__main__":
