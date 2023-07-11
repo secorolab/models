@@ -5,8 +5,20 @@ from pprint import pprint
 
 
 ROOT_DIR = os.path.join(os.path.dirname(__file__), "..")
-IGNORE_DIRS = ["assets", "_data", "script"]
-IGNORE_EXTENSIONS = [".html", ".md", ""]
+
+IGNORE_DIRS = [
+    "assets",
+    "_data",
+    "_includes",
+    "_layouts",
+    "_site",
+    ".github",
+    ".git",
+    "script",
+]
+IGNORE_EXTENSIONS = [".html", ".md", ".gitignore", ".gemspec"]
+IGNORE_PATHS = ["_config.yaml", "LICENSE", "Gemfile"]
+
 PATHS_FILE = "file_paths.yml"
 CUSTOM_DIR_FILE = "custom_dirs.yml"
 OUTPUT_DIR = os.path.join(ROOT_DIR, "_data")
@@ -25,6 +37,10 @@ def main():
                 custom_view_dirs.append(rel_path)
             continue
 
+        # skip specified paths
+        if rel_path in IGNORE_PATHS:
+            continue
+
         # skip specified directories
         skip_dir = False
         for ignore_dir in IGNORE_DIRS:
@@ -35,17 +51,13 @@ def main():
             continue
 
         dir_name, file_name = os.path.split(rel_path)
-
-        # skip top directory
-        if not dir_name:
-            continue
-
         file_base_name, extension = os.path.splitext(file_name)
-        extensions.add(extension)
 
         # skip specified extensions
         if extension in IGNORE_EXTENSIONS:
             continue
+
+        extensions.add(extension)
 
         # populate file data
         if dir_name not in filtered_file_data:
