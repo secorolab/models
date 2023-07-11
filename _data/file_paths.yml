@@ -1,13 +1,14 @@
-acceptance-criteria:
-- extension: JSON
-  name: pickup.json
-  path: acceptance-criteria/bdd/templates/pickup.json
+acceptance-criteria/bdd:
 - extension: JSON
   name: pickup-variants.json
   path: acceptance-criteria/bdd/pickup-variants.json
 - extension: JINJA
   name: feature.jinja
   path: acceptance-criteria/bdd/feature.jinja
+acceptance-criteria/bdd/templates:
+- extension: JSON
+  name: pickup.json
+  path: acceptance-criteria/bdd/templates/pickup.json
 agents:
 - extension: JSON
   name: brsu.json
@@ -16,6 +17,7 @@ coordination:
 - extension: JSON
   name: pickup-events.json
   path: coordination/pickup-events.json
+coordination/bt:
 - extension: JSON
   name: pickup-behaviours.json
   path: coordination/bt/pickup-behaviours.json
@@ -26,30 +28,20 @@ environments:
 - extension: JSON
   name: brsu.json
   path: environments/brsu.json
-- extension: SVG
-  name: classroom_c025_bundle.svg
-  path: environments/brsu_building_c_with_doors/classroom_c025/classroom_c025_bundle.svg
 - extension: JSON
-  name: classroom_c025_bundle.prov.json
-  path: environments/brsu_building_c_with_doors/classroom_c025/classroom_c025_bundle.prov.json
-- extension: PROVN
-  name: classroom_c025_bundle.provn
-  path: environments/brsu_building_c_with_doors/classroom_c025/classroom_c025_bundle.provn
-- extension: PROVN
-  name: classroom_c022_bundle.provn
-  path: environments/brsu_building_c_with_doors/classroom_c022/classroom_c022_bundle.provn
-- extension: JSON
-  name: classroom_c022_bundle.prov.json
-  path: environments/brsu_building_c_with_doors/classroom_c022/classroom_c022_bundle.prov.json
-- extension: SVG
-  name: classroom_c022_bundle.svg
-  path: environments/brsu_building_c_with_doors/classroom_c022/classroom_c022_bundle.svg
+  name: avl.json
+  path: environments/avl.json
+environments/brsu_building_c_with_doors:
 - extension: JSON
   name: brsu_building_c_with_doors_bundle.prov.json
   path: environments/brsu_building_c_with_doors/brsu_building_c_with_doors_bundle.prov.json
 - extension: SVG
   name: brsu_building_c_with_doors_bundle.svg
   path: environments/brsu_building_c_with_doors/brsu_building_c_with_doors_bundle.svg
+- extension: PROVN
+  name: brsu_building_c_with_doors_bundle.provn
+  path: environments/brsu_building_c_with_doors/brsu_building_c_with_doors_bundle.provn
+environments/brsu_building_c_with_doors/classroom_c018:
 - extension: SVG
   name: classroom_c018_bundle.svg
   path: environments/brsu_building_c_with_doors/classroom_c018/classroom_c018_bundle.svg
@@ -59,48 +51,37 @@ environments:
 - extension: PROVN
   name: classroom_c018_bundle.provn
   path: environments/brsu_building_c_with_doors/classroom_c018/classroom_c018_bundle.provn
+environments/brsu_building_c_with_doors/classroom_c022:
 - extension: PROVN
-  name: brsu_building_c_with_doors_bundle.provn
-  path: environments/brsu_building_c_with_doors/brsu_building_c_with_doors_bundle.provn
+  name: classroom_c022_bundle.provn
+  path: environments/brsu_building_c_with_doors/classroom_c022/classroom_c022_bundle.provn
 - extension: JSON
-  name: avl.json
-  path: environments/avl.json
+  name: classroom_c022_bundle.prov.json
+  path: environments/brsu_building_c_with_doors/classroom_c022/classroom_c022_bundle.prov.json
+- extension: SVG
+  name: classroom_c022_bundle.svg
+  path: environments/brsu_building_c_with_doors/classroom_c022/classroom_c022_bundle.svg
+environments/brsu_building_c_with_doors/classroom_c025:
+- extension: SVG
+  name: classroom_c025_bundle.svg
+  path: environments/brsu_building_c_with_doors/classroom_c025/classroom_c025_bundle.svg
+- extension: JSON
+  name: classroom_c025_bundle.prov.json
+  path: environments/brsu_building_c_with_doors/classroom_c025/classroom_c025_bundle.prov.json
+- extension: PROVN
+  name: classroom_c025_bundle.provn
+  path: environments/brsu_building_c_with_doors/classroom_c025/classroom_c025_bundle.provn
+environments/floorplan_dsl_models/input_models:
 - extension: FLOORPLAN
-  name: hbrs_3805.floorplan
-  path: environments/floorplan_dsl_models/output_models/hbrs/variations/hbrs_3805.floorplan
+  name: brsu_building_c_with_doorways.floorplan
+  path: environments/floorplan_dsl_models/input_models/brsu_building_c_with_doorways.floorplan
+- extension: VARIATION
+  name: hbrs.variation
+  path: environments/floorplan_dsl_models/input_models/hbrs.variation
 - extension: FLOORPLAN
-  name: hbrs_1411.floorplan
-  path: environments/floorplan_dsl_models/output_models/hbrs/variations/hbrs_1411.floorplan
-- extension: FLOORPLAN
-  name: hbrs_4735.floorplan
-  path: environments/floorplan_dsl_models/output_models/hbrs/variations/hbrs_4735.floorplan
-- extension: FLOORPLAN
-  name: hbrs_3614.floorplan
-  path: environments/floorplan_dsl_models/output_models/hbrs/variations/hbrs_3614.floorplan
-- extension: JSON
-  name: spatial_relations.json
-  path: environments/floorplan_dsl_models/output_models/hbrs/json-ld/spatial_relations.json
-- extension: JSON
-  name: coordinate.json
-  path: environments/floorplan_dsl_models/output_models/hbrs/json-ld/coordinate.json
-- extension: JSON
-  name: shape.json
-  path: environments/floorplan_dsl_models/output_models/hbrs/json-ld/shape.json
-- extension: JSON
-  name: skeleton.json
-  path: environments/floorplan_dsl_models/output_models/hbrs/json-ld/skeleton.json
-- extension: JSON
-  name: floorplan.json
-  path: environments/floorplan_dsl_models/output_models/hbrs/json-ld/floorplan.json
-- extension: YAML
-  name: hbrs.yaml
-  path: environments/floorplan_dsl_models/output_models/hbrs/map/hbrs.yaml
-- extension: PGM
-  name: hbrs.pgm
-  path: environments/floorplan_dsl_models/output_models/hbrs/map/hbrs.pgm
-- extension: STL
-  name: hbrs.stl
-  path: environments/floorplan_dsl_models/output_models/hbrs/mesh/hbrs.stl
+  name: hbrs.floorplan
+  path: environments/floorplan_dsl_models/input_models/hbrs.floorplan
+environments/floorplan_dsl_models/output_models/brsu_building_c_with_doorways/json-ld:
 - extension: JSON
   name: spatial_relations.json
   path: environments/floorplan_dsl_models/output_models/brsu_building_c_with_doorways/json-ld/spatial_relations.json
@@ -116,30 +97,64 @@ environments:
 - extension: JSON
   name: floorplan.json
   path: environments/floorplan_dsl_models/output_models/brsu_building_c_with_doorways/json-ld/floorplan.json
+environments/floorplan_dsl_models/output_models/brsu_building_c_with_doorways/map:
 - extension: PGM
   name: brsu_building_c_with_doorways.pgm
   path: environments/floorplan_dsl_models/output_models/brsu_building_c_with_doorways/map/brsu_building_c_with_doorways.pgm
 - extension: YAML
   name: brsu_building_c_with_doorways.yaml
   path: environments/floorplan_dsl_models/output_models/brsu_building_c_with_doorways/map/brsu_building_c_with_doorways.yaml
-- extension: STL
-  name: brsu_building_c_with_doorways.stl
-  path: environments/floorplan_dsl_models/output_models/brsu_building_c_with_doorways/mesh/meshes/brsu_building_c_with_doorways.stl
+environments/floorplan_dsl_models/output_models/brsu_building_c_with_doorways/mesh:
 - extension: CONFIG
   name: model.config
   path: environments/floorplan_dsl_models/output_models/brsu_building_c_with_doorways/mesh/model.config
 - extension: SDF
   name: model.sdf
   path: environments/floorplan_dsl_models/output_models/brsu_building_c_with_doorways/mesh/model.sdf
+environments/floorplan_dsl_models/output_models/brsu_building_c_with_doorways/mesh/meshes:
+- extension: STL
+  name: brsu_building_c_with_doorways.stl
+  path: environments/floorplan_dsl_models/output_models/brsu_building_c_with_doorways/mesh/meshes/brsu_building_c_with_doorways.stl
+environments/floorplan_dsl_models/output_models/hbrs/json-ld:
+- extension: JSON
+  name: spatial_relations.json
+  path: environments/floorplan_dsl_models/output_models/hbrs/json-ld/spatial_relations.json
+- extension: JSON
+  name: coordinate.json
+  path: environments/floorplan_dsl_models/output_models/hbrs/json-ld/coordinate.json
+- extension: JSON
+  name: shape.json
+  path: environments/floorplan_dsl_models/output_models/hbrs/json-ld/shape.json
+- extension: JSON
+  name: skeleton.json
+  path: environments/floorplan_dsl_models/output_models/hbrs/json-ld/skeleton.json
+- extension: JSON
+  name: floorplan.json
+  path: environments/floorplan_dsl_models/output_models/hbrs/json-ld/floorplan.json
+environments/floorplan_dsl_models/output_models/hbrs/map:
+- extension: YAML
+  name: hbrs.yaml
+  path: environments/floorplan_dsl_models/output_models/hbrs/map/hbrs.yaml
+- extension: PGM
+  name: hbrs.pgm
+  path: environments/floorplan_dsl_models/output_models/hbrs/map/hbrs.pgm
+environments/floorplan_dsl_models/output_models/hbrs/mesh:
+- extension: STL
+  name: hbrs.stl
+  path: environments/floorplan_dsl_models/output_models/hbrs/mesh/hbrs.stl
+environments/floorplan_dsl_models/output_models/hbrs/variations:
 - extension: FLOORPLAN
-  name: brsu_building_c_with_doorways.floorplan
-  path: environments/floorplan_dsl_models/input_models/brsu_building_c_with_doorways.floorplan
-- extension: VARIATION
-  name: hbrs.variation
-  path: environments/floorplan_dsl_models/input_models/hbrs.variation
+  name: hbrs_3805.floorplan
+  path: environments/floorplan_dsl_models/output_models/hbrs/variations/hbrs_3805.floorplan
 - extension: FLOORPLAN
-  name: hbrs.floorplan
-  path: environments/floorplan_dsl_models/input_models/hbrs.floorplan
+  name: hbrs_1411.floorplan
+  path: environments/floorplan_dsl_models/output_models/hbrs/variations/hbrs_1411.floorplan
+- extension: FLOORPLAN
+  name: hbrs_4735.floorplan
+  path: environments/floorplan_dsl_models/output_models/hbrs/variations/hbrs_4735.floorplan
+- extension: FLOORPLAN
+  name: hbrs_3614.floorplan
+  path: environments/floorplan_dsl_models/output_models/hbrs/variations/hbrs_3614.floorplan
 oracles:
 - extension: YAML
   name: scenario_c.yaml
@@ -240,7 +255,7 @@ scenarios:
 - extension: JSON
   name: scenario_c.prov.json
   path: scenarios/scenario_c.prov.json
-tasks:
+tasks/brsu_building_c_with_doors:
 - extension: YAML
   name: navigate_home_2.yaml
   path: tasks/brsu_building_c_with_doors/navigate_home_2.yaml
