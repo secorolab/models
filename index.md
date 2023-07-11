@@ -16,14 +16,13 @@ Custom views of the following top-level directories are available:
 {% endfor %}
 
 Additionally, all models in this repository can be found in the following table,
-grouped by their top-level directory.
+grouped by the directory where they are located.
 
 <table id="models" class="table table-striped" style="width:100%;white-space:nowrap;">
 <thead>
 <tr>
 <th>Filename</th>
 <th>Extension</th>
-<th>Path</th>
 <th style="display:none"></th>
 </tr>
 </thead>
@@ -32,13 +31,10 @@ grouped by their top-level directory.
 {% for file_data in item[1] %}
 <tr>
 <td>
-  {{ file_data.name }}
+  <a href="{{ file_data.path }}">{{ file_data.name }}</a>
 </td>
 <td>
   {{ file_data.extension }}
-</td>
-<td>
-  <a href="{{ file_data.path }}">{{ file_data.path }}</a>
 </td>
 <td style="display:none">
 {{ item[0]  }}
@@ -58,7 +54,7 @@ new DataTable('#models', {
   scrollX: true,
   order: [[2, 'asc']],
   rowGroup: {
-    dataSrc: 3
+    dataSrc: 2
   },
   pageLength: 25
 });
