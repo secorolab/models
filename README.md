@@ -1,7 +1,8 @@
 # ExSce Models
 
-A repository of models created and/or generated to support the metamodels and tools in
-the [Executable Scenario](https://sesame-project.github.io/exsce/)
+A repository of models created or generated during the development of the
+metamodels and tools in the
+[Executable Scenario](https://sesame-project.github.io/exsce/) (ExSce)
 [Workbench](https://sesame-project.github.io/exsce/exsce-workbench.html)
 to support stakeholders in carrying out one or more activities of the
 [ExSce Methodology](https://sesame-project.github.io/exsce/terminology.html).
