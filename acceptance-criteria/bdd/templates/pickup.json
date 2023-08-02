@@ -32,11 +32,11 @@
         },
 
         { "@id": "lift", "@type": "bhv:Behaviour" },
-        { "@id": "lift-given", "@type": "GivenClause" },
-        { "@id": "lift-when", "@type": "WhenClause" },
-        { "@id": "lift-then", "@type": "ThenClause" },
+        { "@id": "lift-given", "@type": "bdd:GivenClause" },
+        { "@id": "lift-when", "@type": "bdd:WhenClause" },
+        { "@id": "lift-then", "@type": "bdd:ThenClause" },
         {
-            "@id": "scenario-lift", "@type": "Scenario",
+            "@id": "scenario-lift", "@type": "bdd:Scenario",
             "of-behaviour": "lift",
             "given": "lift-given",
             "when": "lift-when",
@@ -89,7 +89,7 @@
         {
             "@id": "fluent-ee-near-obj",
             "@type": [ "bdd:FluentClause", "bdd:IsNearPredicate" ],
-            "clause-of": [ "approach-then" ],
+            "clause-of": [ "approach-then", "lift-given" ],
             "predicate": "pred-robot-near-obj",
             "time-constraint": [ "after-approach", "before-lift" ],
             "ref-object": "pick-object",
