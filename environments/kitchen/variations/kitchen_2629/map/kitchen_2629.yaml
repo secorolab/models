@@ -1,0 +1,9 @@
+free_thresh: 0.196
+image: kitchen_2629.pgm
+negate: 0
+occupied_thresh: 0.65
+origin:
+- -8.250000000000004
+- -8.850000000000001
+- 0
+resolution: 0.05
