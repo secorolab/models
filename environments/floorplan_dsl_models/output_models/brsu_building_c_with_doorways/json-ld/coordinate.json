@@ -6,7 +6,7 @@
         },
         "https://comp-rob2b.github.io/metamodels/qudt.json",
         "https://comp-rob2b.github.io/metamodels/geometry/coordinates.json",
-        "https://hbrs-sesame.github.io/metamodels/geometry/coordinate-extension.json"
+        "https://secorolab.github.io/metamodels/geometry/coordinate-extension.json"
     ],
     "@graph": [
         {

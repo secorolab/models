@@ -3,7 +3,7 @@
         {
             "polytope": "https://hbrs-sesame.github.io/metamodels/polytope#"
         },
-        "https://hbrs-sesame.github.io/metamodels/geometry/polytope.json"
+        "https://secorolab.github.io/metamodels/geometry/polytope.json"
     ],
     "@graph": [
         {
