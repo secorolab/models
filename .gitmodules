@@ -1,3 +1,3 @@
 [submodule "acceptance-criteria/bdd"]
 	path = acceptance-criteria/bdd
-	url = https://github.com/secorolab/models-bdd.git
+	url = git@github.com:secorolab/models-bdd.git
