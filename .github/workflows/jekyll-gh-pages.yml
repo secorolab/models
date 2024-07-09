@@ -28,6 +28,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          submodules: true
       - name: Populate data files
         run: python script/generate_dir_tree.py
       - name: Setup Pages
