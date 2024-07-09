@@ -29,7 +29,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          token: ${{ secrets.GH_TOKEN_ACTIONS_READ }}
+          token: ${{ secrets.ACCESS_TOKEN }}
           submodules: true
       - name: Populate data files
         run: python script/generate_dir_tree.py
