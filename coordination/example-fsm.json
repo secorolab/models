@@ -1,0 +1,371 @@
+{
+    "@context": {
+        "el": "https://secorolab.github.io/metamodels/behaviour/event_loop#",
+        "fsm": "https://secorolab.github.io/metamodels/behaviour/fsm#",
+        "hello": "https://example.com/hello#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
+    },
+    "@graph": [
+        {
+            "@id": "hello:S_CONFIGURE",
+            "@type": "fsm:State"
+        },
+        {
+            "@id": "hello:E_EXECUTE_EXIT",
+            "@type": "el:Event"
+        },
+        {
+            "@id": "hello:T_CONFIGURE_IDLE",
+            "@type": "fsm:Transition",
+            "fsm:transition-from": {
+                "@id": "hello:S_CONFIGURE"
+            },
+            "fsm:transition-to": {
+                "@id": "hello:S_IDLE"
+            }
+        },
+        {
+            "@id": "hello:R_E_STEP3",
+            "@type": "fsm:Reaction",
+            "fsm:do-transition": {
+                "@id": "hello:T_EXECUTE_EXECUTE"
+            },
+            "fsm:when-event": {
+                "@id": "hello:E_STEP"
+            }
+        },
+        {
+            "@id": "hello:T_IDLE_COMPILE",
+            "@type": "fsm:Transition",
+            "fsm:transition-from": {
+                "@id": "hello:S_IDLE"
+            },
+            "fsm:transition-to": {
+                "@id": "hello:S_COMPILE"
+            }
+        },
+        {
+            "@id": "hello:S_IDLE",
+            "@type": "fsm:State"
+        },
+        {
+            "@id": "hello:E_IDLE_EXIT_COMPILE",
+            "@type": "el:Event"
+        },
+        {
+            "@id": "hello:T_IDLE_IDLE",
+            "@type": "fsm:Transition",
+            "fsm:transition-from": {
+                "@id": "hello:S_IDLE"
+            },
+            "fsm:transition-to": {
+                "@id": "hello:S_IDLE"
+            }
+        },
+        {
+            "@id": "hello:E_CONFIGURE_EXIT",
+            "@type": "el:Event"
+        },
+        {
+            "@id": "hello:R_E_IDLE_EXIT_EXECUTE",
+            "@type": "fsm:Reaction",
+            "fsm:do-transition": {
+                "@id": "hello:T_IDLE_EXECUTE"
+            },
+            "fsm:fires-events": {
+                "@id": "hello:E_EXECUTE_ENTERED"
+            },
+            "fsm:when-event": {
+                "@id": "hello:E_IDLE_EXIT_EXECUTE"
+            }
+        },
+        {
+            "@id": "hello:S_EXECUTE",
+            "@type": "fsm:State"
+        },
+        {
+            "@id": "hello:R_E_IDLE_EXIT_COMPILE",
+            "@type": "fsm:Reaction",
+            "fsm:do-transition": {
+                "@id": "hello:T_IDLE_COMPILE"
+            },
+            "fsm:fires-events": {
+                "@id": "hello:E_COMPILE_ENTERED"
+            },
+            "fsm:when-event": {
+                "@id": "hello:E_IDLE_EXIT_COMPILE"
+            }
+        },
+        {
+            "@id": "hello:T_EXECUTE_EXECUTE",
+            "@type": "fsm:Transition",
+            "fsm:transition-from": {
+                "@id": "hello:S_EXECUTE"
+            },
+            "fsm:transition-to": {
+                "@id": "hello:S_EXECUTE"
+            }
+        },
+        {
+            "@id": "hello:T_COMPILE_EXECUTE",
+            "@type": "fsm:Transition",
+            "fsm:transition-from": {
+                "@id": "hello:S_COMPILE"
+            },
+            "fsm:transition-to": {
+                "@id": "hello:S_EXECUTE"
+            }
+        },
+        {
+            "@id": "hello:E_IDLE_ENTERED",
+            "@type": "el:Event"
+        },
+        {
+            "@id": "hello:T_IDLE_EXECUTE",
+            "@type": "fsm:Transition",
+            "fsm:transition-from": {
+                "@id": "hello:S_IDLE"
+            },
+            "fsm:transition-to": {
+                "@id": "hello:S_EXECUTE"
+            }
+        },
+        {
+            "@id": "hello:E_CONFIGURE_ENTERED",
+            "@type": "el:Event"
+        },
+        {
+            "@id": "hello:R_E_STEP2",
+            "@type": "fsm:Reaction",
+            "fsm:do-transition": {
+                "@id": "hello:T_IDLE_IDLE"
+            },
+            "fsm:when-event": {
+                "@id": "hello:E_STEP"
+            }
+        },
+        {
+            "@id": "hello:S_START",
+            "@type": "fsm:State"
+        },
+        {
+            "@id": "hello:example_fsm",
+            "@type": "fsm:FSM",
+            "fsm:current-state": {
+                "@id": "hello:S_START"
+            },
+            "fsm:description": "Example of a simple FSM",
+            "fsm:end-state": {
+                "@id": "hello:S_EXIT"
+            },
+            "fsm:events": [
+                {
+                    "@id": "hello:E_CONFIGURE_ENTERED"
+                },
+                {
+                    "@id": "hello:E_CONFIGURE_EXIT"
+                },
+                {
+                    "@id": "hello:E_IDLE_ENTERED"
+                },
+                {
+                    "@id": "hello:E_IDLE_EXIT_EXECUTE"
+                },
+                {
+                    "@id": "hello:E_IDLE_EXIT_COMPILE"
+                },
+                {
+                    "@id": "hello:E_COMPILE_ENTERED"
+                },
+                {
+                    "@id": "hello:E_COMPILE_EXIT"
+                },
+                {
+                    "@id": "hello:E_EXECUTE_ENTERED"
+                },
+                {
+                    "@id": "hello:E_EXECUTE_EXIT"
+                },
+                {
+                    "@id": "hello:E_STEP"
+                }
+            ],
+            "fsm:name": "example-fsm",
+            "fsm:reactions": [
+                {
+                    "@id": "hello:R_E_CONFIGURE_EXIT"
+                },
+                {
+                    "@id": "hello:R_E_IDLE_EXIT_EXECUTE"
+                },
+                {
+                    "@id": "hello:R_E_IDLE_EXIT_COMPILE"
+                },
+                {
+                    "@id": "hello:R_E_COMPILE_EXIT"
+                },
+                {
+                    "@id": "hello:R_E_EXECUTE_EXIT"
+                },
+                {
+                    "@id": "hello:R_E_STEP1"
+                },
+                {
+                    "@id": "hello:R_E_STEP2"
+                },
+                {
+                    "@id": "hello:R_E_STEP3"
+                }
+            ],
+            "fsm:start-state": {
+                "@id": "hello:S_START"
+            },
+            "fsm:states": [
+                {
+                    "@id": "hello:S_START"
+                },
+                {
+                    "@id": "hello:S_CONFIGURE"
+                },
+                {
+                    "@id": "hello:S_IDLE"
+                },
+                {
+                    "@id": "hello:S_COMPILE"
+                },
+                {
+                    "@id": "hello:S_EXECUTE"
+                },
+                {
+                    "@id": "hello:S_EXIT"
+                }
+            ],
+            "fsm:transitions": [
+                {
+                    "@id": "hello:T_START_CONFIGURE"
+                },
+                {
+                    "@id": "hello:T_CONFIGURE_IDLE"
+                },
+                {
+                    "@id": "hello:T_IDLE_IDLE"
+                },
+                {
+                    "@id": "hello:T_IDLE_EXECUTE"
+                },
+                {
+                    "@id": "hello:T_IDLE_COMPILE"
+                },
+                {
+                    "@id": "hello:T_COMPILE_EXECUTE"
+                },
+                {
+                    "@id": "hello:T_EXECUTE_EXECUTE"
+                },
+                {
+                    "@id": "hello:T_EXECUTE_IDLE"
+                }
+            ]
+        },
+        {
+            "@id": "hello:E_STEP",
+            "@type": "el:Event"
+        },
+        {
+            "@id": "hello:T_START_CONFIGURE",
+            "@type": "fsm:Transition",
+            "fsm:transition-from": {
+                "@id": "hello:S_START"
+            },
+            "fsm:transition-to": {
+                "@id": "hello:S_CONFIGURE"
+            }
+        },
+        {
+            "@id": "hello:R_E_STEP1",
+            "@type": "fsm:Reaction",
+            "fsm:do-transition": {
+                "@id": "hello:T_START_CONFIGURE"
+            },
+            "fsm:fires-events": {
+                "@id": "hello:E_CONFIGURE_ENTERED"
+            },
+            "fsm:when-event": {
+                "@id": "hello:E_STEP"
+            }
+        },
+        {
+            "@id": "hello:E_COMPILE_ENTERED",
+            "@type": "el:Event"
+        },
+        {
+            "@id": "hello:E_EXECUTE_ENTERED",
+            "@type": "el:Event"
+        },
+        {
+            "@id": "hello:T_EXECUTE_IDLE",
+            "@type": "fsm:Transition",
+            "fsm:transition-from": {
+                "@id": "hello:S_EXECUTE"
+            },
+            "fsm:transition-to": {
+                "@id": "hello:S_IDLE"
+            }
+        },
+        {
+            "@id": "hello:S_EXIT",
+            "@type": "fsm:State"
+        },
+        {
+            "@id": "hello:S_COMPILE",
+            "@type": "fsm:State"
+        },
+        {
+            "@id": "hello:R_E_CONFIGURE_EXIT",
+            "@type": "fsm:Reaction",
+            "fsm:do-transition": {
+                "@id": "hello:T_CONFIGURE_IDLE"
+            },
+            "fsm:fires-events": {
+                "@id": "hello:E_IDLE_ENTERED"
+            },
+            "fsm:when-event": {
+                "@id": "hello:E_CONFIGURE_EXIT"
+            }
+        },
+        {
+            "@id": "hello:E_IDLE_EXIT_EXECUTE",
+            "@type": "el:Event"
+        },
+        {
+            "@id": "hello:E_COMPILE_EXIT",
+            "@type": "el:Event"
+        },
+        {
+            "@id": "hello:R_E_EXECUTE_EXIT",
+            "@type": "fsm:Reaction",
+            "fsm:do-transition": {
+                "@id": "hello:T_EXECUTE_IDLE"
+            },
+            "fsm:fires-events": {
+                "@id": "hello:E_IDLE_ENTERED"
+            },
+            "fsm:when-event": {
+                "@id": "hello:E_EXECUTE_EXIT"
+            }
+        },
+        {
+            "@id": "hello:R_E_COMPILE_EXIT",
+            "@type": "fsm:Reaction",
+            "fsm:do-transition": {
+                "@id": "hello:T_COMPILE_EXECUTE"
+            },
+            "fsm:fires-events": {
+                "@id": "hello:E_EXECUTE_ENTERED"
+            },
+            "fsm:when-event": {
+                "@id": "hello:E_COMPILE_EXIT"
+            }
+        }
+    ]
+}
